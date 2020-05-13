@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Ирина М](https://up.htmlacademy.ru/htmlcss/28/user/1473923).
-* Наставник: `Максим Кузнецов`.
+* Студент: [Ирина М](https://htmlacademy.ru/profile/id1473923).
+* Наставник: `Максим Кузнецов`(https://htmlacademy.ru/profile/maxkuznetsov).
 
 ---
 
