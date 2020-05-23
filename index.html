@@ -237,53 +237,68 @@
         </a>
       </div>
     </footer>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <input type="text" name="search" placeholder="Что ищем?" />
-      <ul>
-        <li>
-          <input type="text" name="email" placeholder="Электронная почта" />
-        </li>
-        <li><input type="password" name="password" placeholder="Пароль" /></li>
-        <li><input type="submit" value="Войти" /></li>
-      </ul>
-      <ul>
-        <li><a href="#">Забыли пароль?</a></li>
-        <li><a href="#">Новая регистрация</a></li>
-      </ul>
-      <fieldset>
-        <legend>Мы обязательно вам ответим!</legend>
+    <section>
+      <h4>Поиск</h4>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="search" placeholder="Что ищем?" />
+      </form>
+    </section>
+    <section>
+      <h4>Вход</h4>
+      <form action="https://echo.htmlacademy.ru" method="post">
         <ul>
           <li>
-            <button type="button">
-              <img
-                src="img/cross-big.svg"
-                width="18"
-                height="17"
-                alt="Закрыть"
-              />
-            </button>
+            <input type="text" name="email" placeholder="Электронная почта" />
           </li>
           <li>
-            <input name="name" type="text" placeholder="Как вас зовут?" />
+            <input type="password" name="password" placeholder="Пароль" />
           </li>
-          <li>
-            <input
-              name="email"
-              type="text"
-              placeholder="Ваша почта для ответа?"
-            />
-          </li>
-          <li>
-            <textarea
-              name="comment"
-              id="comment-field"
-              placeholder="Напишите что-нибудь..."
-              rows="7"
-            ></textarea>
-          </li>
-          <li><input type="submit" value="Отправить" /></li>
+          <li><input type="submit" value="Войти" /></li>
         </ul>
-      </fieldset>
-    </form>
+        <ul>
+          <li><a href="#">Забыли пароль?</a></li>
+          <li><a href="#">Новая регистрация</a></li>
+        </ul>
+      </form>
+    </section>
+    <section>
+      <h4>Обратная связь</h4>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Мы обязательно вам ответим!</legend>
+          <ul>
+            <li>
+              <button type="button">
+                <img
+                  src="img/cross-big.svg"
+                  width="18"
+                  height="17"
+                  alt="Закрыть"
+                />
+              </button>
+            </li>
+            <li>
+              <input name="name" type="text" placeholder="Как вас зовут?" />
+            </li>
+            <li>
+              <input
+                name="email"
+                type="text"
+                placeholder="Ваша почта для ответа?"
+              />
+            </li>
+            <li>
+              <textarea
+                name="comment"
+                id="comment-field"
+                placeholder="Напишите что-нибудь..."
+                rows="7"
+              ></textarea>
+            </li>
+            <li><input type="submit" value="Отправить" /></li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
