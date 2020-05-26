@@ -1,0 +1,53 @@
+:root {
+  --basic-background-1: #849d8f;
+  --background-ice-1: rgba(215, 242, 227, 0.75);
+  --basic-background-2: #8996a6;
+  --background-ice-2: rgba(218, 228, 239, 0.75);
+  --basic-background-3: #9d8b84;
+  --background-ice-3: rgba(239, 224, 218, 0.75);
+  --background-light: rgba(255, 255, 255, 0.2);
+  --chat: rgba(255, 255, 255, 0.8);
+  --basic-black: #323232;
+  --follow: #5a5a5a;
+  --basic-white: #ffffff;
+  --hit: #231f20;
+  --placeholder: #999999;
+  --total: #000000;
+  --delete: #2c2829;
+  --button-select: #fbded7;
+  --pop-up-background: #f8f7f4;
+}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  height: 2419px;
+  left: 0px;
+  top: 0px;
+  background-color: var(--basic-background-1);
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-navigation {
+  line-height: 18px;
+  font-weight:bold;
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 16px;
+  background:var(--background-light);
+  border-radius: 20px;
+}
+
+

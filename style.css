@@ -1,0 +1,217 @@
+:root {
+  --basic-background-1: #849d8f;
+  --background-ice-1: rgba(215, 242, 227, 0.75);
+  --basic-background-2: #8996a6;
+  --background-ice-2: rgba(218, 228, 239, 0.75);
+  --basic-background-3: #9d8b84;
+  --background-ice-3: rgba(239, 224, 218, 0.75);
+  --background-light: rgba(255, 255, 255, 0.2);
+  --chat: rgba(255, 255, 255, 0.8);
+  --basic-black: #323232;
+  --follow: #5a5a5a;
+  --basic-white: #ffffff;
+  --hit: #231f20;
+  --placeholder: #999999;
+  --total: #000000;
+  --delete: #2c2829;
+  --button-select: #fbded7;
+  --pop-up-background: #f8f7f4;
+  --basic-button: rgba(172, 16, 0, 0.64);
+  --button-location: #d07058;
+}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  height: 2419px;
+  left: 0px;
+  top: 0px;
+  background-color: var(--basic-background-1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border-radius: 26px;
+}
+
+.user-navigation {
+  list-style: none;
+}
+.user-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--basic-white);
+  border-radius: 20px;
+  background-color: var(--background-light);
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.choice-navigation {
+  list-style: none;
+}
+
+.choice-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.choice-navigation a:hover,
+.choice-navigation a:focus {
+  background-color: var(--button-select);
+}
+
+.novelty a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.timetable {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.time-1 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.promotion {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: var(--basic-white);
+  text-align: center;
+  list-style: none;
+}
+
+.promotion a {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.features {
+  background-image: url(img/waffle-pattern.jpg);
+  background-image: repeat-x;
+  width: 1146px;
+  height: 306px;
+  background-position: 27px 1280px;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.articles {
+  list-style: none;
+}
+
+.blog {
+  color: var(--basic-black);
+}
+
+.blog h4 {
+  font-weight: 500;
+}
+
+.blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.subscription {
+  color: var(--follow);
+  width: 560px;
+  height: 220px;
+  background-image: url(img/bg-post.svg);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+}
+
+.subscription button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-button);
+  border-radius: 70px;
+}
+
+.chat {
+  list-style: none;
+}
+
+.links a {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.purchaser {
+  font-weight: bold;
+}
+
+.location {
+  background-color: var(--button-location);
+  border-radius: 26px;
+  width: 89px;
+  height: 31px;
+}
+
+.chain {
+  list-style: none;
+}
+
+.section-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.goods {
+  list-style: none;
+}
+
+.goods h3 {
+  font-weight: 500;
+  color: var(--basic-white);
+}
