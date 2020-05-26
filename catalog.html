@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -16,30 +22,30 @@
             alt="Логотип GllacyShop"
           />
         </a>
-        <ul>
-          <li>Каталог</li>
+        <ul class="site-navigation">
+          <li class="location">Каталог</li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
 
-        <ul>
+        <ul class="user-navigation">
           <li><a href="#">Поиск</a></li>
           <li><a href="#">Вход</a></li>
           <li><a href="#">2 товара</a></li>
         </ul>
       </nav>
-      <p>С 10 до 20, ежедневно</p>
-      <a href="tel:88124502525">8 812 450-25-25</a>
+      <p class="timetable">С 10 до 20, ежедневно</p>
+      <a class="tel-1" href="tel:88124502525">8 812 450-25-25</a>
     </header>
     <main>
       <section>
-        <ul>
+        <ul class="chain">
           <li><a href="index.html">Главная</a></li>
           <li>Каталог</li>
           <li>Сливочное</li>
         </ul>
-        <h2>Сливочное Мороженое</h2>
-        <h3>Фильтр товаров</h3>
+        <h2 class="section-title">Сливочное Мороженое</h2>
+        <h3 class="visually hidden">Фильтр товаров</h3>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
@@ -138,7 +144,7 @@
           <button>Применить</button>
         </form>
 
-        <ul>
+        <ul class="goods">
           <li>
             <a href="#">
               <img
@@ -320,7 +326,7 @@
       <table>
         <tr>
           <td>
-            <button type="submit">
+            <button type="button">
               Убрать из корзины
             </button>
           </td>
@@ -340,7 +346,7 @@
         </tr>
         <tr>
           <td>
-            <button type="submit">
+            <button type="button">
               Убрать из корзины
             </button>
           </td>
