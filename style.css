@@ -147,7 +147,7 @@ img {
 .promotion {
   list-style: none;
   font-weight: var(--weight-bold);
-  font-size: var(--size-60);
+  font-size: var(--size-promotion);
   line-height: var(--line-60);
   text-align: center;
   color: var(--basic-white);
@@ -156,7 +156,7 @@ img {
 .ice-cream a {
   width: 278px;
 
-  font-size: var(--size-32);
+  font-size: var(--size-ice-cream);
   line-height: var(--line-44);
   color: var(--basic-white);
   text-decoration: none;
