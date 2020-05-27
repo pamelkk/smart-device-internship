@@ -1,38 +1,66 @@
 :root {
-  --basic-background-1: #849d8f;
   --background-ice-1: rgba(215, 242, 227, 0.75);
-  --basic-background-2: #8996a6;
   --background-ice-2: rgba(218, 228, 239, 0.75);
-  --basic-background-3: #9d8b84;
   --background-ice-3: rgba(239, 224, 218, 0.75);
   --background-light: rgba(255, 255, 255, 0.2);
-  --chat: rgba(255, 255, 255, 0.8);
+  --basic-background-1: #849d8f;
+  --basic-background-2: #8996a6;
+  --basic-background-3: #9d8b84;
   --basic-black: #323232;
-  --follow: #5a5a5a;
-  --basic-white: #ffffff;
-  --hit: #231f20;
-  --placeholder: #999999;
-  --total: #000000;
-  --delete: #2c2829;
-  --button-select: #fbded7;
-  --pop-up-background: #f8f7f4;
   --basic-button: rgba(172, 16, 0, 0.64);
+  --basic-white: #ffffff;
+  --border-r-L: 26px;
+  --border-r-M: 20px;
+  --border-r-S: 16px;
+  --border-r-XXXL: 70px;
   --button-location: #d07058;
+  --button-select: #fbded7;
+  --chat: rgba(255, 255, 255, 0.8);
+  --delete: #2c2829;
+  --follow: #5a5a5a;
+  --hit: #231f20;
+  --line-L-XL: 41px;
+  --line-M: 24px;
+  --line-M-L: 30px;
+  --line-S: 22px;
+  --line-XL: 44px;
+  --line-XS: 18px;
+  --line-XXL: 60px;
+  --line-XXS: 16px;
+  --line-hit: 45px;
+  --placeholder: #999999;
+  --pop-up-background: #f8f7f4;
+  --size-L: 32px;
+  --size-L-XL: 35px;
+  --size-M: 22px;
+  --size-M-L: 24px;
+  --size-S: 16px;
+  --size-S-M: 18px;
+  --size-XL: 60px;
+  --size-XS: 14px;
+  --size-XXS: 13px;
+  --size-hit: 45px;
+  --total: #000000;
+  --weight-500: 500;
+  --weight-bold: bold;
+  --weight-normal: normal;
 }
 
 body {
+  top: 0;
+  left: 0;
+
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  height: 2419px;
-  left: 0px;
-  top: 0px;
-  background-color: var(--basic-background-1);
+
+  font-weight: var(--weight-normal);
+  font-size: var(--size-S);
+  line-height: var(--line-S);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: normal;
   color: var(--basic-white);
+
+  background-color: var(--basic-background-1);
 }
 
 img {
@@ -44,33 +72,36 @@ img {
   list-style: none;
 }
 .site-navigation a {
-  line-height: 18px;
-  font-weight: bold;
+  font-weight: var(--weight-bold);
+  line-height: var(--line-XS);
   color: var(--basic-white);
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: var(--basic-white);
   color: var(--basic-black);
-  border-radius: 26px;
+
+  background-color: var(--basic-white);
+  border-radius: var(--border-r-L);
 }
 
 .user-navigation {
   list-style: none;
 }
 .user-navigation a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
+  font-weight: var(--weight-500);
+  font-size: var(--size-XS);
+  line-height: var(--line-XXS);
   color: var(--basic-white);
-  border-radius: 20px;
+
   background-color: var(--background-light);
+  border-radius: var(--border-r-M);
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: var(--basic-white);
   color: var(--basic-black);
+
+  background-color: var(--basic-white);
 }
 
 .choice-navigation {
@@ -78,9 +109,9 @@ img {
 }
 
 .choice-navigation a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
+  font-weight: var(--weight-normal);
+  font-size: var(--size-XS);
+  line-height: var(--line-XXS);
 }
 
 .choice-navigation a:hover,
@@ -89,50 +120,52 @@ img {
 }
 
 .novelty a {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: bold;
+  font-weight: var(--weight-bold);
+  font-size: var(--size-XS);
+  line-height: var(--line-XS);
 }
 
 .timetable {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: bold;
+  font-weight: var(--weight-bold);
+  font-size: var(--size-XS);
+  line-height: var(--line-XXS);
 }
-.time-1 {
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: bold;
+.phone {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-M);
+  line-height: var(--line-M);
 }
 
 .promotion {
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: bold;
-  color: var(--basic-white);
-  text-align: center;
   list-style: none;
+  font-weight: var(--weight-bold);
+  font-size: var(--size-XL);
+  line-height: var(--line-XXL);
+  text-align: center;
+  color: var(--basic-white);
 }
 
 .promotion a {
-  font-size: 32px;
-  line-height: 44px;
+  font-size: var(--size-L);
+  line-height: var(--line-XXL);
 }
 
 .features {
-  background-image: url(img/waffle-pattern.jpg);
-  background-image: repeat-x;
   width: 1146px;
   height: 306px;
-  background-position: 27px 1280px;
-  color: var(--basic-black);
+
   list-style: none;
+  color: var(--basic-black);
+
+  background-image: url(img/waffle-pattern.jpg);
+  background-image: repeat-x;
+  background-position: 27px 1280px;
 }
 
 .features h2 {
+  font-weight: var(--weight-500);
   font-size: 24px;
   line-height: 30px;
-  font-weight: 500;
 }
 
 .feature-list {
@@ -148,32 +181,35 @@ img {
 }
 
 .blog h4 {
-  font-weight: 500;
+  font-weight: var(--weight-500);
 }
 
 .blog a {
+  font-weight: var(--weight-bold);
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
   color: var(--basic-black);
 }
 
 .subscription {
-  color: var(--follow);
   width: 560px;
   height: 220px;
+
+  color: var(--follow);
+
   background-image: url(img/bg-post.svg);
-  border-radius: 16px;
   background-repeat: no-repeat;
+  border-radius: var(--border-r-S);
 }
 
 .subscription button {
+  font-weight: var(--weight-bold);
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   color: var(--basic-white);
+
   background-color: var(--basic-button);
-  border-radius: 70px;
+  border-radius: var(--border-r-XXXL);
 }
 
 .chat {
@@ -188,14 +224,15 @@ img {
 }
 
 .purchaser {
-  font-weight: bold;
+  font-weight: var(--weight-bold);
 }
 
 .location {
-  background-color: var(--button-location);
-  border-radius: 26px;
   width: 89px;
   height: 31px;
+
+  background-color: var(--button-location);
+  border-radius: var(--border-r-L);
 }
 
 .chain {
@@ -212,6 +249,6 @@ img {
 }
 
 .goods h3 {
-  font-weight: 500;
+  font-weight: var(--weight-500);
   color: var(--basic-white);
 }
