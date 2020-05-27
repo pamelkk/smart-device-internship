@@ -185,6 +185,10 @@ img {
 
 .blog {
   color: var(--basic-black);
+  background-image: url(img/strawberry-background.png);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
 }
 
 .blog h4 {
