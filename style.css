@@ -9,24 +9,24 @@
   --basic-black: #323232;
   --basic-button: #e74a35;
   --basic-white: #ffffff;
-  --border-r-16: 16px;
-  --border-r-20: 20px;
-  --border-r-26: 26px;
-  --border-r-70: 70px;
+  --border-r-s: 16px;
+  --border-r-m: 20px;
+  --border-r-l: 26px;
+  --border-r-xl: 70px;
   --button-location: #d07058;
   --button-select: #fbded7;
   --chat: rgba(255, 255, 255, 0.8);
   --delete: #2c2829;
   --follow: #5a5a5a;
   --hit: #231f20;
-  --line-16: 16px;
-  --line-18: 18px;
+  --line-s: 16px;
+  --line-m: 18px;
   --line-20: 20px;
-  --line-22: 22px;
-  --line-24: 24px;
-  --line-30: 30px;
+  --line-l: 22px;
+  --line-xl: 24px;
+  --line-xxl: 30px;
   --line-35: 35px;
-  --line-41: 41px;
+  --line-xxxl: 41px;
   --line-44: 44px;
   --line-60: 60px;
   --line-price: 45px;
@@ -34,15 +34,15 @@
   --placeholder: #999999;
   --pop-up-background: #f8f7f4;
   --pop-up-background: #f8f7f4;
-  --size-13: 13px;
-  --size-14: 14px;
-  --size-16: 16px;
-  --size-18: 18px;
+  --size-links: 13px;
+  --size-xs: 14px;
+  --size-s: 16px;
+  --size-m: 18px;
   --size-22: 22px;
-  --size-24: 24px;
-  --size-32: 32px;
-  --size-35: 35px;
-  --size-60: 60px;
+  --size-l: 24px;
+  --size-ice-cream: 32px;
+  --size-xl: 35px;
+  --size-promotion: 60px;
   --size-price: 45px;
   --total: #000000;
   --weight-500: 500;
@@ -59,8 +59,8 @@ body {
   padding: 0;
 
   font-weight: var(--weight-normal);
-  font-size: var(--size-16);
-  line-height: var(--line-22);
+  font-size: var(--size-s);
+  line-height: var(--line-l);
   font-family: "Roboto", Arial, sans-serif;
   color: var(--basic-white);
 
@@ -77,7 +77,7 @@ img {
 }
 .site-navigation a {
   font-weight: var(--weight-bold);
-  line-height: var(--line-18);
+  line-height: var(--line-m);
   color: var(--basic-white);
 }
 
@@ -86,7 +86,7 @@ img {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
-  border-radius: var(--border-r-26);
+  border-radius: var(--border-r-l);
 }
 
 .user-navigation {
@@ -94,13 +94,13 @@ img {
 }
 .user-navigation a {
   font-weight: var(--weight-500);
-  font-size: var(--size-14);
-  line-height: var(--line-16);
+  font-size: var(--size-xs);
+  line-height: var(--line-s);
   color: var(--basic-white);
   text-decoration: none;
 
   background-color: var(--background-light);
-  border-radius: var(--border-r-20);
+  border-radius: var(--border-r-m);
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
@@ -115,8 +115,8 @@ img {
 
 .choice-navigation a {
   font-weight: var(--weight-normal);
-  font-size: var(--size-14);
-  line-height: var(--line-16);
+  font-size: var(--size-xs);
+  line-height: var(--line-s);
   text-decoration: none;
 }
 
@@ -127,19 +127,19 @@ img {
 
 .novelty a {
   font-weight: var(--weight-bold);
-  font-size: var(--size-14);
-  line-height: var(--line-18);
+  font-size: var(--size-xs);
+  line-height: var(--line-m);
 }
 
 .timetable {
   font-weight: var(--weight-bold);
-  font-size: var(--size-14);
-  line-height: var(--line-16);
+  font-size: var(--size-xs);
+  line-height: var(--line-s);
 }
 .phone {
   font-weight: var(--weight-bold);
   font-size: var(--size-22);
-  line-height: var(--line-24);
+  line-height: var(--line-xl);
   color: var(--basic-white);
   text-decoration: none;
 }
@@ -162,7 +162,7 @@ img {
   text-decoration: none;
 
   border-color: var(--basic-button);
-  border-radius: var(--border-r-70);
+  border-radius: var(--border-r-xl);
 }
 
 .features {
@@ -178,8 +178,8 @@ img {
 
 .features h2 {
   font-weight: var(--weight-500);
-  font-size: var(--size-24);
-  line-height: var(--line-30);
+  font-size: var(--size-l);
+  line-height: var(--line-xxl);
 }
 
 .feature-list {
@@ -205,14 +205,14 @@ img {
 
 .blog a {
   font-weight: var(--weight-bold);
-  font-size: var(--size-24);
-  line-height: var(--line-30);
+  font-size: var(--size-l);
+  line-height: var(--line-xxl);
   color: var(--basic-black);
 }
 
 
 .info-block {
-  border-radius: var(--border-r-16);
+  border-radius: var(--border-r-s);
 }
 
 .subscription {
@@ -226,12 +226,12 @@ img {
 
 .subscription button {
   font-weight: var(--weight-bold);
-  font-size: var(--size-18);
-  line-height: var(--line-24);
+  font-size: var(--size-m);
+  line-height: var(--line-xl);
   color: var(--basic-white);
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-70);
+  border-radius: var(--border-r-xl);
 }
 
 .chat {
@@ -243,8 +243,8 @@ img {
 
 .links a {
   list-style: none;
-  font-size: var(--size-13);
-  line-height: var(--line-18);
+  font-size: var(--size-links);
+  line-height: var(--line-m);
   color: var(--basic-white);
 }
 
@@ -256,13 +256,13 @@ img {
   width: 89px;
 
   background-color: var(--button-location);
-  border-radius: var(--border-r-26);
+  border-radius: var(--border-r-l);
 }
 
 .chain {
   list-style: none;
-  font-size: var(--size-14);
-  line-height: var(--line-16);
+  font-size: var(--size-xs);
+  line-height: var(--line-s);
 }
 
 .chain a {
@@ -297,72 +297,72 @@ img {
 
   list-style: none;
   font-weight: var(--weight-bold);
-  font-size: var (--size-18);
-  line-height: var(--line-22);
+  font-size: var (--size-m);
+  line-height: var(--line-l);
 
-  border-radius: var(--border-r-16);
+  border-radius: var(--border-r-s);
 }
 
 .raspberry {
   background-image: url("img/raspberry-background.png");
   background-position: 27px 647px;
-  border-radius: var(--border-r-16);
+  border-radius: var(--border-r-s);
 }
 
 .chocolate {
   background-image: url("img/chocolate-background.png");
   background-position: 613px 647px;
-  border-radius: var(--border-r-16);
+  border-radius: var(--border-r-s);
 }
 
 .raspberry  h4 {
   font-weight: var(--weight-bold);
-  font-size: var(--size-35);
-  line-height: var(--line-41);
+  font-size: var(--size-xl);
+  line-height: var(--line-xxxl);
 }
 
 .chocolate h4 {
   font-weight: var(--weight-bold);
-  font-size: var(--size-35);
-  line-height: var(--line-41);
+  font-size: var(--size-xl);
+  line-height: var(--line-xxxl);
 }
 
 .raspberry  p {
   font-weight: var(--weight-normal);
-  font-size: var(--size-18);
-  line-height: var(--line-22);
+  font-size: var(--size-m);
+  line-height: var(--line-l);
 }
 
 .chocolate p {
   font-weight: var(--weight-normal);
-  font-size: var(--size-18);
-  line-height: var(--line-22);
+  font-size: var(--size-m);
+  line-height: var(--line-l);
 }
 
 .raspberry  a {
   width: 164px;
 
   font-weight: var(--weight-bold);
-  font-size: var(--size-18);
-  line-height: var(--line-24);
+  font-size: var(--size-m);
+  line-height: var(--line-xl);
   color: var(--basic-white);
   text-decoration: none;
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-70);
+  border-radius: var(--border-r-xl);
 }
 
 .chocolate a {
   width: 164px;
 
   font-weight: var(--weight-bold);
-  font-size: var(--size-18);
-  line-height: var(--line-24);
+  font-size: var(--size-m);
+  line-height: var(--line-xl);
   color: var(--basic-white);
   text-decoration: none;
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-70);
+  border-radius: var(--border-r-xl);
 }
 
 .goods {
@@ -371,13 +371,13 @@ img {
 
 .hit h3 {
   font-weight: var(--weight-500);
-  font-size: var(--size-16);
-  line-height: var(--line-22);
+  font-size: var(--size-s);
+  line-height: var(--line-l);
 }
 
 .hit span {
   font-weight: var(--weight-bold);
-  font-size: var(--size-35);
+  font-size: var(--size-xl);
   line-height: var(--line-35);
 }
 .price {
@@ -386,21 +386,21 @@ img {
 }
 
 .map {
-  font-size: var(--size-14);
+  font-size: var(--size-xs);
   line-height: var(--line-20);
   color: var(--basic-black);
 }
 
 .address span {
   font-weight: var(--weight-bold);
-  font-size: var(--size-18);
-  line-height: var(--line-24);
+  font-size: var(--size-m);
+  line-height: var(--line-xl);
 }
 
 .telephone a {
   font-weight: var(--weight-bold);
-  font-size: var(--size-18);
-  line-height: var(--line-24);
+  font-size: var(--size-m);
+  line-height: var(--line-xl);
   color: var(--basic-black);
 }
 .form-feedback a {
@@ -409,7 +409,7 @@ img {
   text-decoration: none;
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-70);
+  border-radius: var(--border-r-xl);
 }
 
 .visually-hidden {
