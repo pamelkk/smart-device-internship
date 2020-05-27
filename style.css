@@ -7,7 +7,7 @@
   --basic-background-2: #8996a6;
   --basic-background-3: #9d8b84;
   --basic-black: #323232;
-  --basic-button: rgba(172, 16, 0, 0.64);
+  --basic-button: #e74a35;
   --basic-white: #ffffff;
   --border-r-L: 26px;
   --border-r-M: 20px;
@@ -145,9 +145,16 @@ img {
   color: var(--basic-white);
 }
 
-.promotion a {
+.ice-cream a {
+  width: 278px;
+  height: 63px;
+
   font-size: var(--size-L);
-  line-height: var(--line-XXL);
+  line-height: var(--line-XL);
+  color: var(--basic-white);
+
+  border-color: var(--basic-button);
+  border-radius: var(--border-r-XXXL);
 }
 
 .features {
@@ -191,6 +198,11 @@ img {
   color: var(--basic-black);
 }
 
+
+.info-block {
+  border-radius: var(--border-r-S);
+}
+
 .subscription {
   width: 560px;
   height: 220px;
@@ -199,7 +211,6 @@ img {
 
   background-image: url(img/bg-post.svg);
   background-repeat: no-repeat;
-  border-radius: var(--border-r-S);
 }
 
 .subscription button {
@@ -251,4 +262,80 @@ img {
 .goods h3 {
   font-weight: var(--weight-500);
   color: var(--basic-white);
+}
+
+.FOC {
+  width: 560px;
+  height: 229px;
+
+  list-style: none;
+  font-weight: var(--weight-bold);
+  font-size: var (--size-S-M);
+  line-height: var(--line-S);
+
+  border-radius: var(--border-r-S);
+}
+
+.raspberry {
+  background-image: url(img/raspberry-background.png);
+  background-position: 27px 647px;
+}
+
+.chocolate {
+  background-image: url(img/chocolate-background.png);
+  background-position: 613px 647px;
+}
+
+.raspberry  h4 {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-L-XL);
+  line-height: var(--line-L-XL);
+}
+
+.chocolate h4 {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-L-XL);
+  line-height: var(--line-L-XL);
+}
+
+.raspberry  p {
+  font-weight: var(--weight-normal);
+  font-size: var(--size-S-M);
+  line-height: var(--line-S);
+}
+
+.chocolate p {
+  font-weight: var(--weight-normal);
+  font-size: var(--size-S-M);
+  line-height: var(--line-S);
+}
+
+.raspberry  a {
+  width: 164px;
+  height: 48px;
+
+  font-weight: var(--weight-bold);
+  font-size: var(--size-S-M);
+  line-height: var(--line-M);
+  color: var(--basic-white);
+
+  background-color: var(--basic-button);
+  border-radius: var(--border-r-XXXL);
+}
+
+.chocolate a {
+  width: 164px;
+  height: 48px;
+
+  font-weight: var(--weight-bold);
+  font-size: var(--size-S-M);
+  line-height: var(--line-M);
+  color: var(--basic-white);
+
+  background-color: var(--basic-button);
+  border-radius: var(--border-r-XXXL);
+}
+
+.hits-goods {
+  list-style: none;
 }
