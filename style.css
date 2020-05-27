@@ -9,36 +9,38 @@
   --basic-black: #323232;
   --basic-button: #e74a35;
   --basic-white: #ffffff;
-  --border-r-L: 26px;
-  --border-r-M: 20px;
-  --border-r-S: 16px;
-  --border-r-XXXL: 70px;
+  --border-r-16: 16px;
+  --border-r-20: 20px;
+  --border-r-26: 26px;
+  --border-r-70: 70px;
   --button-location: #d07058;
   --button-select: #fbded7;
   --chat: rgba(255, 255, 255, 0.8);
   --delete: #2c2829;
   --follow: #5a5a5a;
   --hit: #231f20;
-  --line-L-XL: 41px;
-  --line-M: 24px;
-  --line-M-L: 30px;
-  --line-S: 22px;
-  --line-XL: 44px;
-  --line-XS: 18px;
-  --line-XXL: 60px;
-  --line-XXS: 16px;
+  --line-16: 16px;
+  --line-18: 18px;
+  --line-22: 22px;
+  --line-24: 24px;
+  --line-30: 30px;
+  --line-41: 41px;
+  --line-44: 44px;
+  --line-60: 60px;
   --line-hit: 45px;
   --placeholder: #999999;
+  --placeholder: #999999;
   --pop-up-background: #f8f7f4;
-  --size-L: 32px;
-  --size-L-XL: 35px;
-  --size-M: 22px;
-  --size-M-L: 24px;
-  --size-S: 16px;
-  --size-S-M: 18px;
-  --size-XL: 60px;
-  --size-XS: 14px;
-  --size-XXS: 13px;
+  --pop-up-background: #f8f7f4;
+  --size-13: 13px;
+  --size-14: 14px;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-22: 22px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-35: 35px;
+  --size-60: 60px;
   --size-hit: 45px;
   --total: #000000;
   --weight-500: 500;
@@ -55,8 +57,8 @@ body {
   padding: 0;
 
   font-weight: var(--weight-normal);
-  font-size: var(--size-S);
-  line-height: var(--line-S);
+  font-size: var(--size-16);
+  line-height: var(--line-22);
   font-family: "Roboto", Arial, sans-serif;
   color: var(--basic-white);
 
@@ -73,7 +75,7 @@ img {
 }
 .site-navigation a {
   font-weight: var(--weight-bold);
-  line-height: var(--line-XS);
+  line-height: var(--line-18);
   color: var(--basic-white);
 }
 
@@ -82,7 +84,7 @@ img {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
-  border-radius: var(--border-r-L);
+  border-radius: var(--border-r-26);
 }
 
 .user-navigation {
@@ -90,12 +92,12 @@ img {
 }
 .user-navigation a {
   font-weight: var(--weight-500);
-  font-size: var(--size-XS);
-  line-height: var(--line-XXS);
+  font-size: var(--size-14);
+  line-height: var(--line-16);
   color: var(--basic-white);
 
   background-color: var(--background-light);
-  border-radius: var(--border-r-M);
+  border-radius: var(--border-r-20);
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
@@ -110,8 +112,8 @@ img {
 
 .choice-navigation a {
   font-weight: var(--weight-normal);
-  font-size: var(--size-XS);
-  line-height: var(--line-XXS);
+  font-size: var(--size-14);
+  line-height: var(--line-16);
 }
 
 .choice-navigation a:hover,
@@ -121,58 +123,56 @@ img {
 
 .novelty a {
   font-weight: var(--weight-bold);
-  font-size: var(--size-XS);
-  line-height: var(--line-XS);
+  font-size: var(--size-14);
+  line-height: var(--line-18);
 }
 
 .timetable {
   font-weight: var(--weight-bold);
-  font-size: var(--size-XS);
-  line-height: var(--line-XXS);
+  font-size: var(--size-14);
+  line-height: var(--line-16);
 }
 .phone {
   font-weight: var(--weight-bold);
-  font-size: var(--size-M);
-  line-height: var(--line-M);
+  font-size: var(--size-22);
+  line-height: var(--line-24);
 }
 
 .promotion {
   list-style: none;
   font-weight: var(--weight-bold);
-  font-size: var(--size-XL);
-  line-height: var(--line-XXL);
+  font-size: var(--size-60);
+  line-height: var(--line-60);
   text-align: center;
   color: var(--basic-white);
 }
 
 .ice-cream a {
   width: 278px;
-  height: 63px;
 
-  font-size: var(--size-L);
-  line-height: var(--line-XL);
+  font-size: var(--size-32);
+  line-height: var(--line-44);
   color: var(--basic-white);
 
   border-color: var(--basic-button);
-  border-radius: var(--border-r-XXXL);
+  border-radius: var(--border-r-70);
 }
 
 .features {
   width: 1146px;
-  height: 306px;
 
   list-style: none;
   color: var(--basic-black);
 
-  background-image: url(img/waffle-pattern.jpg);
+  background-image: url("img/waffle-pattern.jpg");
   background-image: repeat-x;
   background-position: 27px 1280px;
 }
 
 .features h2 {
   font-weight: var(--weight-500);
-  font-size: 24px;
-  line-height: 30px;
+  font-size: var(--size-24);
+  line-height: var(--line-30);
 }
 
 .feature-list {
@@ -184,11 +184,12 @@ img {
 }
 
 .blog {
-  color: var(--basic-black);
-  background-image: url(img/strawberry-background.png);
-  background-repeat: no-repeat;
   width: 560px;
-  height: 220px;
+
+  color: var(--basic-black);
+
+  background-image: url("img/strawberry-background.png");
+  background-repeat: no-repeat;
 }
 
 .blog h4 {
@@ -204,16 +205,15 @@ img {
 
 
 .info-block {
-  border-radius: var(--border-r-S);
+  border-radius: var(--border-r-16);
 }
 
 .subscription {
   width: 560px;
-  height: 220px;
 
   color: var(--follow);
 
-  background-image: url(img/bg-post.svg);
+  background-image: url("img/bg-post.svg");
   background-repeat: no-repeat;
 }
 
@@ -224,7 +224,7 @@ img {
   color: var(--basic-white);
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-XXXL);
+  border-radius: var(--border-r-70);
 }
 
 .chat {
@@ -233,8 +233,8 @@ img {
 
 .links a {
   list-style: none;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: var(--size-13);
+  line-height: var(--line-18);
   color: var(--basic-white);
 }
 
@@ -244,10 +244,9 @@ img {
 
 .location {
   width: 89px;
-  height: 31px;
 
   background-color: var(--button-location);
-  border-radius: var(--border-r-L);
+  border-radius: var(--border-r-26);
 }
 
 .chain {
@@ -270,74 +269,71 @@ img {
 
 .FOC {
   width: 560px;
-  height: 229px;
 
   list-style: none;
   font-weight: var(--weight-bold);
-  font-size: var (--size-S-M);
-  line-height: var(--line-S);
+  font-size: var (--size-18);
+  line-height: var(--line-22);
 
-  border-radius: var(--border-r-S);
+  border-radius: var(--border-r-16);
 }
 
 .raspberry {
-  background-image: url(img/raspberry-background.png);
+  background-image: url("img/raspberry-background.png");
   background-position: 27px 647px;
 }
 
 .chocolate {
-  background-image: url(img/chocolate-background.png);
+  background-image: url("img/chocolate-background.png");
   background-position: 613px 647px;
 }
 
 .raspberry  h4 {
   font-weight: var(--weight-bold);
-  font-size: var(--size-L-XL);
-  line-height: var(--line-L-XL);
+  font-size: var(--size-35);
+  line-height: var(--line-41);
 }
 
 .chocolate h4 {
   font-weight: var(--weight-bold);
-  font-size: var(--size-L-XL);
-  line-height: var(--line-L-XL);
+  font-size: var(--size-35);
+  line-height: var(--line-41);
 }
 
 .raspberry  p {
   font-weight: var(--weight-normal);
-  font-size: var(--size-S-M);
-  line-height: var(--line-S);
+  font-size: var(--size-18);
+  line-height: var(--line-22);
 }
 
 .chocolate p {
   font-weight: var(--weight-normal);
-  font-size: var(--size-S-M);
-  line-height: var(--line-S);
+  font-size: var(--size-18);
+  line-height: var(--line-22);
 }
 
 .raspberry  a {
   width: 164px;
-  height: 48px;
 
   font-weight: var(--weight-bold);
-  font-size: var(--size-S-M);
-  line-height: var(--line-M);
+  font-size: var(--size-18);
+  line-height: var(--line-24);
   color: var(--basic-white);
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-XXXL);
+  border-radius: var(--border-r-70);
 }
 
 .chocolate a {
   width: 164px;
-  height: 48px;
 
   font-weight: var(--weight-bold);
-  font-size: var(--size-S-M);
-  line-height: var(--line-M);
+  font-size: var(--size-18);
+  line-height: var(--line-24);
   color: var(--basic-white);
 
   background-color: var(--basic-button);
-  border-radius: var(--border-r-XXXL);
+  border-radius: var(--border-r-70);
 }
 
 .hits-goods {
