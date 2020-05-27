@@ -21,13 +21,15 @@
   --hit: #231f20;
   --line-16: 16px;
   --line-18: 18px;
+  --line-20: 20px;
   --line-22: 22px;
   --line-24: 24px;
   --line-30: 30px;
+  --line-35: 35px;
   --line-41: 41px;
   --line-44: 44px;
   --line-60: 60px;
-  --line-hit: 45px;
+  --line-price: 45px;
   --placeholder: #999999;
   --placeholder: #999999;
   --pop-up-background: #f8f7f4;
@@ -41,7 +43,7 @@
   --size-32: 32px;
   --size-35: 35px;
   --size-60: 60px;
-  --size-hit: 45px;
+  --size-price: 45px;
   --total: #000000;
   --weight-500: 500;
   --weight-bold: bold;
@@ -95,6 +97,7 @@ img {
   font-size: var(--size-14);
   line-height: var(--line-16);
   color: var(--basic-white);
+  text-decoration: none;
 
   background-color: var(--background-light);
   border-radius: var(--border-r-20);
@@ -114,6 +117,7 @@ img {
   font-weight: var(--weight-normal);
   font-size: var(--size-14);
   line-height: var(--line-16);
+  text-decoration: none;
 }
 
 .choice-navigation a:hover,
@@ -136,6 +140,8 @@ img {
   font-weight: var(--weight-bold);
   font-size: var(--size-22);
   line-height: var(--line-24);
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 .promotion {
@@ -153,6 +159,7 @@ img {
   font-size: var(--size-32);
   line-height: var(--line-44);
   color: var(--basic-white);
+  text-decoration: none;
 
   border-color: var(--basic-button);
   border-radius: var(--border-r-70);
@@ -198,8 +205,8 @@ img {
 
 .blog a {
   font-weight: var(--weight-bold);
-  font-size: 24px;
-  line-height: 30px;
+  font-size: var(--size-24);
+  line-height: var(--line-30);
   color: var(--basic-black);
 }
 
@@ -219,8 +226,8 @@ img {
 
 .subscription button {
   font-weight: var(--weight-bold);
-  font-size: 18px;
-  line-height: 24px;
+  font-size: var(--size-18);
+  line-height: var(--line-24);
   color: var(--basic-white);
 
   background-color: var(--basic-button);
@@ -228,6 +235,9 @@ img {
 }
 
 .chat {
+  list-style: none;
+}
+.links {
   list-style: none;
 }
 
@@ -251,6 +261,21 @@ img {
 
 .chain {
   list-style: none;
+  font-size: var(--size-14);
+  line-height: var(--line-16);
+}
+
+.chain a {
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.chain-name {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .section-title {
@@ -281,11 +306,13 @@ img {
 .raspberry {
   background-image: url("img/raspberry-background.png");
   background-position: 27px 647px;
+  border-radius: var(--border-r-16);
 }
 
 .chocolate {
   background-image: url("img/chocolate-background.png");
   background-position: 613px 647px;
+  border-radius: var(--border-r-16);
 }
 
 .raspberry  h4 {
@@ -319,6 +346,7 @@ img {
   font-size: var(--size-18);
   line-height: var(--line-24);
   color: var(--basic-white);
+  text-decoration: none;
 
   background-color: var(--basic-button);
   border-radius: var(--border-r-70);
@@ -331,11 +359,59 @@ img {
   font-size: var(--size-18);
   line-height: var(--line-24);
   color: var(--basic-white);
+  text-decoration: none;
 
   background-color: var(--basic-button);
   border-radius: var(--border-r-70);
 }
 
-.hits-goods {
+.goods {
   list-style: none;
+}
+
+.hit h3 {
+  font-weight: var(--weight-500);
+  font-size: var(--size-16);
+  line-height: var(--line-22);
+}
+
+.hit span {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-35);
+  line-height: var(--line-35);
+}
+.price {
+  font-size: var(--size-price);
+  line-height: var(--line-price);
+}
+
+.map {
+  font-size: var(--size-14);
+  line-height: var(--line-20);
+  color: var(--basic-black);
+}
+
+.address span {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-18);
+  line-height: var(--line-24);
+}
+
+.telephone a {
+  font-weight: var(--weight-bold);
+  font-size: var(--size-18);
+  line-height: var(--line-24);
+  color: var(--basic-black);
+}
+.form-feedback a {
+  font-weight: var(--weight-bold);
+  color: var(--basic-white);
+  text-decoration: none;
+
+  background-color: var(--basic-button);
+  border-radius: var(--border-r-70);
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
