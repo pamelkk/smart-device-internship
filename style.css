@@ -332,6 +332,7 @@ img {
 
   background-image: url("img/raspberry-background.png");
   border-radius: var(--border-r-s);
+  flex-shrink:0;
 }
 
 .chocolate {
@@ -341,6 +342,7 @@ img {
 
   background-image: url("img/chocolate-background.png");
   border-radius: var(--border-r-s);
+  flex-shrink:0;
 }
 
 .raspberry  h4 {
@@ -499,6 +501,7 @@ footer {
 .foc {
   display: flex;
   padding: 0;
+  
 }
 
 .site-navigation {
