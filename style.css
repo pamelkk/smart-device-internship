@@ -54,7 +54,7 @@ body {
   top: 0;
   left: 0;
 
-  min-width: 1220px;
+  width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -337,6 +337,7 @@ img {
 .chocolate {
   width: 560px;
   margin-left: 26px;
+  margin-right: 0;
 
   background-image: url("img/chocolate-background.png");
   border-radius: var(--border-r-s);
@@ -454,7 +455,7 @@ img {
 
   column-gap: 26px;
 
-  gap: 26px;
+  
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
