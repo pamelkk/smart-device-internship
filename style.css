@@ -72,6 +72,10 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
 .site-navigation {
   list-style: none;
 }
@@ -167,6 +171,7 @@ img {
 
 .features {
   width: 1146px;
+  min-height: 306px;
 
   list-style: none;
   color: var(--basic-black);
@@ -192,6 +197,7 @@ img {
 
 .blog {
   width: 560px;
+  min-height: 220px;
 
   color: var(--basic-black);
 
@@ -217,6 +223,7 @@ img {
 
 .subscription {
   width: 560px;
+  min-height: 220px;
 
   color: var(--follow);
 
@@ -294,25 +301,28 @@ img {
 
 .FOC {
   width: 560px;
-
+min-height: 229px;
   list-style: none;
   font-weight: var(--weight-bold);
   font-size: var (--size-m);
   line-height: var(--line-l);
 
   border-radius: var(--border-r-s);
+  
 }
 
 .raspberry {
   background-image: url("img/raspberry-background.png");
   background-position: 27px 647px;
   border-radius: var(--border-r-s);
+  
 }
 
 .chocolate {
   background-image: url("img/chocolate-background.png");
   background-position: 613px 647px;
   border-radius: var(--border-r-s);
+  
 }
 
 .raspberry  h4 {
@@ -415,3 +425,31 @@ img {
 .visually-hidden {
   visibility: hidden;
 }
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content:start;
+  grid-template-columns: 267px 267px 267px 267px;
+  column-gap: 26px;
+}
+
+header {
+  grid-column-start:1;
+  grid-column-end:5;
+  grid-row-start:1;
+}
+
+main {
+  grid-column-start:1;
+  grid-column-end:5;
+  grid-row-start:2;
+}
+
+footer {
+  grid-column-start:1;
+  grid-column-end:5;
+  grid-row-start:9;
+}
+
