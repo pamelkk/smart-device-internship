@@ -85,8 +85,8 @@ img {
   color: var(--basic-white);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover:not(.logo),
+.site-navigation a:focus:not(.logo) {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
@@ -198,6 +198,7 @@ img {
   padding: 0;
 
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .blog {
@@ -256,7 +257,7 @@ img {
   list-style: none;
 }
 
-.chat li:nth-of-type(n+1) {
+.chat li:nth-of-type(n+2) {
   margin-left: 12px;
 }
 
@@ -277,6 +278,7 @@ img {
 
 .location {
   width: 89px;
+  height: 31px;
 
   background-color: var(--button-location);
   border-radius: var(--border-r-l);
@@ -332,7 +334,6 @@ img {
 
   background-image: url("img/raspberry-background.png");
   border-radius: var(--border-r-s);
-  flex-shrink:0;
 }
 
 .chocolate {
@@ -342,7 +343,6 @@ img {
 
   background-image: url("img/chocolate-background.png");
   border-radius: var(--border-r-s);
-  flex-shrink:0;
 }
 
 .raspberry  h4 {
@@ -501,7 +501,7 @@ footer {
 .foc {
   display: flex;
   padding: 0;
-  
+  flex-wrap: wrap;
 }
 
 .site-navigation {
@@ -509,6 +509,7 @@ footer {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  margin-top:32px;
 }
 
 .user-navigation {
@@ -516,6 +517,7 @@ footer {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
+  margin-top:31px;
 }
 
 .site-navigation li:nth-of-type(n+2) {
@@ -534,15 +536,25 @@ footer {
 
 .copyright {
   display: flex;
+  flex-direction:column;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
+.copyright img {
+  margin-right:109px;
+}
+
+.copyright h5 {
+  justify-content: flex-end;
+  margin:0;
+}
 
 .pages {
   display: flex;
   justify-content: flex-end;
+  margin:0;
 
   list-style: none;
 }
@@ -560,4 +572,14 @@ footer {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
 }
