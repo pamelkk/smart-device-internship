@@ -76,11 +76,11 @@ img {
   height: 100%;
 }
 
-.site-navigation {
+.general-site-navigation {
   list-style: none;
   margin:0;
 }
-.site-navigation a {
+.general-site-navigation a {
   font-weight: var(--weight-bold);
   line-height: var(--line-m);
   color: var(--basic-white);
@@ -292,9 +292,16 @@ img {
 
 .location {
   width: 89px;
-  height: 31px;
-
+  margin-left: 24px;
+  text-align: center;
+  padding: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 11px;
   font-weight: var(--weight-bold);
+  font-size: var(--border-r-s);
+  line-height: var(--line-m);
 
   background-color: var(--button-location);
   border-radius: var(--border-r-l);
@@ -340,6 +347,7 @@ img {
   font-weight: var(--weight-500);
   text-align: center;
   color: var(--basic-white);
+  margin-top:17px;
 }
 
 .foc {
@@ -495,12 +503,16 @@ img {
 
   column-gap: 26px;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 267px);
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  
+  padding-top:10px;
+  padding-bottom:10px;
   grid-column: 1/-1;
 }
 
@@ -545,7 +557,7 @@ footer {
   padding: 0;
 }
 
-.site-navigation {
+.general-site-navigation {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -554,19 +566,27 @@ footer {
 
 .user-navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   
   padding: 0;
 }
 
-.site-navigation li:nth-of-type(n+2) {
+.general-site-navigation li:nth-of-type(n+3) {
+  margin-left: 32px;
+}
+
+.general-site-navigation li:nth-of-type(2) {
   margin-left: 32px;
 }
 
 .user-navigation li:nth-of-type(n+1) {
   margin-left: 10px;
+}
+
+.user-navigation li:first-child  {
+  margin-left: auto;
 }
 
 .links {
@@ -598,6 +618,7 @@ footer {
 .pages {
   display: flex;
   justify-content: flex-end;
+  padding:0;
   margin: 0;
   align-items: center;
   list-style: none;
@@ -678,10 +699,17 @@ footer {
   text-decoration: none;
 }
 
-.catalog-timetable-phone {
+.timetable-phone {
   position: absolute;
   top: 75px;
   right: 0;
 
   margin: 0;
+}
+
+
+
+.site-navigation li:first-child {
+  margin-left:24px;
+  
 }
