@@ -1164,6 +1164,8 @@ footer {
   font-size: var(--size-l);
   line-height: var(--line-28);
   color: var(--basic-black);
+  padding-top:20px;
+  padding-left:23px;
 }
 
 .send-us-letter button {
