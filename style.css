@@ -4,6 +4,7 @@
   --background-ice-3: rgba(239, 224, 218, 0.75);
   --background-light: rgba(255, 255, 255, 0.2);
   --background-slider-hover: rgba(255, 255, 255, 0.4);
+  --background-gradient-body-catalog: rgba(255, 255, 255, 0);
   --border-color-focus: rgba(46, 136, 228, 0.52);
   --basic-background-1: #849d8f;
   --basic-background-2: #8996a6;
@@ -82,6 +83,10 @@ body {
   color: var(--basic-white);
 
   background-color: var(--basic-background-1);
+}
+
+.page-body-catalog header{
+  background: linear-gradient(180deg, var(--background-light) 0%, var(--background-gradient-body-catalog) 100%);
 }
 /*
 .promotion-1  {
@@ -172,12 +177,17 @@ img {
   position: relative;
   padding:0;
   margin:0;
+  
 
   font-weight: var(--weight-bold);
   font-size: var(--size-promotion);
   line-height: var(--line-60);
   text-align: center;
   color: var(--basic-white);
+}
+
+.ice-cream img {
+  z-index:1;
 }
 
 .promotion h2 {
@@ -198,6 +208,7 @@ img {
   position: absolute;
   top:500px;
   left:434px;
+  
 
   font-size: var(--size-ice-cream);
   line-height: var(--line-44);
@@ -221,6 +232,8 @@ img {
   position: absolute;
   bottom: 53px;
   left: 0;
+  display: flex;
+  width:79px;
 }
 
 .slider-button button {
@@ -363,8 +376,11 @@ background-color: var(--background-slider-hover);
 .blog {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 560px;
   min-height: 220px;
+  margin:0;
+  padding:20px;
 
   color: var(--basic-black);
 
@@ -374,16 +390,13 @@ background-color: var(--background-slider-hover);
 
 .blog h4 {
   margin: 0;
-  margin-top: 23px;
-  margin-left: 20px;
-  padding: 0;
+  padding-top: 3px;
+  margin-bottom:2px;
 
   font-weight: var(--weight-500);
 }
 
 .blog a {
-  width: 287px;
-  padding-left: 20px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-l);
@@ -399,6 +412,7 @@ background-color: var(--background-slider-hover);
 
   width: 560px;
   min-height: 220px;
+  padding:0;
 
   color: var(--follow);
 
@@ -415,56 +429,63 @@ background-color: var(--background-slider-hover);
 
   width: 548px;
   min-height: 210px;
+  box-sizing: border-box;
+  padding:20px;
+  padding-top:0;
 
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-s);
 }
 
 .subscription-form p {
-  width: 512px;
-  min-height: 55px;
   margin: 0;
-  margin-top: 29px;
-  margin-left: 20px;
-  padding: 0;
+  padding:0;
+  padding-top: 7px;
+  margin-bottom:46px;
 }
 
 .subscription-form button {
   position: absolute;
   bottom: 41px;
-  left: 398px;
+  right: 20px;
 
-  height: 44px;
-  margin-right: 20px;
   padding-top: 11px;
   padding-right: 19px;
   padding-bottom: 13px;
   padding-left: 19px;
+  border:none;
+  
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
   line-height: var(--line-xl);
-  vertical-align: center;
   color: var(--basic-white);
 
   background: linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
-  border: none;
   border-radius: var(--border-r-xl);
   cursor: pointer;
+}
+
+.subscription-form button:hover,
+.subscription-form button:focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.subscription-form button:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 
 .subscription-form [type="email"] {
   position: absolute;
   bottom: 40px;
+  left:0;
 
   box-sizing: border-box;
   width: 368px;
   height: 44px;
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
   padding-right: 14px;
   padding-left: 14px;
+  margin-left:20px;
 
   font-size: var(--size-s);
   line-height: var(--line-xl);
@@ -666,11 +687,11 @@ padding-top: 15px;
 .raspberry {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 560px;
   min-height: 229px;
   margin: 0;
-  padding: 0;
-
+  padding:16px;
   background-image: url("img/raspberry-background.png");
   border-radius: var(--border-r-s);
 }
@@ -678,33 +699,35 @@ padding-top: 15px;
 .chocolate {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 560px;
   min-height: 229px;
   margin: 0;
-  margin-right: 0;
-  padding: 0;
+  padding: 16px;
 
   background-image: url("img/chocolate-background.png");
   border-radius: var(--border-r-s);
 }
 
 .raspberry  h4 {
+  margin:0;
+  margin-bottom:16px;
   font-weight: var(--weight-bold);
   font-size: var(--size-xl);
   line-height: var(--line-xxxl);
 }
 
 .chocolate h4 {
+  margin:0;
+  margin-bottom:16px;
   font-weight: var(--weight-bold);
   font-size: var(--size-xl);
   line-height: var(--line-xxxl);
 }
 
 .raspberry  p {
-  margin: 0;
-  margin-bottom: 42px;
-  padding-right: 30px;
-  padding-left: 16px;
+  margin:0;
+  margin-bottom:42px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -714,8 +737,6 @@ padding-top: 15px;
 .chocolate p {
   margin: 0;
   margin-bottom: 42px;
-  padding-right: 30px;
-  padding-left: 16px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -724,7 +745,6 @@ padding-top: 15px;
 
 .raspberry  a {
   align-self: flex-end;
-  margin-right: 22px;
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 11px;
@@ -733,7 +753,6 @@ padding-top: 15px;
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
   line-height: var(--line-xl);
-  text-align: center;
   color: var(--basic-white);
   text-decoration: none;
 
@@ -755,7 +774,6 @@ padding-top: 15px;
 
 .chocolate a {
   align-self: flex-end;
-  margin-right: 22px;
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 11px;
@@ -764,7 +782,6 @@ padding-top: 15px;
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
   line-height: var(--line-xl);
-  text-align: center;
   color: var(--basic-white);
   text-decoration: none;
 
@@ -778,7 +795,7 @@ padding-top: 15px;
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
   margin: 0;
   margin-top: 40px;
   padding: 0;
@@ -788,11 +805,12 @@ padding-top: 15px;
   position: relative;
 
   width: 267px;
+  display:flex;
 }
 
 .hit a {
   text-decoration: none;
-  
+  text-align: center;
 }
 
 .hit h3 {
@@ -829,13 +847,24 @@ padding-top: 15px;
   margin-top: 13px;
   
   font-weight: var(--weight-500);
-  text-align: center;
+
   color: var(--basic-white);
 }
 
 .goods span,
 .catalog-goods span {
   position: absolute;
+}
+
+.catalog-goods li:hover,
+.catalog-goods li:focus, 
+.goods li:hover,
+.goods li:focus {
+  background-color: var(--basic-white);
+  opacity: 0.2;
+  border-radius: 4px;
+  min-height:402px;
+  width: 293px;
 }
 
 .price {
@@ -956,6 +985,15 @@ padding-top: 15px;
   border-radius: var(--border-r-xl);
 }
 
+.address-popup > a:hover,
+.address-popup > a:focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.address-popup > a:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
 .visually-hidden {
   margin: 0;
   padding: 0;
@@ -1062,8 +1100,10 @@ footer {
 
 .choice-navigation {
   position: absolute;
+  overflow: hidden;
   top: 20px;
   left: 0;
+  
 
   box-sizing: border-box;
   width: 143px;
@@ -1085,7 +1125,7 @@ footer {
 }
 
 .choice-navigation li {
-  overflow: hidden;
+  z-index:2;
 }
 
 .choice-navigation a {
@@ -1171,24 +1211,44 @@ footer {
   line-height: var(--line-m);
 }
 
+.pages li:not(.buttons) {
+  width:26px;
+  height:26px;
+}
+
+.buttons a {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  display:flex;
+}
+
 .page a,
 .inactive a {
   box-sizing: border-box;
-  padding-top: 3px;
-  padding-bottom: 2px;
-  padding-right: 8px;
-  padding-left: 8px;
-
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  display:flex;
   color: var(--basic-white);
   text-decoration: none;
-
   border-radius: 50%;
 }
 
-.pages li:nth-of-type(n+2) {
+.pages .page:nth-of-type(n+3) {
   margin-left: 10px;
 }
 
+.pages .buttons:nth-of-type(1) {
+  margin-right: 16px;
+}
+
+.pages .page:nth-of-type(6n)  {
+  margin-right: 18px;
+}
 
 .pages li:not(.buttons):not(.inactive) a:hover,
 .pages li:not(.buttons):not(.inactive) a:focus  {
@@ -1294,6 +1354,7 @@ footer {
   align-items: center;
   border-radius: 50%;
   padding:8px;
+  display:flex;
 }
 
 .user-search li {
@@ -1455,6 +1516,7 @@ display: flex;
   font-size: var(--size-xs);
   line-height: var(--line-s);
   color: var(--placeholder);
+  border-radius: var(--border-r-4);
 
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border-pop-up-form);
@@ -1473,6 +1535,7 @@ display: flex;
   font-size: var(--size-xs);
   line-height: var(--line-s);
   color: var(--placeholder);
+  border-radius: var(--border-r-4);
 
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border-pop-up-form);
@@ -1496,6 +1559,15 @@ display: flex;
   border: none;
   border-radius: var(--border-r-l);
   cursor: pointer;
+}
+
+.form-log-in button:hover,
+.form-log-in button:focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.form-log-in button:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 
 .log-in a {
@@ -1745,6 +1817,15 @@ display: flex;
   cursor: pointer;
 }
 
+.send-us-letter button:nth-of-type(2):hover,
+.send-us-letter button:nth-of-type(2):focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.subscription-form button:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
 .log-in-help a {
   font-size: var(--size-links);
   line-height: var(--line-15);
@@ -1822,6 +1903,15 @@ display: flex;
   position: absolute;
   right: 14px;
   bottom: 21px;
+}
+
+.checkout:hover,
+.checkout:focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.checkout:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 
 .remove {
