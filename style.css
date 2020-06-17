@@ -106,10 +106,10 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
-.gllacy-page {
+.gllacy-page,
+.gllacy-page-catalog {
   height: 100%;
 }
 
@@ -186,18 +186,21 @@ img {
   color: var(--basic-white);
 }
 
-.promotion img {
+.ice-cream img {
   position: absolute;
   top:0;
-  left:242px;
+  left:270px;
+  z-index:-1;
 }
 
 .promotion h2 {
   font-size: var(--size-promotion);
-  position: absolute;
-  top:315px;
-  left:237px;
+  margin:0;
+  
   width:672px;
+  margin:0 auto;
+  margin-bottom:27px;
+  margin-top:275px;
 }
 
 .ice-cream a {
@@ -207,15 +210,12 @@ img {
   padding-right: 40px;
   padding-bottom: 10px;
   padding-left: 40px;
-  position: absolute;
-  top:544px;
-  left:434px;
-  
 
   font-size: var(--size-ice-cream);
   line-height: var(--line-44);
   color: var(--basic-white);
   text-decoration: none;
+  
 
   background: linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
   border-radius: var(--border-r-xl);
@@ -232,8 +232,8 @@ img {
 
 .slider-button {
   position: absolute;
-  bottom: 53px;
-  left: 0;
+  top: 630px;
+  left:70px;
   display: flex;
   width:79px;
 }
@@ -249,6 +249,7 @@ img {
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
+  
 }
 
 .slider-button button:not(.current):hover,
@@ -650,6 +651,12 @@ padding-top: 15px;
  
 }
 
+.bread-crumbs a:hover,
+.bread-crumbs a:focus,
+.bread-crumbs a:active {
+  color: var(--basic-links-cursor);
+}
+
 .no-underline {
   text-decoration: none;
 }
@@ -662,6 +669,7 @@ padding-top: 15px;
 .foc {
   min-height: 229px;
   margin: 0;
+  margin-top:40px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -805,24 +813,19 @@ padding-top: 15px;
 
 .hit {
   position: relative;
-
   width: 267px;
-  display:flex;
-  flex-direction: column;
 }
 
 .hit h3 {
   font-weight: var(--weight-500);
   font-size: var(--size-s);
   line-height: var(--line-l);
-  display: inline;
-  text-align: center;
-flex-wrap: wrap;
-  border-bottom: 1px solid var(--background-light);
   
+  text-align: center;
+  border-bottom: 1px solid var(--background-light);
 }
 
-.hit span {
+.hit span:not(.good) {
   font-weight: var(--weight-bold);
   font-size: var(--size-xl);
   line-height: var(--line-35);
@@ -839,7 +842,7 @@ flex-wrap: wrap;
   top:-6px;
   min-height:402px;
   width:293px;
-  z-index:1;
+  z-index:-1;
   border-radius: var(--border-r-4);
 }
 
@@ -906,7 +909,7 @@ flex-wrap: wrap;
   color: var(--basic-white);
 }
 
-.goods span,
+.goods span:not(.good),
 .catalog-goods span {
   position: absolute;
 }
@@ -1462,15 +1465,19 @@ footer {
   background-color: var(--chat);
 }
 
-/*
+
 
 .filter fieldset{
   border:none;
+  padding:0;
+  margin:0;
+  margin-right:15px;
 }
-*/
+
 
 .filter {
   width:869px;
+  min-height:130px;
 }
 
 .filter form {
@@ -1482,22 +1489,21 @@ footer {
   font-size: var(--size-xs);
   line-height: var(--line-s);
   font-weight: var(--weight-500);
+  margin-bottom:7px;
 }
 
 .sorting-fieldset select {
   background-color: var(--background-light);
   border-radius: var(--border-r-m);
-}
-
-.sorting-fieldset select[name="sorting"] {
   font-size: var(--size-s);
   line-height: var(--line-m);
   font-weight: var(--weight-500);
   color: var(--basic-white);
   border:none;
   padding-left:16px;
-  width:196px;
-  height:36px;
+  padding-top:10px;
+  padding-right:13px;
+  padding-bottom:8px;
   box-sizing: border-box;
   display: flex;
   -webkit-appearance: none;
@@ -1514,13 +1520,52 @@ footer {
   color: var(--basic-black);
 }
 
+.price-fieldset input[type="range"] {
+  background-color: var(--background-light);
+  border-radius: var(--border-r-m);
+  box-sizing: border-box;
+}
+
+.fat-content-fieldset .fat-content-ul {
+  background-color: var(--background-light);
+  border-radius: var(--border-r-m);
+  box-sizing: border-box;
+  padding-left:14px;
+  padding-right:17px;
+  padding-top:7px;
+  padding-bottom:7px;
+  justify-content: space-between;
+}
+
+.fillers .fillers-ul {
+  background-color: var(--background-light);
+  border-radius: var(--border-r-m);
+  box-sizing: border-box;
+  padding-left:16px;
+  padding-right:19px;
+  padding-top:8px;
+  padding-bottom:6px;
+}
+
 .fat-content-ul {
 display: flex;
+padding:0;
+  margin:0;
 }
 
 .fillers-ul {
   display: flex;
+  padding:0;
+  margin:0;
   }
+
+.fillers legend {
+  margin-bottom:11px;
+}
+
+.filter fieldset:nth-of-type(n+4) {
+  margin-top:14px;
+}
 
 .apply-filter {
   box-sizing: border-box;
@@ -1581,7 +1626,8 @@ display: flex;
 .choice-navigation li,
 .pages li,
 .timetable-phone li,
-.chat li {
+.chat li,
+.fat-content-ul li {
   list-style: none;
 }
 .form-log-in {

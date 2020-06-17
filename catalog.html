@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="gllacy-page" lang="ru">
+<html class="gllacy-page-catalog" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
@@ -14,6 +14,7 @@
 
   <body class="page-body page-body-catalog">
     <header>
+      
       <nav class="navigation">
         <ul class="general-site-navigation">
           <li class="logo">
@@ -109,7 +110,7 @@
           <li class="bread-crumbs-name no-name">
             <img src="img/bread.svg" width="6" height="6" alt="" />
           </li>
-          <li class="bread-crumbs-name">Каталог</li>
+          <li class="bread-crumbs-name"><a>Каталог</a></li></li>
           <li class="bread-crumbs-name no-name">
             <img src="img/bread.svg" width="6" height="6" alt="" />
           </li>
@@ -132,7 +133,7 @@
               <legend>Цена: 100₽ - 500₽</legend>
               <input type="range" min="100" max="500" step="10" value="300" />
             </fieldset>
-            <fieldset class="fat-content">
+            <fieldset class="fat-content-fieldset">
               <legend>Жирность:</legend>
               <ul class="fat-content-ul">
                 <li>
@@ -219,6 +220,7 @@
                 </li>
               </ul>
             </fieldset>
+            
             <button class="apply-filter">Применить</button>
           </form>
         </div>
@@ -603,5 +605,6 @@
 
       <a class="checkout" href="#">Оформить заказ</a>
     </section>
+  
   </body>
 </html>
