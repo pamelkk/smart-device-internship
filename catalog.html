@@ -117,8 +117,8 @@
           <li class="bread-crumbs-name no-underline">Сливочное</li>
         </ul>
         <h2 class="section-title">Сливочное Мороженое</h2>
+        <h3 class="visually-hidden">Фильтр товаров</h3>
         <div class="filter">
-          <h3 class="visually-hidden">Фильтр товаров</h3>
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="sorting-fieldset">
               <legend>Сортировка:</legend>
@@ -131,13 +131,18 @@
             </fieldset>
             <fieldset class="price-fieldset">
               <legend>Цена: 100₽ - 500₽</legend>
-              <input type="range" min="100" max="500" step="10" value="300" />
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
             </fieldset>
             <fieldset class="fat-content-fieldset">
               <legend>Жирность:</legend>
               <ul class="fat-content-ul">
                 <li>
-                  <input
+                  <input class="visually-hidden fat-content-input"
                     type="radio"
                     value="0"
                     id="fat-content-0"
@@ -147,7 +152,7 @@
                   <label for="fat-content-0">0%</label>
                 </li>
                 <li>
-                  <input
+                  <input class="visually-hidden fat-content-input"
                     type="radio"
                     value="up-to-10"
                     id="fat-content-up-to-10"
@@ -158,7 +163,7 @@
                   <label for="fat-content-up-to-10">до 10%</label>
                 </li>
                 <li>
-                  <input
+                  <input class="visually-hidden fat-content-input"
                     type="radio"
                     value="up-to-30"
                     id="fat-content-up-to-30"
@@ -168,7 +173,7 @@
                   <label for="fat-content-up-to-30">до 30%</label>
                 </li>
                 <li>
-                  <input
+                  <input class="visually-hidden fat-content-input"
                     type="radio"
                     value="over-30"
                     id="fat-content-over-30"
@@ -183,7 +188,7 @@
               <legend>Наполнители:</legend>
               <ul class="fillers-ul">
                 <li>
-                  <input
+                  <input class="visually-hidden fillers-input"
                     type="checkbox"
                     name="chocolate"
                     id="filter-chocolate"
@@ -194,9 +199,9 @@
                 </li>
 
                 <li>
-                  <input
+                  <input class="visually-hidden fillers-input"
                     type="checkbox"
-                    name="chocolate"
+                    name="sugar"
                     id="filter-sugar"
                     checked
                   />
@@ -205,17 +210,17 @@
                 </li>
 
                 <li>
-                  <input type="checkbox" name="chocolate" id="filter-fruits" />
+                  <input class="visually-hidden fillers-input" type="checkbox" name="fruits" id="filter-fruits" />
                   <label for="filter-fruits">фрукты</label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="chocolate" id="filter-syrup" />
+                  <input class="visually-hidden fillers-input" type="checkbox" name="syrup" id="filter-syrup" />
                   <label for="filter-syrup">сиропы</label>
                 </li>
 
                 <li>
-                  <input type="checkbox" name="chocolate" id="filter-jam" />
+                  <input class="visually-hidden fillers-input" type="checkbox" name="jam" id="filter-jam" />
                   <label for="filter-jam">джемы</label>
                 </li>
               </ul>
@@ -233,7 +238,7 @@
               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
             />
 
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <h3><span class="good">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
 
             <span class="price">310 ₽</span>
             <span class="unit">/кг</span>
@@ -247,7 +252,7 @@
               alt="Сливочно-кофейное с кусочками шоколада"
             />
 
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <h3><span class="good">Сливочно-кофейное с кусочками шоколада</span></h3>
 
             <span class="price">380 ₽</span>
             <span class="unit">/кг</span>
@@ -261,7 +266,7 @@
               alt="Сливочно-клубничное с присыпкой из белого шоколада"
             />
 
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <h3><span class="good">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
 
             <span class="price">355 ₽</span>
             <span class="unit">/кг</span>
@@ -275,7 +280,7 @@
               alt="Сливочное крем-брюле с карамельной подливкой"
             />
 
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <h3><span class="good">Сливочное крем-брюле с карамельной подливкой</span></h3>
 
             <span class="price">415 ₽</span>
             <span class="unit">/кг</span>
@@ -289,7 +294,7 @@
               alt="Сливочное с брусничным джемом"
             />
 
-            <h3>Сливочное с брусничным джемом</h3>
+            <h3><span class="good">Сливочное с брусничным джемом</span></h3>
 
             <span class="price">325 ₽</span>
             <span class="unit">/кг</span>
@@ -303,7 +308,7 @@
               alt="Сливочно-черничное с цельными ягодами черники"
             />
 
-            <h3>Сливочно-черничное с цельными ягодами черники</h3>
+            <h3><span class="good">Сливочно-черничное с цельными ягодами черники</span></h3>
 
             <span class="price">410 ₽</span>
             <span class="unit">/кг</span>
@@ -317,7 +322,7 @@
               alt="Сливочно-лимонное с карамельной присыпкой"
             />
 
-            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            <h3><span class="good">Сливочно-лимонное с карамельной присыпкой</span></h3>
 
             <span class="price">315 ₽</span>
             <span class="unit">/кг</span>
@@ -331,7 +336,7 @@
               alt="Сливочное с шоколадной стружкой"
             />
 
-            <h3>Сливочное с шоколадной стружкой</h3>
+            <h3><span class="good">Сливочное с шоколадной стружкой</span></h3>
 
             <span class="price">320 ₽</span>
             <span class="unit">/кг</span>
@@ -345,7 +350,7 @@
               alt="Сливочно-ванильное с кусочками шоколада"
             />
 
-            <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            <h3><span class="good">Сливочно-ванильное с кусочками шоколада</span></h3>
 
             <span class="price">440 ₽</span>
             <span class="unit">/кг</span>
@@ -359,7 +364,7 @@
               alt="Сливочное с ментоловым сиропом"
             />
 
-            <h3>Сливочное с ментоловым сиропом</h3>
+            <h3><span class="good">Сливочное с ментоловым сиропом</span></h3>
 
             <span class="price">435 ₽</span>
             <span class="unit">/кг</span>
@@ -373,7 +378,7 @@
               alt="Сливочное с кусочками черного шоколада"
             />
 
-            <h3>Сливочное с кусочками черного шоколада</h3>
+            <h3><span class="good">Сливочное с кусочками черного шоколада</span></h3>
 
             <span class="price">355 ₽</span>
             <span class="unit">/кг</span>
@@ -387,7 +392,7 @@
               alt="Сливочное с мятным сиропом"
             />
 
-            <h3>Сливочное с мятным сиропом</h3>
+            <h3><span class="good">Сливочное с мятным сиропом</span></h3>
 
             <span class="price">420 ₽</span>
             <span class="unit">/кг</span>
@@ -539,9 +544,9 @@
     </footer>
     <section class="page-basket">
       <h4>Корзина</h4>
-      <table>
+      <table class="page-basket-table" width="510" height="117">
         <tr>
-          <td class="remove">
+          <td class="remove" width="26">
             <button type="button" title="Убрать из корзины">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -556,7 +561,7 @@
               </svg>
             </button>
           </td>
-          <td class="image">
+          <td class="image" width="33">
             <img
               src="img/product-photo-1.png"
               width="33"
@@ -564,14 +569,14 @@
               alt="Пломбир с апельсиновым джемом"
             />
           </td>
-          <td class="name-of-product">
-            Пломбир с апельсиновым джемом
+          <td class="name-of-product" width="260">
+            <span>Пломбир с апельсиновым джемом</span>
           </td>
-          <td class="price-unit">1.5кг х 200руб.</td>
-          <td class="preliminary-amount">300 руб.</td>
+          <td class="price-unit" width="95"><span>1.5 кг х<span class="grey-unit"> 200 руб.</span></span></td>
+          <td class="preliminary-amount" width="96"><span>300 руб.</span></td>
         </tr>
         <tr>
-          <td class="remove">
+          <td class="remove" width="26">
             <button type="button" title="Убрать из корзины">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -586,7 +591,7 @@
               </svg>
             </button>
           </td>
-          <td class="image">
+          <td class="image" width="33">
             <img
               src="img/product-photo-3.png"
               width="33"
@@ -594,14 +599,14 @@
               alt="Клубничный пломбир с присыпкой из белого шоколада"
             />
           </td>
-          <td class="name-of-product">
-            Клубничный пломбир с присыпкой из белого шоколада
+          <td class="name-of-product" width="260">
+            <span>Клубничный пломбир с присыпкой из белого шоколада</span>
           </td>
-          <td class="price-unit">1.5кг х 300руб.</td>
-          <td class="preliminary-amount">450 руб.</td>
+          <td class="price-unit" width="95"><span>1.5 кг х<span class="grey-unit"> 300 руб.</span></span></td>
+          <td class="preliminary-amount" width="96"><span>450 руб.</span></td>
         </tr>
       </table>
-      <span class="total">Итого: 750руб.</span>
+      <span class="total">Итого: 750 руб.</span>
 
       <a class="checkout" href="#">Оформить заказ</a>
     </section>
