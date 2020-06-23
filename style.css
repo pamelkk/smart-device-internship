@@ -66,8 +66,10 @@
   --size-ice-cream: 32px;
   --size-l: 24px;
   --size-links: 13px;
+  --size-copyright: 12px;
   --size-m: 18px;
   --size-price: 45px;
+  --size-unit: 30px;
   --size-promotion: 60px;
   --size-s: 16px;
   --size-xl: 35px;
@@ -158,36 +160,55 @@ img {
   position: relative;
 }
 
+.logo {
+  padding-top: 9px;
+}
+
 .site-navigation > a {
   width:87px;
   box-sizing: border-box;
-  padding-top: 7px;
+  padding:0;
+  padding-top: 5px;
   padding-bottom: 0.2px;
-  padding-right: 13px;
-  padding-left: 13px;
   background-color: transparent;
 }
 
-.general-site-navigation > li:nth-of-type(2) {
-  margin-left:9px;
+.site-navigation:not(.location) > a {
+  margin-left:18px;
+  margin-right:13px;
 }
 
-.general-site-navigation > li:nth-of-type(n+3) {
-  margin-left:8px;
+.site-navigation:not(.location) .menu-choice {
+  margin-left:23px;
 }
+
 
 .site-navigation > a:hover,
 .site-navigation > a:focus {
   margin: 0;
   padding-bottom: 7px;
+  padding-right: 13px;
+  padding-left: 13px;
   text-align: center;
   color: var(--basic-black);
   background-color: var(--basic-white);
   border-radius: var(--border-r-l);
+  
 }
 
+.site-navigation:not(.location) > a:hover,
+.site-navigation:not(.location) > a:focus {
+  margin-left:5px;
+}
+
+.site-navigation:not(.location) .menu-choice:hover,
+.site-navigation:not(.location) .menu-choice:focus {
+  margin-left:10px;
+}
+
+
 .site-navigation > a:active {
-  margin: 0;
+  
   padding-top: 7px;
   padding-right: 13px;
   padding-bottom: 7px;
@@ -210,36 +231,33 @@ img {
   line-height: var(--line-60);
   text-align: center;
   color: var(--basic-white);
-}
-
-.ice-cream {
   position: relative;
+  min-height:209px;
 }
 
 .ice-cream img {
   position: absolute;
-  background-size: 100%;
-  top: 0;
-  left: 0;
+  top: -400px;
+  left: 50px;
   z-index: -1;
 }
 
 .promotion h2 {
   width: 672px;
   margin: 0;
-  margin-top: 275px;
-  margin-left:237px;
-  
-  margin-bottom: 27px;
+  margin: 0 auto;
+  margin-top: 310px;
+  margin-bottom: 17px;
+
   font-size: var(--size-promotion);
 }
 
 .ice-cream a {
   box-sizing: border-box;
   width: 278px;
-  padding-top: 9px;
+  padding-top: 13px;
   padding-right: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   padding-left: 40px;
 
   font-size: var(--size-ice-cream);
@@ -265,7 +283,7 @@ img {
 
 .slider-button {
   position: absolute;
-  top: 464px;
+  top: 165px;
   left: 0;
 
   display: flex;
@@ -349,7 +367,7 @@ img {
 
   width: 484px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 22px;
 }
 
 .feature-item::before {
@@ -580,8 +598,9 @@ img {
   width: 305px;
   min-height: 35px;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 30px;
   margin-bottom: 32px;
+  margin-left: 25px;
   padding: 0;
 }
 
@@ -631,7 +650,7 @@ img {
   content: "";
   position: absolute;
   top: 6px;
-  left: -20px;
+  left: -23px;
 
   width: 15px;
   height: 13px;
@@ -645,6 +664,10 @@ img {
   color: var(--basic-links-cursor);
 }
 
+.location {
+  margin-left:10px;
+}
+
 .location > a {
   font-weight: var(--weight-bold);
   font-size: var(--border-r-s);
@@ -652,6 +675,8 @@ img {
   background-color: var(--button-location);
   border-radius: var(--border-r-l);
   padding-bottom: 7px;
+  padding-right: 13px;
+  padding-left: 13px;
 }
 
 .bread-crumbs {
@@ -659,6 +684,7 @@ img {
   align-items: flex-start;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
 
   font-size: var(--size-xs);
   line-height: var(--line-s);
@@ -690,8 +716,8 @@ img {
 
 .section-title {
   margin: 0;
-  margin-top: 9px;
-  margin-bottom: 7px;
+  margin-top: 2px;
+  margin-bottom: 23px;
 
   font-size: 35px;
   line-height: 41px;
@@ -793,6 +819,7 @@ img {
   padding-right: 22px;
   padding-bottom: 11px;
   padding-left: 22px;
+  margin-right:6px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -832,6 +859,7 @@ img {
   color: var(--basic-white);
   text-decoration: none;
   box-shadow: 0px 2px 2px var(--shadow-choco-rasp);
+  margin-right:6px;
 
   background: linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
   border-radius: var(--border-r-xl);
@@ -850,7 +878,6 @@ img {
 
 .hit {
   position: relative;
-
   width: 267px;
 }
 
@@ -861,12 +888,6 @@ span.good {
   text-align: center;
 
   border-bottom: 1px solid var(--background-light);
-}
-
-.hit span:not(.good) {
-  font-weight: var(--weight-bold);
-  font-size: var(--size-xl);
-  line-height: var(--line-35);
 }
 
 .hit:hover::after,
@@ -947,9 +968,10 @@ span.good {
 .goods h3,
 .catalog-goods h3 {
   margin: 0;
-  margin-top: 13px;
+  margin-top: 6px;
 
   font-weight: var(--weight-500);
+  font-size: var(--size-s);
   text-align: center;
   color: var(--basic-white);
 }
@@ -961,17 +983,23 @@ span.good {
 
 
 .price {
-  top: 216px;
-  right: 160px;
+  top: 210px;
+  right: 145px;
+  min-width:121px;
 
   font-size: var(--size-price);
   line-height: var(--line-price);
+  font-weight: var(--weight-bold);
   text-shadow: 0px 1px 3px var( --shadow-price-unit);
 }
 .unit {
-  top: 216px;
-  right: 110px;
+  top: 220px;
+  right: 105px;
   text-shadow: 0px 1px 3px var( --shadow-price-unit);
+
+  font-weight: var(--weight-bold);
+  font-size: var(--size-unit);
+  line-height: var(--line-35);
 }
 
 .map {
@@ -1117,11 +1145,12 @@ span.good {
 }
 
 header {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
   grid-column: 1/-1;
 }
 
@@ -1141,7 +1170,7 @@ footer {
 
 .goods li:nth-of-type(n+5),
 .catalog-goods li:nth-of-type(n+5) {
-  margin-top: 40px;
+  margin-top: 36px;
   margin-right: 26px;
 }
 
@@ -1296,25 +1325,26 @@ footer {
 
 .copyright {
   display: flex;
+  width:190px;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-}
-.copyright img {
-  margin-right: 109px;
+  margin-top:-5px;
 }
 
 .copyright h5 {
   justify-content: flex-end;
   margin: 0;
-
+  font-size: var(--size-copyright);
   font-weight: var(--weight-normal);
 }
 
 .copyright a {
   color: var(--basic-white);
+  height:39px;
+  padding-bottom: 3px;
 }
 
 .pages {
@@ -1362,7 +1392,7 @@ footer {
 }
 
 .pages .page:nth-of-type(n+3) {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .pages .buttons:nth-of-type(1) {
@@ -1391,6 +1421,7 @@ footer {
   align-items: center;
   width: 100%;
   margin: 0;
+  margin-bottom:10px;
 }
 
 .page-footer {
@@ -1404,7 +1435,7 @@ footer {
 
 .catalog-footer {
   margin: 0;
-  margin-top: 37px;
+  margin-top: 29px;
   padding: 0;
 
   border-top: 1px solid var(--background-light);
@@ -1412,10 +1443,6 @@ footer {
 
 .chat {
   margin-top: 36px;
-}
-
-.copyright a {
-  margin-top: 18px;
 }
 
 .timetable-phone {
@@ -1501,7 +1528,7 @@ footer {
 }
 
 .chat li:nth-of-type(n+2) {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .chat span {
@@ -1545,11 +1572,16 @@ footer {
 }
 
 .filter legend {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 
   font-weight: var(--weight-500);
   font-size: var(--size-xs);
   line-height: var(--line-s);
+  margin-left:16px;
+}
+
+.filter-head {
+  height:1px;
 }
 
 .sorting-fieldset select {
@@ -1559,7 +1591,7 @@ footer {
   padding-top: 10px;
   padding-right: 13px;
   padding-bottom: 8px;
-  padding-left: 16px;
+  padding-left: 18px;
 
   font-weight: var(--weight-500);
   font-size: var(--size-s);
@@ -1663,10 +1695,10 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-right: 19px;
-  padding-bottom: 8px;
-  padding-left: 30px;
+  padding-bottom: 6px;
+  padding-left: 40px;
 
   background-color: var(--background-light);
   border-radius: var(--border-r-m);
@@ -1680,30 +1712,27 @@ footer {
   padding: 0;
 }
 
-
-.fillers-ul li {
-  height: 20px;
+.fillers legend {
+  margin-bottom: 8px;
 }
 
-.fillers legend {
-  margin-bottom: 11px;
+.fillers-input {
+  width:1px;
 }
 
 .fillers-input + label {
   position: relative;
-
   cursor: pointer;
-
   user-select: none;
 }
 
 .fillers-input + label::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -29px;
+  top: 0;
+  left: -34px;
 
-  width: 26px;
+  width: 23px;
   height: 23px;
 
   background-image: url("img/checkbox-off.svg");
@@ -1719,15 +1748,15 @@ footer {
 .fillers-input:checked + label::after {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -29px;
+  top: 0;
+  left: -30px;
 
-  width: 26px;
+  width: 27px;
   height: 23px;
 
   background-image: url("img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  
 }
 
 .fat-content-input + label {
@@ -2176,7 +2205,6 @@ footer {
   font-size: var(--size-m);
   line-height: var(--line-s);
   color: var(--basic-white);
-  box-shadow: 0px 2px 2px var(--shadow-button);
 
   background: linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
   border: 0;
