@@ -576,7 +576,7 @@ img {
   padding-right: 13px;
   padding-left: 13px;
 
-  border: none;
+  outline: none;
   border: 2px solid var(--border-color-focus);
 }
 
@@ -627,6 +627,7 @@ img {
 .links li:nth-of-type(n+5) {
   flex-grow: 1;
 }
+
 
 .links a {
   font-size: var(--size-links);
@@ -1193,9 +1194,12 @@ span.good {
 
 .form-search h4,
 .form-log-in h4,
-.form-feedback-pop-up h4,
-.page-basket h4 {
+.form-feedback-pop-up h4 {
   height: 20px;
+}
+
+.page-basket h4 {
+  height: 0.5px;
 }
 
 .page-body {
@@ -1424,7 +1428,8 @@ footer {
 
 .copyright a {
   height: 39px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
+  padding-top: 6px;
 
   color: var(--basic-white);
 }
@@ -1527,7 +1532,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -1686,21 +1691,11 @@ footer {
   border-radius: var(--border-r-m);
   
   -webkit-appearance: none;
-}
-
-.sorting-fieldset {
-  position: relative;
-}
-
-.sorting-fieldset::before {
-  content: "";
   background-image: url(img/icon-down-dir-white.svg);
-  position: absolute;
-  top:36px;
-  right:14px;
-  width:11px;
-  height:10px;
+  background-repeat: no-repeat;
+  background-position: 172px 13px;
 }
+
 
 .sorting-fieldset option,
 .fat-content-ul label,
@@ -1713,6 +1708,12 @@ footer {
 .sorting-fieldset select[name="sorting"]:hover,
 .sorting-fieldset select[name="sorting"]:focus {
   color: var(--basic-black);
+}
+.sorting-fieldset select[name="sorting"]:hover,
+.sorting-fieldset select[name="sorting"]:focus {
+background-image: url(img/icon-down-dir-black.svg);
+  background-repeat: no-repeat;
+  background-position: 172px 13px;
 }
 
 .sorting-fieldset::before select[name="sorting"]:hover,
@@ -2347,8 +2348,8 @@ background-image: url(img/icon-down-dir-black.svg);
 }
 
 .page-basket {
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
   width: 539px;
   min-height: 242px;
   margin: 0;
@@ -2369,9 +2370,10 @@ background-image: url(img/icon-down-dir-black.svg);
 
 .page-basket a {
   padding-top: 13px;
-  padding-right: 15px;
+  padding-right: 0;
   padding-bottom: 13px;
-  padding-left: 15px;
+  padding-left: 0;
+  text-align: center;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -2387,9 +2389,9 @@ background-image: url(img/icon-down-dir-black.svg);
 
 
 .checkout {
-  position: absolute;
-  right: 14px;
-  bottom: 21px;
+  width:172px;
+  align-self: flex-end;
+  margin-right:14px;
 }
 
 .checkout:hover,
@@ -2416,7 +2418,7 @@ background-image: url(img/icon-down-dir-black.svg);
 
 .price-unit {
   width: 98px;
-  padding-right: 15px;
+  padding-right: 10px;
 
   font-size: var(--size-links);
   line-height: var(--line-s);
@@ -2438,7 +2440,7 @@ span.grey-unit {
   position: relative;
 
   display: block;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-right: 14px;
   margin-bottom: 15px;
 
@@ -2477,8 +2479,12 @@ table.page-basket-table tr {
   border: 1px solid transparent;
 }
 
-.page-basket-table tr:nth-of-type(1) {
-  padding-bottom: 20px;
+table.page-basket-table tr {
+  min-height:34px;
+}
+table.page-basket-table {
+  border-collapse:separate; 
+  border-spacing:0 20px; 
 }
 
 .remove {
