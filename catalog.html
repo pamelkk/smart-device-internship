@@ -56,10 +56,16 @@
                 ></path>
               </svg>
             </a>
+            <section class="form-search">
+              <h4>Поиск</h4>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="search" placeholder="Что ищем?" />
+              </form>
+            </section>
           </li>
           <li class="log-in">
-            <a class="img-log-in" href="#">
-              <svg
+            <a class="img-log-in" href="#"
+              ><svg
                 width="20"
                 height="19"
                 viewBox="0 0 20 19"
@@ -76,8 +82,19 @@
                   fill="white"
                 />
               </svg>
-              Вход</a
-            >
+              Вход</a>
+            <section class="form-log-in">
+              <h4>Вход</h4>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="email" name="email" placeholder="Электронная почта" />
+                <input type="password" name="password" placeholder="......" />
+                <button type="submit">Войти</button>
+                <ul class="log-in-help">
+                  <li><a class="log-in-help-link" href="#">Забыли пароль?</a></li>
+                  <li><a class="log-in-help-link" href="#">Новая регистрация</a></li>
+                </ul>
+              </form>
+            </section>
           </li>
           <li class="basket catalog-basket">
             <a href="#"
@@ -101,6 +118,78 @@
               </svg>
               2 товара
             </a>
+            <section class="page-basket">
+              <h4>Корзина</h4>
+              <table class="page-basket-table">
+                <tr>
+                  <td class="remove">
+                    <button type="button" title="Убрать из корзины">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11"
+                        viewBox="0 0 11 11"
+                      >
+                        <path
+                          fill="#231F20"
+                          d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </td>
+                  <td class="image">
+                    <img
+                      src="img/product-photo-1.png"
+                      width="33"
+                      height="33"
+                      alt="Пломбир с апельсиновым джемом"
+                    />
+                  </td>
+                  <td class="name-of-product">
+                    <span>Пломбир с апельсиновым джемом</span>
+                  </td>
+                  <td class="price-unit">
+                    <span>1.5 кг х<span class="grey-unit"> 200 руб.</span></span>
+                  </td>
+                  <td class="preliminary-amount"><span>300 руб.</span></td>
+                </tr>
+                <tr>
+                  <td class="remove">
+                    <button type="button" title="Убрать из корзины">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11"
+                        viewBox="0 0 11 11"
+                      >
+                        <path
+                          fill="#231F20"
+                          d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </td>
+                  <td class="image">
+                    <img
+                      src="img/product-photo-3.png"
+                      width="33"
+                      height="33"
+                      alt="Клубничный пломбир с присыпкой из белого шоколада"
+                    />
+                  </td>
+                  <td class="name-of-product">
+                    <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+                  </td>
+                  <td class="price-unit">
+                    <span>1.5 кг х<span class="grey-unit"> 300 руб.</span></span>
+                  </td>
+                  <td class="preliminary-amount"><span>450 руб.</span></td>
+                </tr>
+              </table>
+              <span class="total">Итого: 750 руб.</span>
+        
+              <a class="checkout" href="#">Оформить заказ</a>
+            </section>
           </li>
         </ul>
       </nav>
@@ -606,78 +695,6 @@
         </a>
       </div>
     </footer>
-    <section class="page-basket">
-      <h4>Корзина</h4>
-      <table class="page-basket-table">
-        <tr>
-          <td class="remove">
-            <button type="button" title="Убрать из корзины">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="11"
-                viewBox="0 0 11 11"
-              >
-                <path
-                  fill="#231F20"
-                  d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"
-                ></path>
-              </svg>
-            </button>
-          </td>
-          <td class="image">
-            <img
-              src="img/product-photo-1.png"
-              width="33"
-              height="33"
-              alt="Пломбир с апельсиновым джемом"
-            />
-          </td>
-          <td class="name-of-product">
-            <span>Пломбир с апельсиновым джемом</span>
-          </td>
-          <td class="price-unit">
-            <span>1.5 кг х<span class="grey-unit"> 200 руб.</span></span>
-          </td>
-          <td class="preliminary-amount"><span>300 руб.</span></td>
-        </tr>
-        <tr>
-          <td class="remove">
-            <button type="button" title="Убрать из корзины">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="11"
-                viewBox="0 0 11 11"
-              >
-                <path
-                  fill="#231F20"
-                  d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"
-                ></path>
-              </svg>
-            </button>
-          </td>
-          <td class="image">
-            <img
-              src="img/product-photo-3.png"
-              width="33"
-              height="33"
-              alt="Клубничный пломбир с присыпкой из белого шоколада"
-            />
-          </td>
-          <td class="name-of-product">
-            <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-          </td>
-          <td class="price-unit">
-            <span>1.5 кг х<span class="grey-unit"> 300 руб.</span></span>
-          </td>
-          <td class="preliminary-amount"><span>450 руб.</span></td>
-        </tr>
-      </table>
-      <span class="total">Итого: 750 руб.</span>
-
-      <a class="checkout" href="#">Оформить заказ</a>
-    </section>
     <script src="java.js"></script>
   </body>
 </html>
