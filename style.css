@@ -1796,6 +1796,11 @@ background-image: url(img/icon-down-dir-black.svg);
   cursor: pointer;
 }
 
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  transform: scale(1.1);
+}
+
 .range-controls .toggle-min {
   left: 34px;
 }
