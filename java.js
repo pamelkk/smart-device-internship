@@ -49,6 +49,7 @@ popupForm.addEventListener("submit", function (evt) {
     console.log("Не заполнены данные");
     evt.preventDefault();
     popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
       localStorage.setItem("email", inputEmail.value);
