@@ -1,9 +1,11 @@
 var buttonPopup = document.querySelector(".button-feedback");
 var popup = document.querySelector(".form-feedback-pop-up");
 var buttonClose = popup.querySelector(".button-close-feedback");
+var popupForm = popup.querySelector("form");
 var inputName = popup.querySelector(".input-name-feedback");
 var inputEmail = popup.querySelector(".input-email-feedback");
 var inputComment = popup.querySelector(".input-comment-feedback");
+var sendButton = popup.querySelector(".send-button");
 
 var slide = document.querySelector(".slide");
 var slider = document.querySelector(".slider");
@@ -26,44 +28,44 @@ try {
 
 buttonPopup.addEventListener("click", function (evt) {
   console.log("Клик по ссылке Форма обратной связи");
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    if (storage) {
-        inputName.value = storage;
-        inputEmail.value = storage;
-      } else {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  if (storage) {
+    inputName.value = storage;
+    inputEmail.value = storage;
+  } else {
     inputName.focus();
-      }
+  }
 });
-
 
 buttonClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-
-  inputName.addEventListener("submit", function (evt) {
-      if (!inputName.value || !inputEmail.value || !inputComment.value) {
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {localStorage.setItem("name", inputName.value), ("email", inputEmail.value);
-}
-}
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
+popupForm.addEventListener("submit", function (evt) {
+  if (!inputName.value || !inputEmail.value || !inputComment.value) {
+    console.log("Не заполнены данные");
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  } else {
+      localStorage.setItem("email", inputEmail.value);
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
-  });
+});
 
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    }
+  }
+});
 
 slider1.addEventListener("click", function (evt) {
   console.log("Клик!");
@@ -71,17 +73,18 @@ slider1.addEventListener("click", function (evt) {
     body.classList.add("page-body-green");
     body.classList.remove("page-body-pink");
     body.classList.remove("page-body-blue");
-  };
+  }
   if (!icecream1.classList.contains("slide-current")) {
     icecream1.classList.add("slide-current");
     icecream2.classList.remove("slide-current");
     icecream3.classList.remove("slide-current");
-  };
-  if (!slider1.classList.contains("slider-current"))  {
+  }
+  if (!slider1.classList.contains("slider-current")) {
     slider1.classList.add("slider-current");
     slider2.classList.remove("slider-current");
     slider3.classList.remove("slider-current");
-}});
+  }
+});
 
 slider2.addEventListener("click", function (evt) {
   console.log("Клик!");
@@ -89,17 +92,18 @@ slider2.addEventListener("click", function (evt) {
     body.classList.add("page-body-blue");
     body.classList.remove("page-body-pink");
     body.classList.remove("page-body-green");
-  };
+  }
   if (!icecream2.classList.contains("slide-current")) {
     icecream2.classList.add("slide-current");
     icecream1.classList.remove("slide-current");
     icecream3.classList.remove("slide-current");
-  };
-  if (!slider2.classList.contains("slider-current"))  {
+  }
+  if (!slider2.classList.contains("slider-current")) {
     slider2.classList.add("slider-current");
     slider1.classList.remove("slider-current");
     slider3.classList.remove("slider-current");
-}});
+  }
+});
 
 slider3.addEventListener("click", function (evt) {
   console.log("Клик!");
@@ -107,14 +111,15 @@ slider3.addEventListener("click", function (evt) {
     body.classList.add("page-body-pink");
     body.classList.remove("page-body-blue");
     body.classList.remove("page-body-green");
-  };
-  if (!icecream3.classList.contains("slide-current"))  {
+  }
+  if (!icecream3.classList.contains("slide-current")) {
     icecream3.classList.add("slide-current");
     icecream1.classList.remove("slide-current");
     icecream2.classList.remove("slide-current");
-  };
-  if (!slider3.classList.contains("slider-current"))  {
+  }
+  if (!slider3.classList.contains("slider-current")) {
     slider3.classList.add("slider-current");
     slider1.classList.remove("slider-current");
     slider2.classList.remove("slider-current");
-}});
+  }
+});
