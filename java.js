@@ -48,11 +48,11 @@ popupForm.addEventListener("submit", function (evt) {
   if (!inputName.value || !inputEmail.value || !inputComment.value) {
     console.log("Не заполнены данные");
     evt.preventDefault();
+    popup.classList.remove("modal-error");
     popup.classList.add("modal-error");
   } else {
       localStorage.setItem("email", inputEmail.value);
       popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
     }
 });
 

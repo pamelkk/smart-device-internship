@@ -582,7 +582,7 @@ img {
 .comment-field-comment [name="comment"]:focus {
   padding-right: 13px;
   padding-left: 13px;
-
+  color: var(--basic-black);
   outline: none;
   border: 2px solid var(--border-color-focus);
 }
