@@ -151,7 +151,7 @@ img {
   color: var(--basic-white);
 }
 
-.general-site-navigation li:not(.logo) a {
+.general-site-navigation a {
   text-decoration: none;
 
   border-bottom: 1px solid var(--background-light);
@@ -163,6 +163,10 @@ img {
 
 .logo {
   padding-top: 9px;
+}
+
+.logo img {
+  width:154px;
 }
 
 .site-navigation > a {
@@ -307,13 +311,13 @@ img {
   cursor: pointer;
 }
 
-.slider-button button:not(.current):hover,
-.slider-button button:not(.current):focus {
+.slider-button button:not(.slider-current):hover,
+.slider-button button:not(.slider-current):focus {
   background-color: var(--background-slider-hover);
 }
 
-.slider-button .current,
-.slider-button button:not(.current):active {
+.slider-button .slider-current,
+.slider-button button:not(.slider-current):active {
   background-color: var(--basic-white);
 }
 
@@ -1163,16 +1167,12 @@ span.good {
 .button-feedback {
   box-sizing: border-box;
   width: 253px;
-  height:43px;
   margin: 0;
   margin-top: 27px;
   margin-bottom: 31px;
   margin-left: 25px;
   padding: 0;
-  padding-top: 11px;
-  padding-right: 23px;
-  padding-bottom: 13px;
-  padding-left: 23px;
+  padding:10px;
   cursor: pointer;
   border: none;
 

@@ -65,50 +65,56 @@ window.addEventListener("keydown", function (evt) {
   });
 
 
-slider1.addEventListener("click", function () {
+slider1.addEventListener("click", function (evt) {
   console.log("Клик!");
-  if (body.classList.contains("page-body-green")) {
-  } else {
+  if (!body.classList.contains("page-body-green")) {
     body.classList.add("page-body-green");
     body.classList.remove("page-body-pink");
     body.classList.remove("page-body-blue");
   };
-  if (icecream1.classList.contains("slide-current")) {
-  } else {
+  if (!icecream1.classList.contains("slide-current")) {
     icecream1.classList.add("slide-current");
     icecream2.classList.remove("slide-current");
     icecream3.classList.remove("slide-current");
-  }
-});
+  };
+  if (!slider1.classList.contains("slider-current"))  {
+    slider1.classList.add("slider-current");
+    slider2.classList.remove("slider-current");
+    slider3.classList.remove("slider-current");
+}});
 
-slider2.addEventListener("click", function () {
+slider2.addEventListener("click", function (evt) {
   console.log("Клик!");
-  if (body.classList.contains("page-body-blue")) {
-  } else {
+  if (!body.classList.contains("page-body-blue")) {
     body.classList.add("page-body-blue");
     body.classList.remove("page-body-pink");
     body.classList.remove("page-body-green");
   };
-  if (icecream2.classList.contains("slide-current")) {
-  } else {
+  if (!icecream2.classList.contains("slide-current")) {
     icecream2.classList.add("slide-current");
     icecream1.classList.remove("slide-current");
     icecream3.classList.remove("slide-current");
-  }
-});
+  };
+  if (!slider2.classList.contains("slider-current"))  {
+    slider2.classList.add("slider-current");
+    slider1.classList.remove("slider-current");
+    slider3.classList.remove("slider-current");
+}});
 
-slider3.addEventListener("click", function () {
+slider3.addEventListener("click", function (evt) {
   console.log("Клик!");
-  if (body.classList.contains("page-body-pink")) {
-  } else {
+  if (!body.classList.contains("page-body-pink")) {
     body.classList.add("page-body-pink");
     body.classList.remove("page-body-blue");
     body.classList.remove("page-body-green");
   };
-  if (icecream3.classList.contains("slide-current")) {
-  } else {
+  if (!icecream3.classList.contains("slide-current"))  {
     icecream3.classList.add("slide-current");
     icecream1.classList.remove("slide-current");
     icecream2.classList.remove("slide-current");
-  }
-});
+  };
+  if (!slider3.classList.contains("slider-current"))  {
+    slider3.classList.add("slider-current");
+    slider1.classList.remove("slider-current");
+    slider2.classList.remove("slider-current");
+}});
