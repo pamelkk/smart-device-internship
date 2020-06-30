@@ -2296,10 +2296,11 @@ background-image: url(img/icon-down-dir-black.svg);
 }
 
 .modal-show {
+  display: block;
   position: fixed;
-  top:338px;
-  bottom: auto;
-  margin-left:362px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   z-index:4;
 }
 
