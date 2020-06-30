@@ -122,9 +122,9 @@
       </ul>
     </header>
     <main>
-      <div class="promotion-1">
+      <div>
         <ul class="promotion">
-          <li class="ice-cream slide slide-current">
+          <li class="ice-cream ice-cream-1 slide slide-current">
             <img
               src="img/ice-cream-cones-1.png"
               width="1045"
@@ -135,7 +135,7 @@
             <h2>Крем-брюле и пломбир с малиновым джемом</h2>
             <a href="#">Давайте оба!</a>
           </li>
-          <li class="ice-cream slide">
+          <li class="ice-cream ice-cream-2 slide">
             <img
               src="img/ice-cream-cones-2.png"
               width="1045"
@@ -146,7 +146,7 @@
             <h2>Шоколадный пломбир и лимонный сорбет</h2>
             <a href="#">Давайте оба!</a>
           </li>
-          <li class="ice-cream slide">
+          <li class="ice-cream ice-cream-3 slide">
             <img
               src="img/ice-cream-cones-3.png"
               width="1045"
@@ -159,13 +159,13 @@
           </li>
           <li>
             <div class="slider-button">
-              <button
+              <button class="slider slider-1"
                 class="current"
                 type="button"
                 title="Первый слайд"
               ></button>
-              <button type="button" title="Второй слайд"></button>
-              <button type="button" title="Третий слайд"></button>
+              <button class="slider slider-2" type="button" title="Второй слайд"></button>
+              <button class="slider slider-3" type="button" title="Третий слайд"></button>
             </div>
           </li>
         </ul>
@@ -234,7 +234,7 @@
 
           <h3>
             <span class="good"
-              >Сливочно-клубничное с присыпкой из белого шоколада</span
+              >Сливочно-клубничное <br>с присыпкой из белого шоколада</span
             >
           </h3>
 
@@ -252,7 +252,7 @@
 
           <h3>
             <span class="good"
-              >Сливочное крем-брюле с карамельной подливкой</span
+              >Сливочное крем-брюле <br>с карамельной подливкой</span
             >
           </h3>
 
@@ -340,10 +340,10 @@
         <div class="address-popup">
           <ul class="address">
             <li>
-              Адрес главного офиса офлайн-магазина:
+              Адрес главного офиса и офлайн-магазина:
             </li>
             <li>
-              <span>Ул.Большая Конюшенная, 19/8, Санкт-Петербург</span>
+              <span>ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
             </li>
           </ul>
           <ul class="telephone">
@@ -354,7 +354,7 @@
             <li>(с 10 до 20 ежедневно)</li>
           </ul>
 
-          <a href="#">Форма обратной связи</a>
+          <button class="button-feedback" type="button" title="Форма обратной связи">Форма обратной связи</button>
         </div>
       </section>
     </main>
@@ -459,13 +459,13 @@
         </a>
       </div>
     </footer>
-    <section class="form-feedback-pop-up modal">
+    <section class="form-feedback-pop-up">
       <div class="modal-feedback">
         <h4>Обратная связь</h4>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="send-us-letter">
           <legend>Мы обязательно вам ответим!</legend>
-          <button type="button" title="Закрыть">
+          <button class="button-close-feedback" type="button" title="Закрыть">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -480,17 +480,17 @@
           </button>
           <ul class="connecting-form">
             <li class="comment-field-name">
-              <input name="name" type="text" placeholder="Как вас зовут?" />
+              <input class="input-name-feedback" name="name" type="text" placeholder="Как вас зовут?" />
             </li>
             <li class="comment-field-email">
-              <input
+              <input class="input-email-feedback" 
                 name="email"
                 type="email"
                 placeholder="Ваша почта для ответа?"
               />
             </li>
             <li class="comment-field-comment">
-              <textarea
+              <textarea class="input-comment-feedback" 
                 name="comment"
                 id="comment-field"
                 placeholder="Напишите что-нибудь..."

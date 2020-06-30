@@ -99,6 +99,19 @@ body {
   background-color: var(--basic-background-1);
 }
 
+.page-body-green {
+  background-color: var(--basic-background-1);
+}
+
+.page-body-blue {
+  background-color: var(--basic-background-2);
+}
+
+.page-body-pink {
+  background-color: var(--basic-background-3);
+}
+
+
 .gllacy-page-catalog {
   position: relative;
 }
@@ -116,21 +129,6 @@ body {
   background: linear-gradient(180deg, var(--background-light) 0%, var(--background-gradient-body-catalog) 100%);
 }
 
-
-/*
-.promotion-1  {
-  background-color: var(--basic-background-1);
-}
-
-.promotion-2 {
-  background-color: var(--basic-background-2);
-}
-
-.promotion-3  {
-  background-color: var(--basic-background-3);
-}
-
-*/
 
 img {
   display: block;
@@ -506,9 +504,12 @@ img {
 .subscription-form button {
   position: absolute;
   right: 20px;
-  bottom: 41px;
+  bottom: 36px;
+  width:130px;
+  height:44px;
+  box-sizing: border-box;
 
-  padding-top: 12px;
+  padding-top: 10px;
   padding-right: 19px;
   padding-bottom: 12px;
   padding-left: 19px;
@@ -536,7 +537,7 @@ img {
 
 .subscription-form [type="email"] {
   position: absolute;
-  bottom: 40px;
+  bottom: 35px;
   left: 0;
 
   box-sizing: border-box;
@@ -1120,7 +1121,7 @@ span.good {
 }
 
 .address {
-  margin-top: 26px;
+  margin-top: 28px;
   margin-left: 25px;
 }
 .address li:nth-of-type(1) {
@@ -1142,12 +1143,13 @@ span.good {
 }
 
 .telephone {
-  margin-top: 27px;
+  margin-top: 22px;
   margin-left: 25px;
 }
 
 .telephone li:nth-of-type(1) {
   width: 172px;
+  margin-bottom:2px;
 }
 
 .telephone li:nth-of-type(2) {
@@ -1156,21 +1158,23 @@ span.good {
 
 .telephone li:nth-of-type(3) {
   width: 153px;
-  margin-top: 2px;
 }
 
-.address-popup > a {
+.button-feedback {
   box-sizing: border-box;
   width: 253px;
+  height:43px;
   margin: 0;
-  margin-top: 31px;
+  margin-top: 27px;
   margin-bottom: 31px;
   margin-left: 25px;
   padding: 0;
-  padding-top: 13px;
-  padding-right: 28px;
+  padding-top: 11px;
+  padding-right: 23px;
   padding-bottom: 13px;
-  padding-left: 28px;
+  padding-left: 23px;
+  cursor: pointer;
+  border: none;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -1181,6 +1185,15 @@ span.good {
   background: linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
   border-radius: var(--border-r-xl);
   box-shadow: 0 2px 2px var(--shadow-button);
+}
+
+.button-feedback:hover,
+.button-feedback:focus {
+  background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
+}
+
+.button-feedback:active {
+  background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 
 .address-popup > a:hover,
@@ -2270,7 +2283,7 @@ background-image: url(img/icon-down-dir-black.svg);
   box-sizing: border-box;
   width: 477px;
   min-height: 441px;
-  display: none;
+  display:none;
 
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-4);
@@ -2282,7 +2295,7 @@ background-image: url(img/icon-down-dir-black.svg);
   min-height: 441px;
 }
 
-.modal {
+.modal-show {
   position: fixed;
   top:338px;
   bottom: auto;
@@ -2423,12 +2436,14 @@ background-image: url(img/icon-down-dir-black.svg);
   cursor: pointer;
 }
 
+
 .send-us-letter button:nth-of-type(2):hover,
 .send-us-letter button:nth-of-type(2):focus {
   background: linear-gradient(0deg, var(--background-light), var(--background-light)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 
-.subscription-form button:active {
+.subscription-form button:active,
+.send-us-letter button:nth-of-type(2):active {
   background: linear-gradient(0deg, var(--gradient-black), var(--gradient-black)), linear-gradient(180deg, var(--gradient) 0%, var(--basic-button) 100%);
 }
 

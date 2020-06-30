@@ -1,0 +1,114 @@
+var buttonPopup = document.querySelector(".button-feedback");
+var popup = document.querySelector(".form-feedback-pop-up");
+var buttonClose = popup.querySelector(".button-close-feedback");
+var inputName = popup.querySelector(".input-name-feedback");
+var inputEmail = popup.querySelector(".input-email-feedback");
+var inputComment = popup.querySelector(".input-comment-feedback");
+
+var slide = document.querySelector(".slide");
+var slider = document.querySelector(".slider");
+var slider1 = document.querySelector(".slider-1");
+var slider2 = document.querySelector(".slider-2");
+var slider3 = document.querySelector(".slider-3");
+var body = document.querySelector(".page-body");
+var icecream1 = document.querySelector(".ice-cream-1");
+var icecream2 = document.querySelector(".ice-cream-2");
+var icecream3 = document.querySelector(".ice-cream-3");
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+buttonPopup.addEventListener("click", function (evt) {
+  console.log("Клик по ссылке Форма обратной связи");
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    if (storage) {
+        inputName.value = storage;
+        inputEmail.value = storage;
+      } else {
+    inputName.focus();
+      }
+});
+
+
+buttonClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  inputName.addEventListener("submit", function (evt) {
+      if (!inputName.value || !inputEmail.value || !inputComment.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {localStorage.setItem("name", inputName.value), ("email", inputEmail.value);
+}
+}
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+
+slider1.addEventListener("click", function () {
+  console.log("Клик!");
+  if (body.classList.contains("page-body-green")) {
+  } else {
+    body.classList.add("page-body-green");
+    body.classList.remove("page-body-pink");
+    body.classList.remove("page-body-blue");
+  };
+  if (icecream1.classList.contains("slide-current")) {
+  } else {
+    icecream1.classList.add("slide-current");
+    icecream2.classList.remove("slide-current");
+    icecream3.classList.remove("slide-current");
+  }
+});
+
+slider2.addEventListener("click", function () {
+  console.log("Клик!");
+  if (body.classList.contains("page-body-blue")) {
+  } else {
+    body.classList.add("page-body-blue");
+    body.classList.remove("page-body-pink");
+    body.classList.remove("page-body-green");
+  };
+  if (icecream2.classList.contains("slide-current")) {
+  } else {
+    icecream2.classList.add("slide-current");
+    icecream1.classList.remove("slide-current");
+    icecream3.classList.remove("slide-current");
+  }
+});
+
+slider3.addEventListener("click", function () {
+  console.log("Клик!");
+  if (body.classList.contains("page-body-pink")) {
+  } else {
+    body.classList.add("page-body-pink");
+    body.classList.remove("page-body-blue");
+    body.classList.remove("page-body-green");
+  };
+  if (icecream3.classList.contains("slide-current")) {
+  } else {
+    icecream3.classList.add("slide-current");
+    icecream1.classList.remove("slide-current");
+    icecream2.classList.remove("slide-current");
+  }
+});
