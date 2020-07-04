@@ -8,8 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
     />
 
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body class="page-body page-body-catalog">
@@ -59,7 +59,13 @@
             <section class="form-search">
               <h4>Поиск</h4>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="search" placeholder="Что ищем?" />
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Что ищем?"
+                  id="search"
+                />
+                <label class="visually-hidden" for="search">Поиск</label>
               </form>
             </section>
           </li>
@@ -91,8 +97,11 @@
                   type="email"
                   name="email"
                   placeholder="Электронная почта"
+                  id="email"
                 />
-                <input type="password" name="password" placeholder="......" />
+                <label class="visually-hidden" for="email">Электронная почта</label>
+                <input type="password" name="password" placeholder="......" id="password" />
+                <label class="visually-hidden"  for="password">Пароль</label>
                 <button type="submit">Войти</button>
                 <ul class="log-in-help">
                   <li>
@@ -106,7 +115,7 @@
             </section>
           </li>
           <li class="basket catalog-basket">
-            <a href="#"
+            <a class="catalog-basket-link" href="#"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"

@@ -56,7 +56,13 @@
             <section class="form-search">
               <h4>Поиск</h4>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="search" placeholder="Что ищем?" />
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Что ищем?"
+                  id="search"
+                />
+                <label class="visually-hidden" for="search">Поиск</label>
               </form>
             </section>
           </li>
@@ -88,8 +94,18 @@
                   type="email"
                   name="email"
                   placeholder="Электронная почта"
+                  id="email-form-log-in"
                 />
-                <input type="password" name="password" placeholder="......" />
+                <label class="visually-hidden" for="email-form-log-in"
+                  >Электронная почта</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="......"
+                  id="password"
+                />
+                <label class="visually-hidden" for="password">Пароль</label>
                 <button type="submit">Войти</button>
                 <ul class="log-in-help">
                   <li>
@@ -216,8 +232,8 @@
           />
 
           <h3>
-            <span class="good"
-              >Сливочное с апельсиновым джемом и цитрусовой стружкой</span
+            <span class="good">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой</span
             >
           </h3>
 
@@ -326,7 +342,14 @@
                 и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" placeholder="email@example.com" />
+                <input
+                  type="email"
+                  placeholder="email@example.com"
+                  id="email-subscription"
+                />
+                <label class="visually-hidden" for="email-subscription"
+                  >Электронная почта</label
+                >
               </form>
               <button type="submit">Отправить</button>
             </div>
@@ -339,7 +362,6 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593374394802!5m2!1sru!2sru"
           width="1200"
           height="430"
-          frameborder="0"
           style="border: 0;"
           allowfullscreen=""
           aria-hidden="false"
@@ -366,7 +388,8 @@
         <img
           src="img/map.png"
           width="1200"
-          alt="Ул.Большая Конюшенная, 19/8, Санкт-Петербург"
+          height="430"
+          alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"
         />
         <div class="address-popup">
           <ul class="address">
@@ -385,13 +408,11 @@
             <li>(с 10 до 20 ежедневно)</li>
           </ul>
 
-          <button
-            class="button-feedback"
-            type="button"
+          <a class="button-feedback" href="#"
             title="Форма обратной связи"
           >
             Форма обратной связи
-          </button>
+        </a>
         </div>
       </section>
     </main>
@@ -399,7 +420,7 @@
       <ul class="chat">
         <li class="facebook">
           <a href="#" title="Facebook">
-            <svg
+            <svg class="chat-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -414,7 +435,7 @@
         </li>
         <li class="vkontakte">
           <a href="#" title="VKontakte">
-            <svg
+            <svg class="chat-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -434,7 +455,7 @@
         </li>
         <li class="instagram">
           <a href="#" title="Instagram">
-            <svg
+            <svg class="chat-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -458,7 +479,7 @@
         </li>
         <li class="twitter">
           <a href="#" title="Twitter">
-            <svg
+            <svg class="chat-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -516,23 +537,29 @@
               </svg>
             </button>
             <ul class="connecting-form">
-              <li class="comment-field-name">
+              <li class="comment-field comment-field-name">
                 <input
                   class="input-name-feedback"
                   name="name"
                   type="text"
                   placeholder="Как вас зовут?"
+                  id="name"
                 />
+                <label class="visually-hidden" for="name">Ваше имя</label>
               </li>
-              <li class="comment-field-email">
+              <li class="comment-field comment-field-email">
                 <input
                   class="input-email-feedback"
                   name="email"
                   type="email"
                   placeholder="Ваша почта для ответа?"
+                  id="email-connecting-form"
                 />
+                <label class="visually-hidden" for="email-connecting-form"
+                  >Электронная почта</label
+                >
               </li>
-              <li class="comment-field-comment">
+              <li class="comment-field comment-field-comment">
                 <textarea
                   class="input-comment-feedback"
                   name="comment"
@@ -540,6 +567,9 @@
                   placeholder="Напишите что-нибудь..."
                   rows="7"
                 ></textarea>
+                <label class="visually-hidden" for="comment-field"
+                  >Место для вашего комментария</label
+                >
               </li>
             </ul>
             <button class="send-button" type="submit">Отправить</button>
