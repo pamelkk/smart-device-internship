@@ -1,5 +1,5 @@
 var buttonPopup = document.querySelector(".button-feedback");
-var popup = document.querySelector(".form-feedback-pop-up");
+var popup = document.querySelector(".modal-feedback");
 var buttonClose = popup.querySelector(".button-close-feedback");
 var popupForm = popup.querySelector("form");
 var inputName = popup.querySelector(".input-name-feedback");
