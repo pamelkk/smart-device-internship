@@ -2318,16 +2318,11 @@ background-image: url(img/icon-down-dir-black.svg);
   align-items: center;
 }
 
-.modal-show.form-feedback-pop-up {
-  background-color: var(--background-opened-popup);
-}
-
 .modal-feedback {
   position: relative;
   box-sizing: border-box;
   width: 477px;
   min-height: 441px;
-  display:none;
   padding-top:20px;
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-4);
@@ -2382,8 +2377,6 @@ background-image: url(img/icon-down-dir-black.svg);
 .modal-show {
   display: block;
   animation: bounce 0.6s;
-    left: 50%;
-    top: 50%;
   z-index:4;
 }
 

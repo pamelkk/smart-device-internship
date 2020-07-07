@@ -1,5 +1,6 @@
 var buttonPopup = document.querySelector(".button-feedback");
 var popup = document.querySelector(".modal-feedback");
+var popupSection = document.querySelector(".form-feedback-pop-up");
 var buttonClose = popup.querySelector(".button-close-feedback");
 var popupForm = popup.querySelector("form");
 var inputName = popup.querySelector(".input-name-feedback");
@@ -29,7 +30,7 @@ try {
 buttonPopup.addEventListener("click", function (evt) {
   console.log("Клик по ссылке Форма обратной связи");
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  popupSection.classList.add("modal-show");
   if (storage) {
     inputName.value = storage;
     inputEmail.value = storage;
@@ -40,8 +41,8 @@ buttonPopup.addEventListener("click", function (evt) {
 
 buttonClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
+  popupSection.classList.remove("modal-show");
+  popupSection.classList.remove("modal-error");
 });
 
 popupForm.addEventListener("submit", function (evt) {
@@ -60,10 +61,10 @@ popupForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
+    if (popupSection.classList.contains("modal-show")) {
       evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+      popupSection.classList.remove("modal-show");
+      popupSection.classList.remove("modal-error");
     }
   }
 });
