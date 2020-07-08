@@ -486,7 +486,6 @@ img {
 }
 
 .subscription-form {
-  position: absolute;
   display:flex;
   flex-wrap: wrap;
 
@@ -525,9 +524,9 @@ img {
   flex-grow:1;
 
   padding-top: 10px;
-  padding-right: 19px;
+  padding-right: 9px;
   padding-bottom: 12px;
-  padding-left: 19px;
+  padding-left: 9px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -615,15 +614,15 @@ img {
   width: 305px;
   min-height: 35px;
   margin: 0;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-bottom: 32px;
-  margin-left: 30px;
+  margin-left: 24px;
   padding: 0;
 }
 
 .catalog-footer .links {
-  margin-top: 35px;
-  margin-left: 29px;
+  margin-top: 30px;
+  margin-left: 26px;
 }
 
 .links li:nth-of-type(1) {
@@ -677,7 +676,7 @@ img {
   content: "";
   position: absolute;
   top: 6px;
-  left: -22px;
+  left: -23px;
 
   width: 15px;
   height: 13px;
@@ -1125,14 +1124,14 @@ span.good {
 
 .map svg {
   position: absolute;
-  top: 125px;
-  left: 251px;
+  top: 135px;
+  left: calc(50% - 335px);
 }
 
 .address-popup {
   position: absolute;
   top: 62px;
-  right: 27px;
+  left: calc(50% + 270px);
 
   display: flex;
   flex-direction: column;
@@ -1264,9 +1263,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 main {
@@ -1276,10 +1274,9 @@ main {
   grid-template-columns: 1fr repeat(4, 267px) 1fr;
 }
 
-.footer {
-  width: 1200px;
+footer {
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 .promo {
@@ -1586,7 +1583,6 @@ li.page:not(.buttons) a:focus {
 }
 
 .catalog-footer {
-  margin: 0;
   margin-top: 29px;
   border-top: 1px solid var(--background-light);
 }
@@ -1598,13 +1594,13 @@ li.page:not(.buttons) a:focus {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: -3px;
-  margin-left:1px;
+  margin-top: -8px;
+  margin-left:0;
   padding: 0;
 }
 
 .catalog-footer .chat {
-  margin-top: 0;
+  margin-top: -5px;
   margin-left:0;
 }
 
@@ -2006,13 +2002,13 @@ background-image: url(../img/icon-down-dir-black.svg);
 }
 
 .fat-content-input + label:hover::before,
-.fat-content-input + label:focus::before,
+.fat-content-input:focus + label::before,
 .fat-content-input:checked + label:hover::after,
-.fat-content-input:checked + label:focus::after,
+.fat-content-input:checked:focus + label::after,
 .fillers-input + label:hover::before,
-.fillers-input + label:focus::before,
+.fillers-input:focus + label::before,
 .fillers-input:checked + label:hover::after,
-.fillers-input:checked + label:focus::after {
+.fillers-input:checked:focus + label::after {
   opacity: 1;
 }
 
@@ -2712,7 +2708,7 @@ span.grey-unit {
   position: relative;
 
   display: block;
-  margin-top: 15px;
+  margin-top: 14px;
   margin-right: 14px;
   margin-bottom: 15px;
 
@@ -2726,7 +2722,7 @@ span.grey-unit {
 .total::before {
   content: "";
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   left: 15px;
 
   width: 510px;
@@ -2757,11 +2753,12 @@ table.page-basket-table tr {
 table.page-basket-table {
   border-collapse:separate; 
   border-spacing:0 20px; 
+  margin-top:-5px;
 }
 
 .remove {
   width: 11px;
-  padding-right: 9px;
+  padding-right: 7px;
 }
 
 .image {
