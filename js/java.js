@@ -53,11 +53,10 @@ popupForm.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
-      localStorage.setItem("email", inputEmail.value);
-      popupSection.classList.remove("modal-show");
-    }
+    localStorage.setItem("email", inputEmail.value);
+    popupSection.classList.remove("modal-show");
+  }
 });
-
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
