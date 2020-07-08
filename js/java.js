@@ -42,7 +42,7 @@ buttonPopup.addEventListener("click", function (evt) {
 buttonClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupSection.classList.remove("modal-show");
-  popupSection.classList.remove("modal-error");
+  popup.classList.remove("modal-error");
 });
 
 popupForm.addEventListener("submit", function (evt) {
@@ -54,7 +54,7 @@ popupForm.addEventListener("submit", function (evt) {
     popup.classList.add("modal-error");
   } else {
       localStorage.setItem("email", inputEmail.value);
-      popup.classList.remove("modal-show");
+      popupSection.classList.remove("modal-show");
     }
 });
 
@@ -64,7 +64,7 @@ window.addEventListener("keydown", function (evt) {
     if (popupSection.classList.contains("modal-show")) {
       evt.preventDefault();
       popupSection.classList.remove("modal-show");
-      popupSection.classList.remove("modal-error");
+      popup.classList.remove("modal-error");
     }
   }
 });
