@@ -343,7 +343,7 @@ img {
 
   color: var(--basic-black);
 
-  background-image: url("img/waffle-pattern.jpg");
+  background-image: url("../img/waffle-pattern.jpg");
   background-repeat: repeat;
   border-radius: 16px;
 }
@@ -389,19 +389,19 @@ img {
 }
 
 .feature-item-ice-cream::before {
-  background-image: url(img/ice-cream.svg);
+  background-image: url(../img/ice-cream.svg);
 }
 
 .feature-item-cow::before {
-  background-image: url(img/cow.svg);
+  background-image: url(../img/cow.svg);
 }
 
 .feature-item-eco::before {
-  background-image: url(img/eco.svg);
+  background-image: url(../img/eco.svg);
 }
 
 .feature-item-thermometer::before {
-  background-image: url(img/thermometer.svg);
+  background-image: url(../img/thermometer.svg);
 }
 
 
@@ -443,7 +443,7 @@ img {
 
   color: var(--basic-black);
 
-  background-image: url("img/strawberry-background.png");
+  background-image: url("../img/strawberry-background.png");
   background-repeat: repeat;
 }
 
@@ -472,7 +472,7 @@ img {
 
   color: var(--follow);
 
-  background-image: url("img/bg-post.svg");
+  background-image: url("../img/bg-post.svg");
   background-repeat: repeat;
   border-radius: var(--border-r-s);
 }
@@ -670,7 +670,7 @@ img {
   width: 15px;
   height: 13px;
 
-  background-image: url(img/heart.svg);
+  background-image: url(../img/heart.svg);
 }
 
 .copyright a:hover,
@@ -785,7 +785,7 @@ img {
   margin: 0;
   padding: 16px;
 
-  background-image: url("img/raspberry-background.png");
+  background-image: url("../img/raspberry-background.png");
   background-repeat: repeat;
   border-radius: var(--border-r-s);
 }
@@ -799,7 +799,7 @@ img {
   margin: 0;
   padding: 16px;
 
-  background-image: url("img/chocolate-background.png");
+  background-image: url("../img/chocolate-background.png");
   background-repeat: repeat;
   border-radius: var(--border-r-s);
 }
@@ -1027,7 +1027,7 @@ span.good {
   width: 61px;
   height: 61px;
 
-  background-image: url(img/hit.png);
+  background-image: url(../img/hit.png);
   background-size: 100%;
 }
 
@@ -1764,7 +1764,7 @@ li.page:not(.buttons) a:focus {
   border-radius: var(--border-r-m);
   
   -webkit-appearance: none;
-  background-image: url(img/icon-down-dir-white.svg);
+  background-image: url(../img/icon-down-dir-white.svg);
   background-repeat: no-repeat;
   background-position: 172px 13px;
 }
@@ -1784,14 +1784,14 @@ li.page:not(.buttons) a:focus {
 }
 .sorting-fieldset select[name="sorting"]:hover,
 .sorting-fieldset select[name="sorting"]:focus {
-background-image: url(img/icon-down-dir-black.svg);
+background-image: url(../img/icon-down-dir-black.svg);
   background-repeat: no-repeat;
   background-position: 172px 13px;
 }
 
 .sorting-fieldset::before select[name="sorting"]:hover,
 .sorting-fieldset::before select[name="sorting"]:focus {
-background-image: url(img/icon-down-dir-black.svg);
+background-image: url(../img/icon-down-dir-black.svg);
 }
 
 .price-fieldset {
@@ -1918,7 +1918,7 @@ background-image: url(img/icon-down-dir-black.svg);
   width: 23px;
   height: 23px;
 
-  background-image: url("img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.8;
@@ -1938,7 +1938,7 @@ background-image: url(img/icon-down-dir-black.svg);
   width: 27px;
   height: 23px;
 
-  background-image: url("img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -2310,7 +2310,7 @@ background-image: url(img/icon-down-dir-black.svg);
   height:100vh;
   background-color: var(--background-opened-popup);
   position: fixed;
-  display: flex;
+  
   top:0;
   left:0;
   justify-content: center;
@@ -2327,6 +2327,7 @@ background-image: url(img/icon-down-dir-black.svg);
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-4);
   -webkit-font-smoothing: subpixel-antialiased;
+  animation: bounce 0.6s;
 }
 
 
@@ -2375,8 +2376,7 @@ background-image: url(img/icon-down-dir-black.svg);
 }
 
 .modal-show {
-  display: block;
-  animation: bounce 0.6s;
+  display: flex;
   z-index:4;
 }
 
