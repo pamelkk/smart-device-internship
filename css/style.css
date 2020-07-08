@@ -9,6 +9,10 @@
   --basic-background-1: #849d8f;
   --basic-background-2: #8996a6;
   --basic-background-3: #9d8b84;
+  --raspberry:#c20056;
+  --chocolate:#3d1b0b;
+  --vaffle:#f1e7ce;  
+  --letter:#f8f7f4;
   --basic-black: #323232;
   --basic-border-choice: rgba(50, 50, 50, 0.2);
   --basic-border-pop-up-feedback: rgba(178, 178, 178, 0.52);
@@ -342,7 +346,7 @@ img {
   padding: 0;
 
   color: var(--basic-black);
-
+  background-color: var(--vaffle);
   background-image: url("../img/waffle-pattern.jpg");
   background-repeat: repeat;
   border-radius: 16px;
@@ -414,6 +418,7 @@ img {
 
 .info-block {
   border-radius: var(--border-r-s);
+  margin-bottom: 40px;
 }
 
 .articles {
@@ -440,9 +445,10 @@ img {
   margin: 0;
   padding-top: 15px;
   padding-left: 20px;
-
+  padding-bottom: 20px;
+  border-radius: var(--border-r-s);
   color: var(--basic-black);
-
+  background-color: var(--basic-white);
   background-image: url("../img/strawberry-background.png");
   background-repeat: repeat;
 }
@@ -451,7 +457,7 @@ img {
   margin: 0;
   margin-bottom: 2px;
   padding-top: 3px;
-
+  background-size: cover;
   font-weight: var(--weight-500);
 }
 
@@ -471,7 +477,8 @@ img {
   padding: 0;
 
   color: var(--follow);
-
+  background-color: var(--letter);
+  background-size: cover;
   background-image: url("../img/bg-post.svg");
   background-repeat: repeat;
   border-radius: var(--border-r-s);
@@ -479,30 +486,36 @@ img {
 
 .subscription-form {
   position: absolute;
-  top: 5px;
-  right: 6px;
+  display:flex;
+  flex-direction: column;
 
   box-sizing: border-box;
   width: 548px;
   min-height: 210px;
-  padding: 20px;
+  margin-top:5px;
+  margin-left:6px;
+  margin-right:6px;
+  margin-bottom:5px;
   padding-top: 24px;
-  padding-bottom: 10px;
-
+  padding-left: 20px;
+  padding-right: 16px;
+  background-size: cover;
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-s);
 }
 
 .subscription-form p {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 41px;
   padding: 0;
 }
 
+.subscription-form form {
+  width:368px;
+  margin-right:10px;
+}
+
 .subscription-form button {
-  position: absolute;
-  right: 20px;
-  bottom: 36px;
   width:130px;
   height:44px;
   box-sizing: border-box;
@@ -534,14 +547,9 @@ img {
 }
 
 .subscription-form [type="email"] {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-
   box-sizing: border-box;
   width: 368px;
   height: 44px;
-  margin-left: 20px;
   padding-right: 14px;
   padding-left: 14px;
 
@@ -784,8 +792,9 @@ img {
   min-height: 229px;
   margin: 0;
   padding: 16px;
-
+  background-color: var(--raspberry);
   background-image: url("../img/raspberry-background.png");
+  background-size: cover;
   background-repeat: repeat;
   border-radius: var(--border-r-s);
 }
@@ -798,9 +807,10 @@ img {
   min-height: 229px;
   margin: 0;
   padding: 16px;
-
+  background-color: var(--chocolate);
   background-image: url("../img/chocolate-background.png");
   background-repeat: repeat;
+  background-size: cover;
   border-radius: var(--border-r-s);
 }
 
@@ -1086,7 +1096,6 @@ span.good {
 
   height: 430px;
   margin: 0;
-  margin-top: 40px;
   padding: 0;
 
   font-size: var(--size-xs);
@@ -1232,8 +1241,8 @@ span.good {
   padding: 0 27px;
 
   column-gap: 26px;
-
-  grid-template-columns: repeat(4, 267px);
+ 
+  grid-template-columns: 1fr 1fr repeat(4, 267px) repeat(4, 267px) 1fr repeat(4, 267px) 1fr;
 }
 
 header {
@@ -1243,15 +1252,17 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  grid-column: 1/-1;
+  grid-column: 2/-2;
 }
 
 main {
   grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 267px) repeat(4, 267px) 1fr repeat(4, 267px) 1fr;
 }
 
 footer {
-  grid-column: 1/-1;
+  grid-column: 2/-2;
 }
 
 
@@ -1778,6 +1789,14 @@ li.page:not(.buttons) a:focus {
   line-height: var(--line-m);
 }
 
+.fat-content-ul label {
+  padding-left:5px;
+}
+
+.fillers-ul label {
+  padding-left:2px;
+}
+
 .sorting-fieldset select[name="sorting"]:hover,
 .sorting-fieldset select[name="sorting"]:focus {
   color: var(--basic-black);
@@ -1856,10 +1875,10 @@ background-image: url(../img/icon-down-dir-black.svg);
 .fat-content-fieldset .fat-content-ul {
   box-sizing: border-box;
   padding: 0;
-  padding-top: 4px;
+  padding-top: 6px;
   padding-right: 17px;
   padding-bottom: 7px;
-  padding-left: 46px;
+  padding-left: 45px;
 
   background-color: var(--background-light);
   border-radius: var(--border-r-m);
@@ -1913,7 +1932,7 @@ background-image: url(../img/icon-down-dir-black.svg);
   content: "";
   position: absolute;
   top: 0;
-  left: -30px;
+  left: -32px;
 
   width: 23px;
   height: 23px;
@@ -1933,7 +1952,7 @@ background-image: url(../img/icon-down-dir-black.svg);
   content: "";
   position: absolute;
   top: 0;
-  left: -30px;
+  left: -32px;
 
   width: 27px;
   height: 23px;
