@@ -661,14 +661,11 @@ img {
   width: 305px;
   min-height: 35px;
   margin: 0;
-  margin-top: 28px;
-  margin-bottom: 32px;
   margin-left: 24px;
   padding: 0;
 }
 
 .catalog-footer .links {
-  margin-top: 30px;
   margin-left: 26px;
 }
 
@@ -1646,26 +1643,18 @@ li.page:not(.buttons) a:focus {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 1146px;
   margin: 0 auto;
   padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 25px;
 }
 
 .catalog-footer {
-  position: relative;
-  padding-top: 30px;
-}
-
-.catalog-footer::before {
-  content:"";
-  width:1146px;
-  height:1px;
-  background-color: var(--background-light);
-  position: absolute;
-  top:0;
-  left:0;
+  border-top: 1px solid var(--background-light);
   margin-top:30px;
+  padding-top: 30px;
 }
 
 
@@ -1677,10 +1666,6 @@ li.page:not(.buttons) a:focus {
   margin: 0;
   margin-left: 0;
   padding: 0;
-}
-
-.catalog-footer .chat {
-  margin-left: 0;
 }
 
 .timetable-phone {
