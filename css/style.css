@@ -163,7 +163,8 @@ img {
 
 .site-navigation {
   position: relative;
-  margin-bottom:5px;
+
+  margin-bottom: 5px;
 }
 
 .logo {
@@ -254,39 +255,45 @@ img {
 }
 
 .ice-cream-1::before {
-  content:"";
-  top:-395px;
-  left: 0;
+  content: "";
   position: absolute;
+  top: -395px;
+  left: 0;
+  z-index: -1;
+
+  width: 1200px;
+  height: 966px;
+
   background-image: url(../img/backlight-1.png);
   background-size: cover;
-  width:1200px;
-  height:966px;
-  z-index:-1;
 }
 
 .ice-cream-2::before {
-  content:"";
-  top:-395px;
-  left: 0;
+  content: "";
   position: absolute;
+  top: -395px;
+  left: 0;
+  z-index: -1;
+
+  width: 1200px;
+  height: 966px;
+
   background-image: url(../img/backlight-2.png);
   background-size: cover;
-  width:1200px;
-  height:966px;
-  z-index:-1;
 }
 
 .ice-cream-3::before {
-  content:"";
-  top:-395px;
-  left: 0;
+  content: "";
   position: absolute;
+  top: -395px;
+  left: 0;
+  z-index: -1;
+
+  width: 1200px;
+  height: 966px;
+
   background-image: url(../img/backlight-3.png);
   background-size: cover;
-  width:1200px;
-  height:966px;
-  z-index:-1;
 }
 
 .promotion h2 {
@@ -486,9 +493,9 @@ img {
   min-height: 220px;
   margin: 0;
   padding-top: 15px;
+  padding-right: 19px;
   padding-bottom: 15px;
   padding-left: 20px;
-  padding-right: 19px;
 
   color: var(--basic-black);
 
@@ -515,10 +522,10 @@ img {
 
 
 .subscription {
+  display: flex;
   width: 560px;
   min-height: 219px;
   padding: 0;
-  display: flex;
 
   color: var(--follow);
 
@@ -563,9 +570,9 @@ img {
 .subscription-form button {
   flex-grow: 1;
   box-sizing: border-box;
-  margin-top: auto;
   width: 130px;
   height: 44px;
+  margin-top: auto;
   padding-top: 10px;
   padding-right: 9px;
   padding-bottom: 12px;
@@ -594,12 +601,12 @@ img {
 
 .subscription-form [type="email"] {
   box-sizing: border-box;
-  margin-top: auto;
   width: 368px;
   height: 44px;
+  margin-top: auto;
+  margin-right: 5px;
   padding-right: 14px;
   padding-left: 14px;
-  margin-right:5px;
 
   font-size: var(--size-s);
   line-height: var(--line-xl);
@@ -852,7 +859,7 @@ img {
   min-height: 229px;
   margin: 0;
   padding: 16px;
-  padding-bottom:22px;
+  padding-bottom: 22px;
 
   background-color: var(--raspberry);
   background-image: url("../img/raspberry-background.jpg");
@@ -869,7 +876,7 @@ img {
   min-height: 229px;
   margin: 0;
   padding: 16px;
-  padding-bottom:22px;
+  padding-bottom: 22px;
 
   background-color: var(--chocolate);
   background-image: url("../img/chocolate-background.jpg");
@@ -916,12 +923,12 @@ img {
 
 .raspberry  a {
   align-self: flex-end;
+  margin-top: auto;
   margin-right: 6px;
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 11px;
   padding-left: 22px;
-  margin-top: auto; 
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -950,12 +957,12 @@ img {
 
 .chocolate a {
   align-self: flex-end;
+  margin-top: auto;
   margin-right: 6px;
   padding-top: 12px;
   padding-right: 22px;
   padding-bottom: 11px;
   padding-left: 22px;
-  margin-top: auto; 
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
@@ -974,9 +981,9 @@ img {
 
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
-  align-items: flex-start;
 
   grid-column: 2/-2;
 }
@@ -991,6 +998,7 @@ img {
 
 .hit {
   position: relative;
+
   width: 267px;
 }
 
@@ -1062,6 +1070,7 @@ span.good {
   bottom: -60px;
   left: 33px;
   z-index: 3;
+
   display: none;
   box-sizing: border-box;
   width: 200px;
@@ -1161,9 +1170,11 @@ span.good {
   font-size: var(--size-xs);
   line-height: var(--line-20);
   color: var(--basic-black);
+
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+
   grid-column: 1/-1;
 }
 
@@ -1358,25 +1369,25 @@ span.good {
 .foc {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-
-  grid-column: 2/-2;
   min-height: 229px;
   margin: 0;
   margin-top: 40px;
+  padding: 0;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);
   line-height: var(--line-l);
 
   border-radius: var(--border-r-s);
+
+  grid-column: 2/-2;
 }
 
 .general-site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -1567,7 +1578,9 @@ li.choice-navigation:nth-of-type(5) a {
   justify-content: flex-end;
   margin: 0;
   margin-top: 75px;
+  margin-bottom: 30px;
   padding: 0;
+
   grid-column: 2/-2;
 }
 
@@ -1643,18 +1656,17 @@ li.page:not(.buttons) a:focus {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 1146px;
   margin: 0 auto;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  margin-top: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .catalog-footer {
+  padding-top: 23px;
+
   border-top: 1px solid var(--background-light);
-  margin-top:30px;
-  padding-top: 30px;
 }
 
 
@@ -1984,10 +1996,10 @@ li.page:not(.buttons) a:focus {
 
 .fillers .fillers-ul {
   display: flex;
-  min-width: 711px;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
+  min-width: 711px;
   margin: 0;
   padding: 0;
   padding-top: 6px;
@@ -2175,17 +2187,17 @@ li.page:not(.buttons) a:focus {
 }
 
 .filter fieldset {
+  margin-right: 13px;
   margin-bottom: 12px;
-  margin-right:13px;
 }
 
 .filter fieldset:last-of-type {
+  margin-right: 0;
   margin-bottom: 0;
-  margin-right:0;
 }
 
 .filter fieldset:nth-of-type(3) {
-  margin-right:0;
+  margin-right: 0;
 }
 
 .apply-filter:hover,
@@ -2502,9 +2514,10 @@ li.page:not(.buttons) a:focus {
   width: 477px;
   min-height: 441px;
   padding-top: 20px;
-  padding-left: 23px;
   padding-right: 25px;
   padding-bottom: 27px;
+  padding-left: 23px;
+
   background-color: var(--pop-up-background);
   border-radius: var(--border-r-4);
 
@@ -2655,12 +2668,12 @@ li.page:not(.buttons) a:focus {
   box-sizing: border-box;
   width: 140px;
   margin: 0;
+  margin-top: 25px;
+  margin-left: 288px;
   padding-top: 14px;
   padding-right: 24px;
   padding-bottom: 13px;
   padding-left: 24px;
-  margin-left:288px;
-  margin-top:25px;
 
   font-weight: var(--weight-bold);
   font-size: var(--size-m);

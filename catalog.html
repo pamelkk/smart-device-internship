@@ -9,7 +9,7 @@
     />
 
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/min.css" rel="stylesheet" />
   </head>
 
   <body class="page-body page-body-catalog">
@@ -234,7 +234,9 @@
     <main class="main-page">
       <ul class="bread-crumbs">
         <li class="bread-crumbs-name"><a href="index.html">Главная</a></li>
-        <li class="bread-crumbs-name bread-crumbs-name-catalog"><a>Каталог</a></li>
+        <li class="bread-crumbs-name bread-crumbs-name-catalog">
+          <a>Каталог</a>
+        </li>
         <li class="bread-crumbs-name no-underline">Сливочное</li>
       </ul>
       <h2 class="section-title">Сливочное мороженое</h2>
@@ -256,8 +258,16 @@
             <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
-                <div class="toggle toggle-min" title="ползунок минимальной цены" tabindex="0"></div>
-                <div class="toggle toggle-max" title="ползунок максимальной цены" tabindex="0"></div>
+                <div
+                  class="toggle toggle-min"
+                  title="ползунок минимальной цены"
+                  tabindex="0"
+                ></div>
+                <div
+                  class="toggle toggle-max"
+                  title="ползунок максимальной цены"
+                  tabindex="0"
+                ></div>
               </div>
             </div>
           </fieldset>
@@ -308,7 +318,7 @@
                 />
 
                 <label for="fat-content-over-30">выше 30%</label>
-              </li>      
+              </li>
             </ul>
           </fieldset>
           <fieldset class="fillers">
