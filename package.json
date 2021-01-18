@@ -1,7 +1,7 @@
 {
-  "name": "way",
+  "name": "Moon",
   "private": true,
-  "description": "Личный проект «Way» от HTML Academy",
+  "description": "Личный проект «Moon» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^9.8.4",
@@ -20,8 +20,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp start"
+    "build": "npm run build",
+    "start": "npm start"
   },
   "browserslist": [
     "last 2 versions",

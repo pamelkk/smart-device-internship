@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "OpenSans";
   font-weight: 400;
   font-display: swap;
   src:
-    url("../fonts/Montserrat-Regular.woff") format("woff");
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "OpenSans";
   font-weight: 600;
   font-display: swap;
   src:
-    url("../fonts/MontserratSemiBold.woff") format("woff");
+    url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
 }
 
-$font-main: "Montserrat", "Arial Black", sans-serif;
+$font-main: "OpenSans", "Arial Black", sans-serif;
