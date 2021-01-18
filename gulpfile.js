@@ -10,6 +10,7 @@ const plumber = require("gulp-plumber");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const svgstore = require("gulp-svgstore");
+const sourcemap = require("gulp-sourcemaps");
 const webp = require("gulp-webp");
 
 // Styles
@@ -22,7 +23,7 @@ gulp.task("styles", () => {
           autoprefixer()
         ]))
         .pipe(csso())
-        .pipe(rename("styles.min.css"))
+        .pipe(rename("min.css"))
         .pipe(sourcemap.write("."))
         .pipe(gulp.dest("build/css/"))
         .pipe(sync.stream());
