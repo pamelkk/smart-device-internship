@@ -117,6 +117,10 @@
   .page-header__top-logo {
     margin-left: 21px;
   }
+
+  .page-header__nav-wrapper {
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {

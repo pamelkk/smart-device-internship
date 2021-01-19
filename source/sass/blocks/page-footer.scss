@@ -24,6 +24,7 @@
 
   &:nth-of-type(n+2) {
     margin-top: 23px;
+    margin-left: 22px;
   }
 
   &::before {
@@ -56,8 +57,6 @@
 }
 
 .page-footer__contacts-phone {
-  margin-left: 22px;
-
   &::before {
     width: 21px;
     height: 23px;
@@ -76,9 +75,28 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 768px;
+    margin-top: 2px;
+  }
+
+  .page-footer__contacts {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 155px;
+    justify-content: center;
+  }
+
+  .page-footer__contacts-link {
+    &:nth-of-type(n+2) {
+      margin-top: 0;
+      margin-left: 127px;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 21px;
+    }
+  }
+
+  .page-footer__contacts-mail {
+    margin-left: 30px;
   }
 }
 
@@ -86,6 +104,5 @@
   .page-footer {
     width: auto;
     flex-direction: row;
-    margin-top: 240px;
   }
 }
