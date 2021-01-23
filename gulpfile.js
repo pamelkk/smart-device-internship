@@ -4,7 +4,6 @@ const del = require("del");
 const sync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
-const htmlmin = require("gulp-htmlmin");
 const postcss = require("gulp-postcss");
 const plumber = require("gulp-plumber");
 const autoprefixer = require("autoprefixer");
@@ -34,15 +33,6 @@ gulp.task("clean", () => {
         "css/main.css",
     ]);
 });
-
-// Html
-gulp.task("html", () => {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build/."))
-    .pipe(sync.stream());
-});
-
 
 gulp.task("clean", () => {
   return del("build");
@@ -112,5 +102,5 @@ gulp.task("copy", () => {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series(["clean", "copy", "styles", "html", "sprite", "images", "makewebp"]));
-gulp.task("start", gulp.series(["clean", "copy", "styles", "html", "sprite", "images", "makewebp", "server", "watcher"]));
+gulp.task("build", gulp.series(["clean", "copy", "styles", "sprite", "images", "makewebp"]));
+gulp.task("start", gulp.series(["clean", "copy", "styles", "sprite", "images", "makewebp", "server", "watcher"]));

@@ -13,7 +13,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__top-wrapper">
-      <svg class="page-header__top-logo">
+      <svg class="page-header__top-logo" width="68" height="21">
         <use xlink:href="img/sprite.svg#icon-logo"></use>
       </svg>
       <button class="page-header__menu page-header__opened-menu" title="Открыть/Закрыть меню"></button>
@@ -32,33 +32,35 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="page-main__top">
-      <svg class="page-main__top-logo">
-        <use xlink:href="img/sprite.svg#icon-logo"></use>
-      </svg>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/bckg-bike-desktop.webp">
-        <source media="(min-width: 768px)" srcset="img/bckg-bike-tablet.webp">
-        <img class="page-main__top-img" src="img/bckg-bike-mobile.webp" width="319" height="390"
-          alt="Горный велосипед" /></picture>
-      <h1 class="page-main__top-header">Мы продаем велосипеды</h1>
-      <p class="page-main__top-tagline">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-    </section>
-    <section class="page-main__request">
-      <h2 class="page-main__request-header visually-hidden">Форма заявки</h2>
-      <form class="page-main__request-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-        <fieldset>
-          <legend class="page-main__request-top">Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-          <label class="page-main__request-mail-label visually-hidden" for="name">Ваше имя</label>
-          <input class="page-main__request-input page-main__request-mail-input" type="text" id="name" name="name"
-            placeholder="Введите Ваше Имя">
-          <label class="page-main__request-tel-label visually-hidden" for="tel">Телефон</label>
-          <input class="page-main__request-input page-main__request-tel-input" type="tel" id="tel" name="tel"
-            placeholder="Введите Ваш номер телефона">
-        </fieldset>
-      </form>
-      <button class="page-main__request-button" type="submit">Подобрать велосипед мечты</button>
-    </section>
+    <div class="page-main__top-wrapper">
+      <section class="page-main__top">
+        <svg class="page-main__top-logo" width="68" height="21">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bckg-bike-desktop.webp">
+          <source media="(min-width: 768px)" srcset="img/bckg-bike-tablet.webp">
+          <img class="page-main__top-img" src="img/bckg-bike-mobile.webp" width="319" height="390"
+            alt="Горный велосипед" /></picture>
+        <h1 class="page-main__top-header">Мы продаем велосипеды</h1>
+        <p class="page-main__top-tagline">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </section>
+      <section class="page-main__request">
+        <h2 class="page-main__request-header visually-hidden">Форма заявки</h2>
+        <form class="page-main__request-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+          <fieldset>
+            <legend class="page-main__request-top">Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+            <label class="page-main__request-mail-label visually-hidden" for="name">Ваше имя</label>
+            <input class="page-main__request-input page-main__request-mail-input" type="text" id="name" name="name"
+              placeholder="Введите Ваше Имя" required>
+            <label class="page-main__request-tel-label visually-hidden" for="tel">Телефон</label>
+            <input class="page-main__request-input page-main__request-tel-input" type="tel" id="tel" name="tel"
+              placeholder="Введите Ваш номер телефона" required>
+          </fieldset>
+        </form>
+        <button class="page-main__request-button" type="submit">Подобрать велосипед мечты</button>
+      </section>
+    </div>
     <section class="page-main__facts" id="about-us">
       <h2 class="page-main__facts-header">Несколько фактов о нас</h2>
       <ul class="page-main__facts-list">
@@ -85,7 +87,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/mountain-bike-desktop.webp">
             <source media="(min-width: 768px)" srcset="img/mountain-bike-tablet.webp">
-            <img class="page-main__types-img" src="img/mountain-bike-mobile.webp" width="270" height="300"
+            <img class="page-main__types-img page-main__types-img-mountain" src="img/mountain-bike-mobile.webp" width="270" height="300"
               alt="Горный велосипед" /></picture>
           <a class="page-main__types-link" href="#">
             <h4 class="page-main__types-name">Горный велосипед</h4>

@@ -1,6 +1,7 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .page-main__top-logo {
@@ -155,6 +156,10 @@
   flex-direction: column;
 }
 
+.page-main__top-wrapper {
+  align-items: center;
+}
+
 .page-main__facts-header {
   margin: 0;
   font-weight: 600;
@@ -164,6 +169,7 @@
   width: 300px;
   text-align: center;
   align-self: center;
+  letter-spacing: -0.005em;
 }
 
 .page-main__facts-item {
@@ -233,6 +239,7 @@
   margin: 0;
   margin-top: 50px;
   margin-bottom: 30px;
+  letter-spacing: -0.005em;
 }
 
 .page-main__types-list {
@@ -319,7 +326,7 @@
     width: 320px;
     height: 384px;
     top: -80px;
-    right: 0;
+    left: -10px;
     background-color: $questions;
     z-index: -1;
   }
@@ -347,10 +354,6 @@
   letter-spacing: -0.005em;
   color: $main-title-inputs;
   width: 300px;
-}
-
-.page-main__video picture {
-  position: relative;
 }
 
 .page-main__video-button {
@@ -408,7 +411,7 @@
 .page-main__map-img {
   position: absolute;
   top: 162px;
-  right: 28%;
+  left: 0;
   width: 320px;
   height: 250px;
   z-index: -1;
@@ -541,6 +544,7 @@
     margin-top: 93px;
 
     &::before {
+      left: -133px;
       top: -70px;
       width: 768px;
       height: 413px;
@@ -561,7 +565,7 @@
     width: 90px;
     height: 90px;
     top: 242px;
-    right: 340px;
+    left: 205px;
     background-size: 90px 90px;
   }
 
@@ -582,7 +586,7 @@
     width: 698px;
     height: 545px;
     top: 100px;
-    right: 35px;
+    left: 0;
   }
 
   .page-main__map {
@@ -613,13 +617,293 @@
     display: block;
     width: 68px;
     height: 21px;
+    position: absolute;
+    top: -8px;
+    left: 214px;
   }
 
   .page-main__top-img {
     background-color: $bck-desktop;
     width: 1440px;
-    top: -85px;
-    right: -300px;
+    top: -325px;
+    left: -68px;
     height: 825px;
+  }
+
+  .page-main__top-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 390px;
+    margin-top: 240px;
+    margin-right: 210px;
+  }
+
+  .page-main__top {
+    margin: 0;
+    position: relative;
+  }
+
+  .page-main__top-header {
+    font-size: 46px;
+    line-height: 64px;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 44px;
+    width: 393px;
+    text-align: left;
+  }
+
+  .page-main__top-tagline {
+    text-align: left;
+    width: 381px;
+    margin-left: 39px;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .page-main__request {
+    margin: 0;
+  }
+
+  .page-main__request-top {
+    font-size: 17px;
+    color: $main-title-inputs;
+    width: 327px;
+    margin-bottom: 20px;
+  }
+
+  .page-main__request-input {
+    width: 327px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 76px;
+  }
+
+  .page-main__facts {
+    margin-bottom: 154px;
+  }
+
+  .page-main__facts-header {
+    font-size: 30px;
+    line-height: 30px;
+    width: auto;
+    max-width: 873px;
+  }
+
+  .page-main__facts-list {
+    margin-top: 102px;
+    max-width: 1200px;
+  }
+
+  .page-main__facts-item {
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+1) {
+      margin-right: 38px;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(n+5) {
+      margin-top: 94px;
+    }
+
+    &:nth-of-type(1)::before {
+      top: -50px;
+      right: 105px;
+    }
+
+    &:nth-of-type(2)::before {
+      right: 106px;
+      top: -50px;
+    }
+
+    &:nth-of-type(3)::before {
+      top: -50px;
+    }
+
+    &:nth-of-type(4)::before {
+      right: 110px;
+      top: -52px;
+    }
+  }
+
+  .page-main__types {
+    width: auto;
+    min-width: 1440px;
+  }
+
+  .page-main__types-header {
+    font-size: 30px;
+    line-height: 30px;
+    width: auto;
+    max-width: 873px;
+    margin-top: 149px;
+    margin-bottom: 61px;
+  }
+
+  .page-main__types-item {
+    &:nth-of-type(2n) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    &:nth-of-type(n+1) {
+      margin-right: 50px;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-bottom: 90px;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(1) {
+      &::before {
+        width: 180px;
+        height: 180px;
+        background-size: 180px 180px;
+        top: 156px;
+        left: -60px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        top: -19px;
+        left: -18px;
+        background-image: url("../../img/icon-square.svg");
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        bottom: 82px;
+        right: -24px;
+        background-image: url("../../img/icon-square.svg");
+        z-index: 1;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        width: 95px;
+        height: 95px;
+        background-size: 95px 95px;
+        top: -41px;
+        right: -38px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .page-main__types-img {
+    width: 342px;
+    height: 503px;
+  }
+
+  .page-main__types-img-mountain {
+    height: 566px;
+  }
+
+  .page-main__types-name {
+    margin-top: 17px;
+  }
+
+  .page-main__types-list {
+    margin-bottom: 95px;
+  }
+
+  .page-main__video {
+    margin-top: 122px;
+    margin-bottom: 147px;
+
+    &::before {
+      left: -255px;
+      top: -120px;
+      width: 1440px;
+      height: 706px;
+    }
+  }
+
+  .page-main__video-header {
+    font-size: 30px;
+    margin-left: 6px;
+  }
+
+  .page-main__video-description {
+    width: 340px;
+    margin-bottom: 56px;
+    margin-left: 10px;
+  }
+
+  .page-main__video-img {
+    width: 929px;
+    height: 522px;
+  }
+
+  .page-main__video-button {
+    width: 65px;
+    height: 65px;
+    top: 390px;
+    left: 432px;
+    background-size: 65px 65px;
+  }
+
+  .page-main__map {
+    margin-bottom: 39px;
+  }
+
+  .page-main__map-header {
+    font-size: 30px;
+    width: auto;
+    max-width: 873px;
+    margin-right: 6px;
+  }
+
+  .page-main__map-description {
+    margin-top: 30px;
+    margin-bottom: 41px;
+    width: 555px;
+    max-width: 873px;
+    margin-right: 12px;
+  }
+
+  .page-main__map iframe {
+    width: 957px;
+    height: 530px;
+  }
+
+  .page-main__map-img {
+    width: 957px;
+    height: 530px;
+    top: 161px;
+    right: 241px;
+  }
+
+  .page-main__request-button {
+    width: 326px;
+    height: 51px;
   }
 }
