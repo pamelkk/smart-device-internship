@@ -34,6 +34,14 @@ gulp.task("clean", () => {
     ]);
 });
 
+// Html
+gulp.task("html", () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build/."))
+    .pipe(sync.stream());
+});
+
+
 gulp.task("clean", () => {
   return del("build");
 });
@@ -102,5 +110,5 @@ gulp.task("copy", () => {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series(["clean", "copy", "styles", "sprite", "images", "makewebp"]));
-gulp.task("start", gulp.series(["clean", "copy", "styles", "sprite", "images", "makewebp", "server", "watcher"]));
+gulp.task("build", gulp.series(["clean", "copy", "styles", "html", "sprite", "images", "makewebp"]));
+gulp.task("start", gulp.series(["clean", "copy", "styles", "html", "sprite", "images", "makewebp", "server", "watcher"]));
