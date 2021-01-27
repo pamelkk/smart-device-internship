@@ -1,86 +1,19 @@
 .page-header {
+  width: auto;
+  min-width: 1024px;
+  min-height: 51px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 320px;
   flex-wrap: wrap;
   align-self: center;
   box-sizing: border-box;
-  min-height: 50px;
-}
-
-.page-header__nav-link {
-  text-decoration: none;
-  color: $menu-text;
-}
-
-.page-header__nav-item {
-  background-color: $menu-item;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 35px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-  letter-spacing: -0.005em;
-
-
-  &:nth-of-type(n+2) {
-    margin-top: 30px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 24px;
-    right: 5px;
-    background-image: url("../../img/icon-arrow.svg");
-    background-repeat: no-repeat;
-  }
-
-  &:hover {
-    background-color: $basic-choose-wish;
-  }
-}
-
-.page-header__nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  &:first-child {
-    padding-top: 100px;
-  }
-}
-
-.page-header__nav-wrapper {
-  width: 320px;
-  min-height: 568px;
-  background-color: $main-title-inputs;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 270px;
-    height: 52px;
-    top: -52px;
-    right: 49px;
-    background-color: $main-title-inputs;
-  }
 }
 
 .page-header__top-logo {
+  display: none;
   width: 68px;
   height: 21px;
-  margin-left: 16px;
-  margin-top: 20px;
 }
 
 .page-header__menu {
@@ -91,6 +24,7 @@
   background-repeat: no-repeat;
   background-size: 50px 50px;
   cursor: pointer;
+  display: none;
 }
 
 .page-header__menu--opened {
@@ -105,117 +39,199 @@
   background-color: transparent;
 }
 
+.page-header__nav {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 873.5px;
+    height: 1px;
+    top: 37px;
+    left: -15px;
+    background-color: $main-title-inputs;
+    opacity: 20%;
+    z-index: 100;
+  }
+}
+
+.page-header__nav-wrapper {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  margin-left: 92px;
+  background-color: transparent;
+  min-height: auto;
+  margin-top: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 52px;
+    top: -52px;
+    right: 49px;
+    background-color: $main-title-inputs;
+    display: none;
+  }
+}
+
+.page-header__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.page-header__nav-item {
+  width: auto;
+  max-width: auto;
+  background-color: transparent;
+  padding: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  height: 62px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: -0.005em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 24px;
+    right: 5px;
+    background-image: url("../../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  &:nth-of-type(n+2) {
+    margin-top: 0;
+    margin-left: 134px;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.page-header__nav-link {
+  text-decoration: none;
+  color: $main-title-inputs;
+
+  &:hover {
+    color: $basic-choose-wish;
+  }
+
+  &:active {
+    color: $borders;
+  }
+}
+
 .page-header__top-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .page-header {
+    min-width: auto;
+    min-height: auto;
     width: 768px;
   }
 
   .page-header__top-logo {
+    width: 68px;
+    height: 21px;
+    margin-top: 20px;
+    display: block;
     margin-left: 21px;
   }
 
+  .page-header__nav-wrapper--inactive {
+    display: none;
+  }
+
   .page-header__nav-wrapper {
+    margin: 0;
+    min-height: 568px;
+    background-color: $main-title-inputs;
     width: 768px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    width: auto;
-    min-width: 1024px;
-    min-height: 51px;
-  }
-
-  .page-header__top-logo {
-    display: none;
-  }
-
-  .page-header__menu {
-    display: none;
-  }
-
-  .page-header__nav {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 873.5px;
-      height: 1px;
-      top: 37px;
-      left: -15px;
-      background-color: $main-title-inputs;
-      opacity: 20%;
-      z-index: 100;
+    &::before {
+      display: block;
     }
   }
 
-  .page-header__nav-wrapper {
+  .page-header__menu {
     display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-    margin-left: 92px;
-    background-color: transparent;
-    min-height: auto;
-    margin-top: 20px;
+  }
 
-    &::before {
-      display: none;
+  .page-header__nav-link {
+    color: $menu-text;
+  }
+
+  .page-header__nav-item {
+    background-color: $menu-item;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    padding-right: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    &::after {
+      display: block;
+    }
+
+    &:hover {
+      background-color: $basic-choose-wish;
+    }
+
+    &:nth-of-type(n+2) {
+      margin-top: 30px;
+      margin-left: 0;
     }
   }
 
   .page-header__nav ul {
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
     &:first-child {
-      padding-top: 0;
+      padding-top: 100px;
     }
   }
+}
 
-  .page-header__nav-item {
-    width: auto;
-    max-width: auto;
-    background-color: transparent;
-    padding: 0;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    height: 62px;
-    box-sizing: border-box;
-
-    &::after {
-      display: none;
-    }
-
-    &:nth-of-type(n+2) {
-      margin-top: 0;
-      margin-left: 134px;
-    }
-
-    &:hover {
-      background-color: transparent;
-    }
+@media (max-width: $mobile-width) {
+  .page-header {
+    width: 320px;
+    min-height: 50px;
   }
 
-  .page-header__nav-link {
-    color: $main-title-inputs;
+  .page-header__nav-wrapper {
+    width: 320px;
+  }
 
-    &:hover {
-      color: $basic-choose-wish;
-    }
-
-    &:active {
-      color: $borders;
-    }
+  .page-header__top-logo {
+    width: 68px;
+    height: 21px;
+    margin-left: 16px;
+    margin-top: 20px;
   }
 }
