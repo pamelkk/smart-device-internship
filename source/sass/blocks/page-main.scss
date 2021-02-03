@@ -1,41 +1,8 @@
 .page-main {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    align-self: center;
-    z-index: -1;
-    background-color: $bck-desktop;
-    width: 1440px;
-    top: -87px;
-    background-position: center;
-    height: 825px;
-    background-image: url("../../img/bckg-bike-desktop.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bckg-bike-desktop-2x.jpg");
-      background-size: 1440px 825px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    align-self: center;
-    z-index: -2;
-    background-color: $bck-desktop;
-    opacity: 98%;
-    width: 100vw;
-    top: -87px;
-    left: calc(-50vw + 50%);
-    height: 825px;
-  }
+  align-self: center;
 }
 
 .page-main__request-inputs input::placeholder {
@@ -47,7 +14,7 @@
   width: 68px;
   height: 21px;
   position: absolute;
-  top: 232px;
+  top: 305px;
   background-position: center;
 }
 
@@ -76,10 +43,11 @@
 }
 
 .page-main__top-wrapper {
+  align-self: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 390px;
-  margin-top: 237px;
+  margin-bottom: 392px;
+  margin-top: 239px;
 }
 
 .page-main__request h2 {
@@ -87,7 +55,6 @@
 }
 
 .page-main__top {
-  width: auto;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -98,7 +65,7 @@
   font-size: 46px;
   line-height: 64px;
   margin: 0;
-  margin-right: 161px;
+  margin-right: 162px;
   margin-top: 46px;
   width: 393px;
   text-align: left;
@@ -112,7 +79,7 @@
   margin: 0;
   text-align: left;
   width: 381px;
-  margin-right: 175px;
+  margin-right: 162px;
   font-size: 20px;
   margin-top: 27px;
   align-self: center;
@@ -151,7 +118,7 @@
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 76px;
-
+  align-self: center;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -179,14 +146,14 @@
 }
 
 .page-main__facts {
-  margin-bottom: 150px;
+  margin-bottom: 148px;
   text-align: center;
   align-self: center;
   display: flex;
   flex-direction: column;
 }
 
-.page-main__facts h3 {
+.page-main__facts h2 {
   font-size: 30px;
   line-height: 30px;
   width: auto;
@@ -207,7 +174,7 @@
   display: flex;
   margin-top: 50px;
   max-width: 1200px;
-  width: 1166px;
+  align-self: center;
 }
 
 .page-main__facts-item {
@@ -215,6 +182,7 @@
   text-align: center;
   align-self: center;
   width: 263px;
+  min-height: 120px;
 
 
   &:nth-of-type(2n) {
@@ -233,24 +201,20 @@
     margin-top: 0;
   }
 
-  &:nth-of-type(n+5) {
-    margin-top: 94px;
-  }
-
   &:nth-of-type(n+1) p {
     margin-top: 18px;
   }
 
   &:nth-of-type(n+2) p {
-    margin-top: 10px;
+    margin-top: 13px;
   }
 
   &:nth-of-type(n+2) {
     margin-top: 0;
   }
 
-  &:nth-of-type(n+3) p {
-    margin-top: 15px;
+  &:nth-of-type(n+5) {
+    margin-top: 60px;
   }
 }
 
@@ -266,10 +230,8 @@
 
 .page-main__types {
   padding-bottom: 0;
-  width: auto;
-  min-width: 1440px;
   background-color: $bckg-types;
-  align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -288,7 +250,7 @@
   }
 }
 
-.page-main__types h4 {
+.page-main__types h2 {
   margin: 0;
   font-size: 30px;
   line-height: 30px;
@@ -299,6 +261,7 @@
   font-weight: 600;
   color: $basic-titles;
   letter-spacing: -0.005em;
+  align-self: center;
 }
 
 .page-main__types-item {
@@ -330,7 +293,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-small-round-mobile.svg");
+    background-image: url("../img/icon-small-round-mobile.svg");
     width: 95px;
     height: 95px;
     background-size: 95px 95px;
@@ -350,7 +313,7 @@
     height: 47px;
     top: -19px;
     left: -21px;
-    background-image: url("../../img/icon-square.svg");
+    background-image: url("../img/icon-square.svg");
     z-index: 1;
   }
 
@@ -361,7 +324,7 @@
     height: 47px;
     bottom: 70px;
     right: -22px;
-    background-image: url("../../img/icon-square.svg");
+    background-image: url("../img/icon-square.svg");
     z-index: 1;
   }
 }
@@ -379,7 +342,7 @@
     background-repeat: no-repeat;
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-big-round-mobile.svg");
+    background-image: url("../img/icon-big-round-mobile.svg");
     z-index: -1;
   }
 }
@@ -397,7 +360,7 @@
   height: 566px;
 }
 
-.page-main__types-link h5 {
+.page-main__types-link h3 {
   margin: 0;
   margin-top: 19px;
   text-align: center;
@@ -427,13 +390,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: center;
 }
 
 .page-main__video {
   margin-top: 119px;
   margin-bottom: 151px;
   text-align: center;
-  align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -450,7 +414,7 @@
   }
 }
 
-.page-main__video h6 {
+.page-main__video h2 {
   margin: 0;
   font-size: 30px;
   margin-left: 6px;
@@ -465,7 +429,7 @@
 
 .page-main__video p {
   width: 340px;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
   margin-left: 10px;
   margin-top: 20px;
   font-weight: 300;
@@ -480,36 +444,37 @@
 .page-main__video-img {
   width: 929px;
   height: 522px;
+  align-self: center;
 }
 
 .page-main__video-button {
   width: 65px;
   height: 65px;
-  top: 389px;
-  left: 431px;
+  top: 391px;
+  left: 432px;
   background-size: 65px 65px;
   position: absolute;
-  background-image: url("../../img/icon-triangle.svg");
+  background-image: url("../img/icon-triangle.svg");
   cursor: pointer;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
 
   &:hover {
-    background-image: url("../../img/icon-triangle-white.svg");
+    background-image: url("../img/icon-triangle-white.svg");
   }
 }
 
 .page-main__map {
   margin-bottom: 39px;
   text-align: center;
-  align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.page-main__map h6 {
+.page-main__map h2 {
   margin: 0;
   font-size: 30px;
   width: auto;
@@ -520,24 +485,25 @@
   text-align: center;
   letter-spacing: -0.005em;
   color: $basic-titles;
-  align-items: center;
+  align-self: center;
 }
 
 .page-main__map p {
-  margin-top: 31px;
+  margin-top: 29px;
   margin-bottom: 41px;
   width: 555px;
   max-width: 873px;
-  margin-right: 17px;
+  margin-right: 15px;
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
   color: $features;
   opacity: 70%;
+  align-self: center;
 }
 
 .page-main__map iframe {
-  width: 100vw;
+  width: 957px;
   height: 530px;
   align-items: center;
 }
@@ -557,7 +523,7 @@
   text-align: center;
   align-self: center;
   background-color: $basic-choose-wish;
-  padding-top: 4px;
+  padding-top: 7px;
   padding-bottom: 5px;
   padding-left: 25px;
   padding-right: 28px;
@@ -583,32 +549,8 @@
   }
 
   .page-main__top {
-    width: 767px;
     margin-bottom: 149px;
   }
-
-  .page-main {
-    &::before {
-      background-color: $bck-mobile;
-      width: 768px;
-      top: -50px;
-      height: 340px;
-      background-image: url("../../img/bckg-bike-tablet.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/bckg-bike-tablet-2x.jpg");
-        background-size: 767px 340px;
-      }
-    }
-
-    &::after {
-      background-color: $bck-mobile;
-      opacity: 98%;
-      top: -50px;
-      height: 340px;
-    }
-  }
-
 
   .page-main__top p {
     width: 435px;
@@ -647,7 +589,7 @@
     }
   }
 
-  .page-main__types h4 {
+  .page-main__types h2 {
     margin: 0;
     font-size: 24px;
     line-height: 41px;
@@ -676,8 +618,9 @@
 
   .page-main__request-button {
     padding-bottom: 4px;
-    padding-top: 4px;
+    padding-top: 5px;
     width: 321px;
+    padding-left: 29px;
   }
 
   .page-main__facts {
@@ -696,6 +639,11 @@
 
   .page-main__facts-item {
     width: 265px;
+    min-height: auto;
+
+    &:nth-of-type(n+5) {
+      margin-top: 0;
+    }
 
     &:nth-of-type(n+2) {
       margin-top: 0;
@@ -760,9 +708,7 @@
 
   .page-main__types {
     margin-bottom: 0;
-    width: 768px;
     padding-bottom: 0;
-    min-width: auto;
     min-height: auto;
 
     &::before {
@@ -799,7 +745,7 @@
     background-size: 90px 90px;
   }
 
-  .page-main__map h6 {
+  .page-main__map h2 {
     font-size: 24px;
     margin-right: 0;
   }
@@ -814,6 +760,7 @@
 
   .page-main__map iframe {
     height: 545px;
+    width: 698px;
   }
 
   .page-main__map-img {
@@ -837,12 +784,12 @@
     margin-right: 14px;
   }
 
-  .page-main__types-link h5 {
+  .page-main__types-link h3 {
     margin-top: 17px;
     margin-bottom: 58px;
   }
 
-  .page-main__video h6 {
+  .page-main__video h2 {
     margin-left: 14px;
     font-size: 24px;
   }
@@ -866,7 +813,7 @@
     margin: 0;
   }
 
-  .page-main__facts h3 {
+  .page-main__facts h2 {
     font-size: 24px;
     line-height: 41px;
     width: 300px;
@@ -882,16 +829,12 @@
     height: 300px;
   }
 
-  .page-main__top-wrapper {
-    width: 320px;
-  }
-
   .page-main__video-img {
     width: 288px;
     height: 162px;
   }
 
-  .page-main__facts h3 {
+  .page-main__facts h2 {
     width: 290px;
   }
 
@@ -899,7 +842,7 @@
     margin-bottom: 8px;
   }
 
-  .page-main__types h4 {
+  .page-main__types h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 41px;
@@ -913,24 +856,6 @@
   .page-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    &::before {
-      width: 319px;
-      top: -50px;
-      height: 390px;
-      background-image: url("../../img/bckg-bike-mobile.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/bckg-bike-mobile-2x.jpg");
-        background-size: 319px 390px;
-      }
-    }
-
-    &::after {
-      top: -50px;
-      height: 390px;
-    }
   }
 
   .page-main__top-img img {
@@ -960,7 +885,6 @@
   }
 
   .page-main__top {
-    width: auto;
     margin-bottom: 140px;
   }
 
@@ -994,7 +918,6 @@
   .page-main__facts {
     margin-bottom: 82px;
     flex-direction: column;
-    width: 320px;
   }
 
   .page-main__facts ul {
@@ -1002,7 +925,6 @@
     padding: 0;
     margin-top: 28px;
     flex-direction: column;
-    width: 320px;
   }
 
   .page-main__facts-item {
@@ -1039,7 +961,6 @@
 
   .page-main__types {
     background-color: $bckg-types;
-    width: 320px;
 
     &::before {
       min-height: 1319px;
@@ -1086,14 +1007,14 @@
     }
   }
 
-  .page-main__types-link h5 {
+  .page-main__types-link h3 {
     margin-top: 17px;
     margin-bottom: 41px;
   }
 
   .page-main__video {
     margin-top: 97px;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
 
     &::before {
       height: 384px;
@@ -1101,7 +1022,7 @@
     }
   }
 
-  .page-main__video h6 {
+  .page-main__video h2 {
     margin: 0;
     margin-right: 13px;
   }
@@ -1132,6 +1053,7 @@
 
   .page-main__map iframe {
     height: 250px;
+    width: 320px;
   }
 
   .page-main__map p {
@@ -1148,7 +1070,7 @@
     height: 250px;
   }
 
-  .page-main__map h6 {
+  .page-main__map h2 {
     font-size: 18px;
     margin-right: 5px;
   }

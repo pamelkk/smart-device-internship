@@ -13,7 +13,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="#" title="Логотип нашей компании">
+      <a title="Логотип нашей компании">
         <svg class="page-header__logo-svg" width="68" height="21">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg></a>
@@ -36,7 +36,7 @@
   <main class="page-main">
     <div class="page-main__top-wrapper">
       <section class="page-main__top">
-        <a href="#" title="Логотип нашей компании">
+        <a title="Логотип нашей компании">
           <svg width="68" height="21">
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg></a>
@@ -50,7 +50,7 @@
             <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
             <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required>
             <label class="visually-hidden" for="name">Ваше имя</label>
-            <input type="tel" id="tel" name="tel" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+            <input type="tel" id="tel" name="tel" pattern="(\+7[0-9]{10}|8[0-9]{10})"
               placeholder="Введите Ваш номер телефона" required>
             <label class="visually-hidden" for="tel">Телефон</label>
           </fieldset>
@@ -59,7 +59,7 @@
       </section>
     </div>
     <section class="page-main__facts" id="about-us">
-      <h3>Несколько фактов о нас</h3>
+      <h2>Несколько фактов о нас</h2>
       <ul>
         <li class="page-main__facts-item"><span>01</span>
           <p>Самый широкий выбор велосипедов!</p>
@@ -76,7 +76,7 @@
       </ul>
     </section>
     <section class="page-main__types">
-      <h4 id="about-bikes">Виды велосипедов</h4>
+      <h2 id="about-bikes">Виды велосипедов</h2>
       <ul>
         <li class="page-main__types-item page-main__types-item--road">
           <picture>
@@ -88,7 +88,7 @@
             <img src="img/road-bike-desktop.jpg" srcset="img/road-bike-desktop-2x.jpg 2x" width="342" height="503"
               alt="Дорожный велосипед" /></picture>
           <a class="page-main__types-link" href="#">
-            <h5>Дорожный велосипед</h5>
+            <h3>Дорожный велосипед</h3>
           </a>
         </li>
         <li class="page-main__types-item page-main__types-item--mountain">
@@ -103,7 +103,7 @@
             <img src="img/mountain-bike-desktop.jpg" srcset="img/mountain-bike-desktop-2x.jpg 2x" width="342"
               height="566" alt="Горный велосипед" /></picture>
           <a class="page-main__types-link" href="#">
-            <h5>Горный велосипед</h5>
+            <h3>Горный велосипед</h3>
           </a>
         </li>
         <li class="page-main__types-item page-main__types-item--kids">
@@ -116,13 +116,13 @@
             <img src="img/kids-bike-desktop.jpg" srcset="img/kids-bike-desktop-2x.jpg 2x" width="342" height="513"
               alt="Детский велосипед" /></picture>
           <a class="page-main__types-link" href="#">
-            <h5>Детский велосипед</h5>
+            <h3>Детский велосипед</h3>
           </a>
         </li>
       </ul>
     </section>
     <section class="page-main__video">
-      <h6 id="video">Видео про велосипеды</h6>
+      <h2 id="video">Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для
         себя.</p>
       <picture>
@@ -136,7 +136,7 @@
       <a href="#" class="page-main__video-button" title="Включить видео"></a>
     </section>
     <section class="page-main__map">
-      <h6>Как нас найти?</h6>
+      <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593374394802!5m2!1sru!2sru"
@@ -153,7 +153,7 @@
     </section>
   </main>
   <footer class="page-footer" id="contacts">
-    <h6>Наши контакты</h6>
+    <h2>Наши контакты</h2>
     <a class="page-footer__contacts-link page-footer__contacts-link--mail"
       href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
     <a class="page-footer__contacts-link page-footer__contacts-link--phone" href="tel:849978468446">+7 (499)

@@ -1,17 +1,16 @@
 .page {
-  width: auto;
+  display: flex;
   overflow-x: hidden;
   font-family: $font-main;
 }
 
 @media (max-width: $tablet-width) {
   .page {
-    display: flex;
     width: auto;
     overflow-x: hidden;
   }
 
-  .page-inactive {
+  .page--inactive {
     overflow: hidden;
   }
 }

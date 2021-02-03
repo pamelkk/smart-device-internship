@@ -1,13 +1,44 @@
 .page-header {
-  width: auto;
-  min-width: 1024px;
-  min-height: 51px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   align-self: center;
   box-sizing: border-box;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    align-self: center;
+    z-index: -1;
+    background-color: $bck-desktop;
+    width: 100vw;
+    top: -12px;
+    background-position: center;
+    height: 825px;
+    background-image: url("../img/bckg-bike-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 825px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bckg-bike-desktop-2x.jpg");
+      background-size: 100vw 825px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    align-self: center;
+    z-index: -2;
+    background-color: $bck-desktop;
+    opacity: 98%;
+    width: 100vw;
+    top: -12px;
+    left: calc(-50vw + 50%);
+    height: 825px;
+  }
 }
 
 .page-header__logo-svg {
@@ -20,16 +51,17 @@
   border: none;
   width: 50px;
   height: 50px;
-  background-image: url("../../img/icon-menu-button.svg");
+  background-image: url("../img/icon-menu-button.svg");
   background-repeat: no-repeat;
   background-size: 50px 50px;
   cursor: pointer;
   display: none;
+  padding: 0;
 }
 
 .page-header__menu--opened {
   height: 52px;
-  background-image: url("../../img/icon-cross.svg");
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-size: 50px 52px;
 }
@@ -63,22 +95,22 @@
   display: block;
   flex-direction: row;
   flex-wrap: wrap;
-  width: auto;
-  margin-left: 92px;
+  margin-left: 3px;
   background-color: transparent;
   min-height: auto;
-  margin-top: 14px;
+  margin-top: 7px;
   position: relative;
+  align-self: center;
 }
 
 .page-header__nav ul {
-  max-width: 874px;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 874px;
 
   &:first-child {
     padding-top: 0;
@@ -86,8 +118,6 @@
 }
 
 .page-header__nav-item {
-  width: auto;
-  max-width: auto;
   background-color: transparent;
   padding: 0;
   font-weight: 300;
@@ -106,7 +136,7 @@
     height: 25px;
     top: 24px;
     right: 5px;
-    background-image: url("../../img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     display: none;
   }
@@ -141,56 +171,82 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-self: center;
 }
 
 @media (max-width: $tablet-width) {
   .page-header {
-    min-width: auto;
-    min-height: auto;
-    width: 768px;
+    &::before {
+      background-color: $bck-mobile;
+      top: 0;
+      height: 340px;
+      background-image: url("../img/bckg-bike-tablet.jpg");
+      background-size: 100vw 340px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bckg-bike-tablet-2x.jpg");
+        background-size: 100vw 340px;
+      }
+    }
+
+    &::after {
+      background-color: $bck-mobile;
+      opacity: 98%;
+      top: 0;
+      height: 340px;
+    }
+  }
+
+  .page-header__wrapper {
+    width: 100vw;
   }
 
   .page-header--active {
-    width: 100vw;
     background-color: $main-title-inputs;
     position: fixed;
     top: 0;
-    left: 0;
+    background-position: center;
     z-index: 100;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    display: block;
+    width: 100%;
+    bottom: 0;
   }
 
   .page-header--active .page-header__logo-svg {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 22px;
   }
 
   .page-header__logo-svg {
     width: 68px;
     height: 21px;
-    margin-top: 20px;
+    margin-top: 25px;
     display: block;
-    margin-left: 21px;
-  }
-
-  .page-header__wrapper {
-    align-self: center;
-    width: 768px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .page-header__nav-wrapper--inactive {
-    display: none;
+    margin-left: 22px;
   }
 
   .page-header__nav-wrapper {
     margin: 0;
     min-height: 568px;
     background-color: $main-title-inputs;
-    width: 768px;
     align-self: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $main-title-inputs;
+      width: 100vw;
+      top: -52px;
+      left: calc(-50vw + 50%);
+      height: 53px;
+      z-index: -1;
+    }
+  }
+
+  .page-header__nav-wrapper--inactive {
+    display: none;
   }
 
   .page-header__nav-wrapper--active {
@@ -230,6 +286,7 @@
     box-sizing: border-box;
     height: 60px;
     z-index: 1;
+    width: 768px;
 
     &::after {
       display: block;
@@ -265,48 +322,52 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-self: center;
-    width: 767px;
-    padding-bottom: 400px;
+    max-width: auto;
 
     &:first-child {
       padding-top: 100px;
     }
   }
+
+  .page-header__nav--active ul {
+    padding-bottom: 400px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .page-header {
-    width: 320px;
-    min-height: 50px;
-    align-self: center;
-  }
+    &::before {
+      top: 0;
+      height: 390px;
+      background-image: url("../img/bckg-bike-mobile.jpg");
+      background-size: 100vw 390px;
 
-  .page-header__wrapper {
-    width: 320px;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bckg-bike-mobile-2x.jpg");
+        background-size: 100vw 390px;
+      }
+    }
+
+    &::after {
+      top: 0;
+      height: 390px;
+    }
   }
 
   .page-header--active {
     width: 100vw;
   }
 
-  .page-header__nav-wrapper {
-    width: 320px;
-  }
-
   .page-header__logo-svg {
     width: 68px;
     height: 21px;
-    margin-left: 16px;
-    margin-top: 20px;
-  }
-
-  .page-header__nav ul {
-    width: 320px;
+    margin-left: 22px;
+    margin-top: 23px;
   }
 
   .page-header--active .page-header__logo-svg {
-    margin-top: 20px;
-    margin-left: 14px;
+    margin-top: 23px;
+    margin-left: 22px;
   }
 
   .page-header__nav-item {

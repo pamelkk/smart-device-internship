@@ -1,15 +1,13 @@
 .page-footer {
-  width: auto;
   margin-bottom: 98px;
   justify-content: center;
   display: flex;
   margin-top: 2px;
   flex-wrap: wrap;
-  max-width: 650px;
   align-self: center;
 }
 
-.page-footer h6 {
+.page-footer h2 {
   display: none;
 }
 
@@ -21,13 +19,13 @@
     height: 20px;
     top: 2px;
     left: -42px;
-    background-image: url("../../img/icon-letter-green.svg");
+    background-image: url("../img/icon-letter-green.svg");
     background-repeat: no-repeat;
   }
 
   &:hover {
     &::before {
-      background-image: url("../../img/icon-letter-black.svg");
+      background-image: url("../img/icon-letter-black.svg");
     }
   }
 }
@@ -68,27 +66,25 @@
 .page-footer__contacts-link--phone {
   &::before {
     width: 21px;
-    height: 23px;
+    height: 25px;
     top: -2px;
     left: -37px;
-    background-image: url("../../img/icon-phone-green.svg");
+    background-image: url("../img/icon-phone-green.svg");
     background-repeat: no-repeat;
   }
 
   &:hover {
     &::before {
-      background-image: url("../../img/icon-phone-black.svg");
+      background-image: url("../img/icon-phone-black.svg");
     }
   }
 }
 
 @media (max-width: $tablet-width) {
   .page-footer {
-    width: 768px;
     margin-bottom: 51px;
     margin-top: 2px;
     align-self: center;
-    max-width: 698px;
   }
 
   .page-footer__contacts-link {
@@ -113,13 +109,11 @@
 
 @media (max-width: $mobile-width) {
   .page-footer {
-    width: 320px;
     margin: 0;
     flex-direction: column;
     align-items: center;
     align-self: center;
     margin-bottom: 51px;
-    max-width: 320px;
   }
 
   .page-footer__contacts-link {
@@ -146,13 +140,13 @@
       height: 23px;
       top: -2px;
       left: -37px;
-      background-image: url("../../img/icon-phone-green.svg");
+      background-image: url("../img/icon-phone-green.svg");
       background-repeat: no-repeat;
     }
 
     &:hover {
       &::before {
-        background-image: url("../../img/icon-phone-black.svg");
+        background-image: url("../img/icon-phone-black.svg");
       }
     }
   }
