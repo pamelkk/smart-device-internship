@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   align-self: center;
+  width: 100%;
 }
 
 .page-main__request-inputs input::placeholder {
@@ -151,6 +152,7 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .page-main__facts h2 {
@@ -808,7 +810,6 @@
   }
 
   .page-main__top-wrapper {
-    align-items: center;
     display: block;
     margin: 0;
   }
@@ -925,6 +926,7 @@
     padding: 0;
     margin-top: 28px;
     flex-direction: column;
+    width: 100%;
   }
 
   .page-main__facts-item {
