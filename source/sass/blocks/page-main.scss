@@ -545,6 +545,53 @@
 }
 
 @media (max-width: $tablet-width) {
+  .page-main {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      align-self: center;
+      z-index: -1;
+      width: 100vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: $bck-mobile;
+      top: 0;
+      height: 340px;
+      background-image: url("../img/bckg-bike-tablet.jpg");
+      background-size: 100vw 340px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bckg-bike-tablet-2x.jpg");
+        background-size: 100vw 340px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      align-self: center;
+      z-index: -2;
+      width: 100vw;
+      left: calc(-50vw + 50%);
+      background-color: $bck-mobile;
+      opacity: 98%;
+      top: 0;
+      height: 340px;
+    }
+  }
+
+  .page-main--inactive {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
   .page-main__types-item img {
     width: 270px;
     height: 300px;
@@ -857,6 +904,23 @@
   .page-main {
     display: flex;
     flex-direction: column;
+
+    &::before {
+      top: 0;
+      height: 390px;
+      background-image: url("../img/bckg-bike-mobile.jpg");
+      background-size: 100vw 390px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bckg-bike-mobile-2x.jpg");
+        background-size: 100vw 390px;
+      }
+    }
+
+    &::after {
+      top: 0;
+      height: 390px;
+    }
   }
 
   .page-main__top-img img {
