@@ -83,7 +83,7 @@
     position: absolute;
     width: 873.5px;
     height: 1px;
-    top: 37px;
+    bottom: 18px;
     left: -15px;
     background-color: $main-title-inputs;
     opacity: 20%;
@@ -343,7 +343,7 @@
   }
 
   .page-header__nav--active ul {
-    padding-bottom: 400px;
+    padding-bottom: 50px;
   }
 }
 
@@ -374,13 +374,13 @@
   .page-header__logo-svg {
     width: 68px;
     height: 21px;
-    margin-left: 22px;
+    margin-left: 18px;
     margin-top: 23px;
   }
 
   .page-header--active .page-header__logo-svg {
     margin-top: 23px;
-    margin-left: 22px;
+    margin-left: 18px;
   }
 
   .page-header__nav-item {
