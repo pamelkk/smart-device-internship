@@ -1,5 +1,86 @@
-@media (max-width: $tablet-width) {
+.page-main {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: $mobile-width) {
+.page-main__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.page-main__header-description {
+  display: flex;
+  flex-direction: column;
+  width: 718px;
+}
+
+.page-main__header-description h1 {
+  margin: 0;
+  margin-top: 231px;
+  margin-bottom: 31px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $header-features-form;
+}
+
+.page-main__header-description p {
+  margin: 0;
+  margin-bottom: 37px;
+  width: 683px;
+  margin-left: 94px;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: $header-features-form;
+  position: relative;
+
+  &::before {
+    background-color: $header-features-form;
+    content: "";
+    position: absolute;
+    width: 66px;
+    top: 15px;
+    left: -94px;
+    height: 2px;
+  }
+}
+
+.page-main__header-description-consultation {
+  text-decoration: none;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 407px;
+  height: 55px;
+  padding-top: 19px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  background-color: $questions-features-products;
+  border-radius: 5px;
+  color: $header-features-form;
+  margin-left: 94px;
+}
+
+.page-main__header-description-features {
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $header-features-form;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+  width: 93px;
+  text-decoration: none;
+  margin-top: 93px;
 }

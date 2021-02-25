@@ -1,0 +1,114 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  &::before {
+    background-color: $products-footer-header;
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    top: 0;
+    left: calc(-50vw + 50%);
+    height: 825px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 0;
+    left: calc(-50vw + 50%);
+    background-position: center;
+    height: 878px;
+    background-image: url("../img/bckg-header-dt.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 878px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bckg-header-dt@2x.png");
+      background-size: 100vw 878px;
+    }
+  }
+}
+
+.page-header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__contacts-link {
+  text-decoration: none;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $header-features-form;
+  align-self: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(n+1) {
+    margin-right: 122px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.page-header__contacts-link--mail {
+  &::before {
+    width: 19px;
+    top: 0;
+    left: -30px;
+    height: 14px;
+    background-image: url("../img/icon-letter.svg");
+    background-size: 19px 14px;
+  }
+}
+
+.page-header__contacts-link--phone {
+  &::before {
+    width: 18px;
+    top: 0;
+    left: -30px;
+    height: 18px;
+    background-image: url("../img/icon-phone.svg");
+    background-size: 18px 18px;
+  }
+}
+
+.page-header__logo {
+  align-self: center;
+}
+
+.page-header__contacts-button {
+  margin-left: 38px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: $font-main;
+  color: $header-features-form;
+  width: 180px;
+  height: 45px;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 13px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+  border: 1px solid $header-features-form;
+  border-radius: 5px;
+  background-color: transparent;
+}
