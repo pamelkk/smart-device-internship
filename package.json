@@ -1,26 +1,42 @@
 {
-  "name": "Smart Device",
-  "private": true,
-  "description": "Личный проект Smart Device от HTML Academy",
+  "name": "Smart-device",
+  "version": "1.0.0",
+  "description": "Проект Smart-device",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "^9.8.4",
-    "gulp-csso": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.5",
-    "stylelint": "13.6.1",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "2.26.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.6.2",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "IE 11",
+    "Firefox ESR"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -28,26 +44,12 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "12.18.2"
+    "node": "8.15"
   },
   "dependencies": {
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-jsmin": "^0.1.5",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-scss": "^1.4.0",
-    "gulp-sourcemap": "^1.0.1",
-    "gulp-svgstore": "^7.0.1",
-    "gulp-webp": "^4.0.1"
+    "del": "^4.1.1"
   }
 }
