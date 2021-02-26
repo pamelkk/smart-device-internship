@@ -84,3 +84,518 @@
   text-decoration: none;
   margin-top: 93px;
 }
+
+.page-main__features {
+  align-self: center;
+  margin-top: 230px;
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__features ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+}
+
+.page-main__features-item {
+  width: 570px;
+  height: 299px;
+  box-sizing: border-box;
+  padding-top: 98px;
+  padding-bottom: 49px;
+  padding-left: 45px;
+  padding-right: 43px;
+  border: 1px solid $features-lines;
+  border-left: 3px solid $questions-features-products;
+
+  &:nth-of-type(n+1) {
+    margin-right: 30px;
+  }
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-top: 30px;
+  }
+
+  &:hover {
+    background-color: $questions-features-products;
+    border: none;
+    cursor: pointer;
+    padding-top: 99px;
+    padding-bottom: 50px;
+    padding-left: 48px;
+    padding-right: 44px;
+
+    h3 {
+      color: $header-features-form;
+    }
+
+    p {
+      color: $header-features-form;
+    }
+
+    .page-main__features-item-header--timing {
+      &::before {
+        background-image: url("../img/icon-watch-white.svg");
+      }
+    }
+
+    .page-main__features-item-header--supplier {
+      &::before {
+        background-image: url("../img/icon-people-white.svg");
+      }
+    }
+
+    .page-main__features-item-header--confidentiality {
+      &::before {
+        background-image: url("../img/icon-detective-white.svg");
+      }
+    }
+
+    .page-main__features-item-header--cost {
+      &::before {
+        background-image: url("../img/icon-tag-white.svg");
+      }
+    }
+  }
+}
+
+.page-main__features-item h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $questions-features-products;
+  margin: 0;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-main__features-item-header--timing {
+  &::before {
+    width: 29px;
+    height: 35px;
+    top: -46px;
+    left: 0;
+    background-image: url("../img/icon-watch.svg");
+    background-size: 29px 35px;
+  }
+}
+
+.page-main__features-item-header--supplier {
+  &::before {
+    width: 35px;
+    height: 35px;
+    top: -46px;
+    left: 0;
+    background-image: url("../img/icon-people.svg");
+    background-size: 35px 35px;
+  }
+}
+
+.page-main__features-item-header--confidentiality {
+  &::before {
+    width: 36px;
+    height: 31px;
+    top: -46px;
+    left: 0;
+    background-image: url("../img/icon-detective.svg");
+    background-size: 36px 31px;
+  }
+}
+
+.page-main__features-item-header--cost {
+  &::before {
+    width: 35px;
+    height: 35px;
+    top: -46px;
+    left: 0;
+    background-image: url("../img/icon-tag.svg");
+    background-size: 35px 35px;
+  }
+}
+
+.page-main__features-item p {
+  margin: 0;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $features-about;
+  width: 100%;
+}
+
+.page-main__about {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 110px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 317px;
+    top: 0;
+    left: -210px;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+    background-size: 220px 317px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/year@2x.png");
+      background-size: 220px 317px;
+    }
+  }
+}
+
+.page-main__about h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $features-about;
+  margin-bottom: 18px;
+}
+
+.page-main__about p {
+  margin: 0;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $features-about;
+  width: 984px;
+
+  &:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.page-main__about a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $questions-features-products;
+  justify-content: flex-start;
+  width: 180px;
+  height: 45px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 13px;
+  border: 1px solid $questions-features-products;
+  border-radius: 5px;
+}
+
+.page-main__products {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 938px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 93px;
+  padding-bottom: 127px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: $products-footer-header;
+
+  &::before {
+    background-color: $products-footer-header;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 0;
+    left: calc(-50vw + 50%);
+    height: 938px;
+  }
+}
+
+.page-main__products h2 {
+  margin: 0;
+  margin-bottom: 47px;
+  text-align: left;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $header-features-form;
+}
+
+.page-main__products ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-main__products-item {
+  background-size: 370px 620px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 63px;
+    height: 63px;
+    top: 557px;
+    left: 307px;
+    background-position: center;
+    background-image: url("../../img/icon-check.svg");
+    background-repeat: no-repeat;
+    background-size: 63px 63px;
+    cursor: pointer;
+  }
+
+  &:nth-of-type(n+1) {
+    margin-right: 30px;
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(n+4) {
+    margin-top: 30px;
+  }
+}
+
+.page-main__products-item h3 {
+  position: absolute;
+  width: 200px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $header-features-form;
+  margin: 0;
+  top: 53px;
+  left: 44px;
+}
+
+.page-main__products-item-img {
+  opacity: 35%;
+}
+
+.page-main__questions {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: $questions-features-products;
+  position: relative;
+  margin-bottom: 65px;
+  padding-left: 670px;
+  padding-top: 96px;
+  padding-bottom: 114px;
+
+  &::before {
+    background-color: $questions-features-products;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 0;
+    left: calc(-50vw + 50%);
+    min-height: 670px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 686px;
+    height: 641px;
+    top: -60px;
+    left: -50px;
+    background-position: left;
+    background-image: url("../img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: 686px 641px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/airplane@2x.png");
+      background-size: 686px 641px;
+    }
+  }
+}
+
+.page-main__questions h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $header-features-form;
+}
+
+.page-main__questions p {
+  margin: 0;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 7px;
+  color: $header-features-form;
+}
+
+.page-main__questions-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.page-main__questions-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 49px;
+  margin-bottom: 43px;
+}
+
+.page-main__questions-inputs input {
+  padding: 0;
+  width: 270px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: $inputs;
+  border: none;
+  font-family: $font-text;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $header-features-form;
+    font-family: $font-text;
+  }
+
+  &:nth-of-type(n+1) {
+    margin-right: 31px;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-top: 31px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.page-main__questions-inputs textarea {
+  margin-top: 40px;
+  padding: 0;
+  width: 570px;
+  min-height: 154px;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: $inputs;
+  border: none;
+  font-family: $font-text;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $header-features-form;
+    font-family: $font-text;
+  }
+}
+
+.page-main__questions-agreement-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $header-features-form;
+  width: 270px;
+  height: 45px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  padding-right: 19.5px;
+  border: 1px solid $header-features-form;
+  border-radius: 5px;
+  background-color: $questions-features-products;
+  font-family: $font-main;
+}
+
+.page-main__questions-agreement {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-main__questions-agreement label {
+  width: 230px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-text;
+  opacity: 0.8;
+  color: $header-features-form;
+  align-self: center;
+  margin-left: 70px;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    top: 0;
+    left: -32px;
+    height: 16px;
+    background-image: url("../img/icon-check-agree-rectangle.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+  }
+}
+
+.page-main__questions-agreement input:checked + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-check-agree-rectangle-checked.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+  }
+}

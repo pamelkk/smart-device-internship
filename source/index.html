@@ -12,7 +12,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a title="Логотип нашей компании" class="page-header__logo">
+    <a title="Логотип нашей компании" class="page-header__logo" href="#">
       <svg class="page-header__logo-svg" width="202" height="52">
         <use xlink:href="img/sprite_auto.svg#icon-logo-header"></use>
       </svg>
@@ -38,28 +38,28 @@
         <!-- 1х: 770px; 2x: 1540px -->
         <source media="(max-width: 1023px)" srcset="img/pcb-tab.webp 1x, img/pcb-tab@2x.webp 2x">
         <!-- 1х: 1920px; 2x: 3840px -->
-        <img class="page-main__map-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="705" height="515"
-          alt="Наша продукция" /></picture>
+        <img class="page-main__header-description-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="705"
+          height="515" alt="Наша продукция" /></picture>
     </section>
     <section class="page-main__features" id="features">
-      <h2>Наши преимущества</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul>
         <li class="page-main__features-item">
-          <h3>Оперативные сроки</h3>
+          <h3 class="page-main__features-item-header--timing">Оперативные сроки</h3>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="page-main__features-item">
-          <h3>Крупные поставщики</h3>
+          <h3 class="page-main__features-item-header--supplier">Крупные поставщики</h3>
           <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li class="page-main__features-item">
-          <h3>Полная конфиденциальность</h3>
+          <h3 class="page-main__features-item-header--confidentiality">Полная конфиденциальность</h3>
           <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="page-main__features-item">
-          <h3>Персонализация стоимости</h3>
+          <h3 class="page-main__features-item-header--cost">Персонализация стоимости</h3>
           <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
             устраивает.</p>
         </li>
@@ -77,14 +77,45 @@
     <section class="page-main__products">
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <ul>
-        <li class="page-main__products-item">
-          <a href="#">Производство печатных плат</a>
+        <li class="page-main__products-item page-main__products-item--production">
+          <a href="#">
+            <h3>Производство печатных плат</h3>
+            <picture>
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/production-mob.webp 1x, img/production-mob@2x.webp 2x">
+              <!-- 1х: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" srcset="img/production-tab.webp 1x, img/production-tab@2x.webp 2x">
+              <!-- 1х: 370px; 2x: 740px -->
+              <img class="page-main__products-item-img" src="img/production-dt.jpg" srcset="img/production-dt@2x.jpg 2x"
+                width="370" height="620" alt="Наша продукция" /></picture>
+          </a>
         </li>
-        <li class="page-main__products-item">
-          <a href="#">Монтаж печатных плат</a>
+        <li class="page-main__products-item page-main__products-item--installation">
+          <a href="#">
+            <h3>Монтаж печатных плат</h3>
+            <picture>
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/installation-mob.webp 1x, img/installation-mob@2x.webp 2x">
+              <!-- 1х: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)"
+                srcset="img/installation-tab.webp 1x, img/installation-tab@2x.webp 2x">
+              <!-- 1х: 370px; 2x: 740px -->
+              <img class="page-main__products-item-img" src="img/installation-dt.jpg"
+                srcset="img/installation-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция" /></picture>
+          </a>
         </li>
-        <li class="page-main__products-item">
-          <a href="#">Комплектующие для светотехники</a>
+        <li class="page-main__products-item page-main__products-item--accessories">
+          <a href="#">
+            <h3>Комплектующие для светотехники</h3>
+            <picture>
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/accessories-mob.webp 1x, img/accessories-mob@2x.webp 2x">
+              <!-- 1х: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" srcset="img/accessories-tab.webp 1x, img/accessories-tab@2x.webp 2x">
+              <!-- 1х: 370px; 2x: 740px -->
+              <img class="page-main__products-item-img" src="img/accessories-dt.jpg"
+                srcset="img/accessories-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция" /></picture>
+          </a>
         </li>
       </ul>
     </section>
@@ -97,12 +128,12 @@
           <label class="visually-hidden" for="name">Введите Ваше Имя</label>
           <input type="tel" id="tel" name="tel" pattern="(\+7[0-9]{10}|8[0-9]{10})" placeholder="Телефон" required>
           <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-          <textarea name="question" id="question" rows="7">Ваш вопрос</textarea>
+          <textarea name="question" id="question" rows="7" placeholder="Ваш вопрос"></textarea>
           <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
         </fieldset>
         <div class="page-main__questions-agreement">
           <button class="page-main__questions-agreement-button" type="submit">Задать вопрос</button>
-          <input type="checkbox" name="agreement" id="agreement" value="agreement" checked>
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" value="agreement" checked>
           <label for="agreement">Я согласен на обработку персональных данных</label>
         </div>
       </form>
@@ -164,13 +195,11 @@
       </div>
     </div>
     <div class="page-footer__information">
-      <div class="page-footer__information-rights">
-        <ul>
-          <li class="page-footer__information-rights-item">Все права защищены</li>
-          <li class="page-footer__information-rights-item">1999-2018 SD Service Devices</li>
-          <li class="page-footer__information-rights-item"><a href="#">Условия конфиденциальности</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li class="page-footer__information-rights-item">Все права защищены</li>
+        <li class="page-footer__information-rights-item">1999-2018 SD Service Devices</li>
+        <li class="page-footer__information-rights-item"><a href="#">Условия конфиденциальности</a></li>
+      </ul>
       <p>Developed by wow studio</p>
     </div>
   </footer>
