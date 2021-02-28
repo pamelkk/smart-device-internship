@@ -13,14 +13,21 @@
 <body class="page-body">
   <header class="page-header">
     <a title="Логотип нашей компании" class="page-header__logo" href="#">
-      <svg class="page-header__logo-svg" width="202" height="52">
+      <svg class="page-header__logo-svg--dt" width="202" height="52">
         <use xlink:href="img/sprite_auto.svg#icon-logo-header"></use>
+      </svg>
+      <svg class="page-header__logo-svg--mob" width="38" height="38">
+        <use xlink:href="img/sprite_auto.svg#icon-logo-header-mob"></use>
       </svg>
     </a>
     <div class="page-header__contacts">
       <a class="page-header__contacts-link page-header__contacts-link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
       <a class="page-header__contacts-link page-header__contacts-link--phone" href="tel:84950005252">+7 (495) 000 52
         52</a>
+      <a class="page-header__contacts-link page-header__contacts-link--tab page-header__contacts-link--mail"
+        href="mailto:info@sd.ru"></a>
+      <a class="page-header__contacts-link page-header__contacts-link--tab page-header__contacts-link--phone"
+        href="tel:84950005252"></a>
       <button type="button" class="page-header__contacts-button">Заказать звонок</button>
     </div>
   </header>
@@ -29,14 +36,15 @@
       <div class="page-main__header-description">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="page-main__header-description-consultation" href="#consultation">Получить бесплатную консультацию</a>
+        <a class="page-main__header-description-consultation page-main__header-description-consultation--dt" href="#consultation">Получить бесплатную консультацию</a>
+        <a class="page-main__header-description-consultation page-main__header-description-consultation--mob" href="#consultation">Бесплатная консультация</a>
         <a href="#features" class="page-main__header-description-features">Скролл вниз</a>
       </div>
       <picture>
         <!-- 1х: 320px; 2x: 640px -->
-        <source media="(max-width: 767px)" srcset="img/pcb-mob.webp 1x, img/pcb-mob@2x.webp 2x">
+        <source media="(max-width: 767px)" srcset="img/pcb-mob.png 1x, img/pcb-mob@2x.png 2x">
         <!-- 1х: 770px; 2x: 1540px -->
-        <source media="(max-width: 1023px)" srcset="img/pcb-tab.webp 1x, img/pcb-tab@2x.webp 2x">
+        <source media="(max-width: 1023px)" srcset="img/pcb-tab.png 1x, img/pcb-tab@2x.png 2x">
         <!-- 1х: 1920px; 2x: 3840px -->
         <img class="page-main__header-description-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="705"
           height="515" alt="Наша продукция" /></picture>
@@ -69,6 +77,9 @@
       <h2>О компании</h2>
       <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
         года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+      <p class="page-main__about-description--tab">Наши поставщики - мировые производители электронных компонентов:
+        OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях
+        Российских Железных Дорог..</p>
       <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
         платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
         (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
@@ -82,9 +93,9 @@
             <h3>Производство печатных плат</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/production-mob.webp 1x, img/production-mob@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/production-mob.jpg 1x, img/production-mob@2x.jpg 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)" srcset="img/production-tab.webp 1x, img/production-tab@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/production-tab.jpg 1x, img/production-tab@2x.jpg 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/production-dt.jpg" srcset="img/production-dt@2x.jpg 2x"
                 width="370" height="620" alt="Наша продукция" /></picture>
@@ -95,10 +106,9 @@
             <h3>Монтаж печатных плат</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/installation-mob.webp 1x, img/installation-mob@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/installation-mob.jpg 1x, img/installation-mob@2x.jpg 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)"
-                srcset="img/installation-tab.webp 1x, img/installation-tab@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/installation-tab.jpg 1x, img/installation-tab@2x.jpg 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/installation-dt.jpg"
                 srcset="img/installation-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция" /></picture>
@@ -109,9 +119,9 @@
             <h3>Комплектующие для светотехники</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/accessories-mob.webp 1x, img/accessories-mob@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/accessories-mob.jpg 1x, img/accessories-mob@2x.jpg 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)" srcset="img/accessories-tab.webp 1x, img/accessories-tab@2x.webp 2x">
+              <source media="(max-width: 1023px)" srcset="img/accessories-tab.jpg 1x, img/accessories-tab@2x.jpg 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/accessories-dt.jpg"
                 srcset="img/accessories-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция" /></picture>
@@ -204,7 +214,7 @@
     </div>
   </footer>
   <footer class="page-footer page-footer--tablet">
-    <div class="page-footer__logo-social">
+    <div class="page-footer__logo-social-list">
       <a title="Логотип нашей компании" href="#">
         <svg class="page-footer__social-logo-svg" width="202" height="52">
           <use xlink:href="img/sprite_auto.svg#icon-logo-footer"></use>
@@ -224,10 +234,10 @@
             </svg></a></li>
       </ul>
     </div>
-    <div>
+    <div class="page-footer__wrapper">
       <nav class="page-footer__nav">
         <h3>Разделы сайта</h3>
-        <div class="page-footer__nav-lists">
+        <div class="page-footer__nav-lists page-footer__nav-lists--opened">
           <ul>
             <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">О компании</a></li>
             <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Продукты</a>
@@ -247,8 +257,9 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="page-footer__nav-lists-menu page-footer__nav-lists-menu--opened"></button>
       </nav>
-      <div class="page-footer__address">
+      <div class="page-footer__address page-footer__address--opened">
         <h3>Наш офис</h3>
         <ul>
           <li class="page-footer__address-item">г. Мытищи, Олимпийский проспект, д.10</li>
@@ -256,6 +267,7 @@
           <li class="page-footer__address-item"><a href="tel:89250038767">+7 (925) 003-87-67</a></li>
           <li class="page-footer__address-item"><a href="tel:892692608079">+7 (926) 926-080-79</a></li>
         </ul>
+        <button type="button" class="page-footer__address-menu page-footer__address-menu--opened"></button>
       </div>
     </div>
     <div class="page-footer__copyright">
