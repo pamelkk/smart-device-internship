@@ -6,19 +6,20 @@
 .page-main__header {
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
 }
 
 .page-main__header-description {
   display: flex;
   flex-direction: column;
   width: 718px;
+  align-self: flex-start;
+  margin-top: 230px;
+  margin-left: 95px;
 }
 
 .page-main__header-description h1 {
   margin: 0;
-  margin-top: 231px;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -27,11 +28,21 @@
   color: $header-features-form;
 }
 
+.page-main__header picture {
+  width: 705px;
+  height: 515px;
+  background-size: 705px 515px;
+  position: absolute;
+  top: 120px;
+  right: -73px;
+  z-index: -1;
+}
+
 .page-main__header-description p {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 45px;
   width: 683px;
-  margin-left: 94px;
+  margin-left: 96px;
   font-family: $font-text;
   font-weight: 400;
   font-size: 22px;
@@ -44,7 +55,7 @@
     content: "";
     position: absolute;
     width: 66px;
-    top: 15px;
+    top: 17px;
     left: -94px;
     height: 2px;
   }
@@ -69,7 +80,7 @@
   background-color: $questions-features-products;
   border-radius: 5px;
   color: $header-features-form;
-  margin-left: 94px;
+  margin-left: 96px;
 }
 
 .page-main__header-description-consultation--mob {
@@ -86,13 +97,14 @@
   transform: rotate(-90deg);
   width: 93px;
   text-decoration: none;
-  margin-top: 93px;
+  margin-top: 130px;
+  margin-left: -37px;
 }
 
 .page-main__features {
   align-self: center;
-  margin-top: 230px;
-  margin-bottom: 110px;
+  margin-top: 240px;
+  margin-bottom: 109px;
   display: flex;
   flex-direction: column;
 }
@@ -107,15 +119,16 @@
   padding-right: 50px;
   justify-content: center;
   box-sizing: border-box;
+  align-self: center;
 }
 
 .page-main__features-item {
   width: 570px;
   height: 299px;
   box-sizing: border-box;
-  padding-top: 98px;
+  padding-top: 97px;
   padding-bottom: 49px;
-  padding-left: 45px;
+  padding-left: 43px;
   padding-right: 43px;
   border: 1px solid $features-lines;
   border-left: 3px solid $questions-features-products;
@@ -128,6 +141,10 @@
     margin-right: 0;
   }
 
+  &:nth-of-type(2n+1) {
+    margin-left: 100px;
+  }
+
   &:nth-of-type(n+3) {
     margin-top: 30px;
   }
@@ -136,9 +153,9 @@
     background-color: $questions-features-products;
     border: none;
     cursor: pointer;
-    padding-top: 99px;
-    padding-bottom: 50px;
-    padding-left: 48px;
+    padding-top: 98px;
+    padding-bottom: 51px;
+    padding-left: 44px;
     padding-right: 44px;
 
     h3 {
@@ -181,7 +198,7 @@
   line-height: 34px;
   color: $questions-features-products;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   position: relative;
 
   &::before {
@@ -206,7 +223,7 @@
   &::before {
     width: 35px;
     height: 35px;
-    top: -46px;
+    top: -57px;
     left: 0;
     background-image: url("../img/icon-people.svg");
     background-size: 35px 35px;
@@ -217,7 +234,7 @@
   &::before {
     width: 36px;
     height: 31px;
-    top: -46px;
+    top: -53px;
     left: 0;
     background-image: url("../img/icon-detective.svg");
     background-size: 36px 31px;
@@ -228,7 +245,7 @@
   &::before {
     width: 35px;
     height: 35px;
-    top: -46px;
+    top: -57px;
     left: 0;
     background-image: url("../img/icon-tag.svg");
     background-size: 35px 35px;
@@ -251,14 +268,14 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 110px;
-  margin-left: 170px;
+  margin-left: 275px;
 
   &::before {
     content: "";
     position: absolute;
     width: 220px;
     height: 317px;
-    top: 0;
+    top: 2px;
     left: -210px;
     background-image: url("../img/year.png");
     background-repeat: no-repeat;
@@ -281,7 +298,7 @@
   font-size: 36px;
   line-height: 51px;
   color: $features-about;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
 
 .page-main__about p {
@@ -294,8 +311,8 @@
   width: 984px;
 
   &:last-of-type {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 22px;
+    margin-bottom: 40px;
   }
 }
 
@@ -327,8 +344,8 @@
   min-height: 938px;
   position: relative;
   box-sizing: border-box;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 90px;
+  padding-bottom: 123px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: $products-footer-header;
@@ -347,7 +364,8 @@
 
 .page-main__products h2 {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 51px;
+  margin-left: 100px;
   text-align: left;
   justify-content: flex-start;
   font-weight: 400;
@@ -362,13 +380,14 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 100px;
 }
 
 .page-main__products-item {
   background-size: 370px 620px;
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -398,18 +417,18 @@
 
 .page-main__products-item h3 {
   position: absolute;
-  width: 200px;
+  width: 170px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: $header-features-form;
   margin: 0;
-  top: 53px;
+  top: 51px;
   left: 44px;
 }
 
 .page-main__products-item-img {
-  opacity: 35%;
+  opacity: 23%;
 }
 
 .page-main__questions {
@@ -419,10 +438,10 @@
   background-color: $questions-features-products;
   position: relative;
   margin-bottom: 65px;
-  padding-left: 670px;
-  padding-top: 96px;
-  padding-bottom: 114px;
-  padding-right: 375px;
+  padding-left: 730px;
+  padding-top: 92px;
+  padding-bottom: 112px;
+  padding-right: 0;
   box-sizing: border-box;
 
   &::before {
@@ -441,8 +460,8 @@
     position: absolute;
     width: 686px;
     height: 641px;
-    top: -60px;
-    left: -50px;
+    top: -61px;
+    left: -71px;
     background-position: left;
     background-image: url("../img/airplane.png");
     background-repeat: no-repeat;
@@ -461,6 +480,7 @@
   font-size: 36px;
   line-height: 51px;
   color: $header-features-form;
+  margin-left: -5px;
 }
 
 .page-main__questions p {
@@ -469,7 +489,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 7px;
+  margin-top: 10px;
   color: $header-features-form;
 }
 
@@ -486,7 +506,7 @@
   padding: 0;
   margin: 0;
   margin-top: 49px;
-  margin-bottom: 43px;
+  margin-bottom: 47px;
 }
 
 .page-main__questions-inputs input {
@@ -554,11 +574,12 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $header-features-form;
+  cursor: pointer;
   width: 270px;
   height: 45px;
   box-sizing: border-box;
   padding-top: 14px;
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   padding-left: 18px;
   padding-right: 19.5px;
   border: 1px solid $header-features-form;
@@ -618,20 +639,26 @@
     flex-wrap: wrap;
   }
 
+  .page-main__header-description {
+    margin-top: 111px;
+    margin-left: 88px;
+  }
+
   .page-main__header-description h1 {
     font-size: 60px;
     line-height: 70px;
-    margin-top: 116px;
-    margin-bottom: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
     width: 470px;
-    margin-left: 63px;
+    margin-left: 0;
   }
 
   .page-main__header-description p {
     font-size: 18px;
     line-height: 28.22px;
     width: 356px;
-    margin-left: 114px;
+    margin-left: 50px;
+    margin-bottom: 55px;
 
     &::before {
       width: 33px;
@@ -642,7 +669,7 @@
   }
 
   .page-main__header-description-consultation {
-    margin-left: 114px;
+    margin-left: 50px;
     padding-top: 17px;
     padding-left: 14px;
     padding-right: 14px;
@@ -655,24 +682,22 @@
   }
 
   .page-main__header-description-img {
-    width: 535px;
-    height: 505px;
-    background-size: 535px 505px;
+    width: 332px;
+    height: 465px;
+    background-size: 332px 465px;
   }
 
   .page-main__header picture {
-    width: 535px;
-    height: 505px;
-    background-size: 535px 505px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+    width: 332px;
+    height: 465px;
+    background-size: 332px 465px;
+    top: 28px;
+    right: -2px;
   }
 
   .page-main__features {
     margin-top: 217px;
-    margin-bottom: 59px;
+    margin-bottom: 56px;
   }
 
   .page-main__features ul {
@@ -684,9 +709,9 @@
   .page-main__features-item {
     width: 345px;
     height: auto;
-    padding-top: 69px;
-    padding-bottom: 12px;
-    padding-left: 27px;
+    padding-top: 65px;
+    padding-bottom: 18px;
+    padding-left: 26px;
     padding-right: 19px;
     border-left: 1.97px solid $questions-features-products;
 
@@ -694,24 +719,76 @@
       background-color: $questions-features-products;
       border: none;
       cursor: pointer;
-      padding-top: 70px;
+      padding-top: 66px;
       padding-bottom: 13px;
       padding-left: 28px;
       padding-right: 20px;
     }
 
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
     &:nth-of-type(n+3) {
-      padding-top: 60px;
-      padding-bottom: 40px;
+      padding-top: 65px;
+      padding-bottom: 33px;
+
+      h3 {
+        margin-bottom: 11px;
+      }
 
       &:hover {
         padding-top: 61px;
         padding-bottom: 41px;
       }
     }
+
+    h3 {
+      margin-bottom: 9px;
+    }
+  }
+
+  .page-main__features-item-header--timing {
+    &::before {
+      height: 36px;
+      top: -46px;
+      left: 0;
+      background-size: 29px 36px;
+    }
+  }
+
+  .page-main__features-item-header--supplier {
+    &::before {
+      width: 31.7px;
+      height: 32px;
+      top: -43px;
+      left: 0;
+      background-size: 31.7px 32px;
+    }
+  }
+
+  .page-main__features-item-header--confidentiality {
+    &::before {
+      width: 30px;
+      height: 26px;
+      top: -39px;
+      left: 0;
+      background-size: 30px 26px;
+    }
+  }
+
+  .page-main__features-item-header--cost {
+    &::before {
+      width: 32px;
+      height: 32px;
+      top: -42px;
+      left: 0;
+      background-size: 32px 32px;
+    }
   }
 
   .page-main__about {
+    margin-left: 185px;
     margin-bottom: 83px;
 
     &::before {
@@ -719,8 +796,8 @@
       position: absolute;
       width: 251px;
       height: 362px;
-      top: 0;
-      left: -210px;
+      top: -1px;
+      left: -220px;
       background-repeat: no-repeat;
       background-size: 251px 362px;
 
@@ -732,6 +809,9 @@
 
   .page-main__about h2 {
     margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 45px;
+    margin-left: -3px;
   }
 
   .page-main__about p {
@@ -742,7 +822,7 @@
     }
 
     &:first-of-type {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 
@@ -751,13 +831,13 @@
   }
 
   .page-main__about a {
-    margin-top: 35px;
+    margin-top: 41px;
   }
 
   .page-main__products {
-    padding-top: 83px;
-    padding-bottom: 78px;
-    padding-left: 25px;
+    padding-top: 50px;
+    padding-bottom: 73px;
+    padding-left: 23px;
     padding-right: 25px;
 
     &::before {
@@ -773,7 +853,8 @@
   }
 
   .page-main__products h2 {
-    margin-bottom: 46px;
+    margin-left: 0;
+    margin-bottom: 50px;
     font-size: 32px;
     line-height: 45px;
     width: 613px;
@@ -781,28 +862,39 @@
 
   .page-main__products ul {
     width: 715px;
+    margin-left: 0;
   }
 
   .page-main__products-item {
     &:nth-of-type(n+1) {
       margin-right: 0;
+      margin-bottom: 44px;
     }
 
     &:nth-of-type(n+4) {
       margin-top: 0;
     }
 
-    &:nth-of-type(n+1) {
-      margin-bottom: 46px;
+    &:nth-of-type(n+2) {
+      margin-bottom: 40px;
     }
 
     &:last-of-type {
       margin-bottom: 0;
+
+      h3 {
+        top: 49px;
+      }
     }
 
-    &:after {
+    &::after {
       top: 193px;
       left: 652px;
+    }
+
+    h3 {
+      top: 38px;
+      width: 170px;
     }
   }
 
@@ -811,15 +903,11 @@
     height: 256px;
   }
 
-  .page-main__products-item h3 {
-    width: 170px;
-  }
-
   .page-main__questions {
     margin-bottom: 19px;
-    padding-left: 84px;
+    padding-left: 98px;
     padding-right: 84px;
-    padding-top: 83px;
+    padding-top: 81px;
     padding-bottom: 103px;
 
     &::after {
@@ -836,9 +924,13 @@
     line-height: 45px;
   }
 
+  .page-main__questions p {
+    margin-top: 15px;
+  }
+
   .page-main__questions-inputs {
-    margin-top: 51px;
-    margin-bottom: 45px;
+    margin-top: 53px;
+    margin-bottom: 46px;
   }
 
   .page-main__questions-inputs input {
@@ -872,7 +964,7 @@
     width: 280px;
     height: 46.6px;
     padding-top: 14.5px;
-    padding-bottom: 8px;
+    padding-bottom: 14px;
     padding-left: 18.6px;
     padding-right: 20px;
   }
@@ -885,6 +977,7 @@
   .page-main__questions-agreement input:checked + label {
     &::before {
       top: 2px;
+      left: -34px;
       width: 17px;
       background-size: 17px 16px;
     }
@@ -918,7 +1011,6 @@
     padding-bottom: 14px;
     width: 287px;
     align-self: center;
-    margin: 0;
   }
 
   .page-main__header-description-consultation--dt {
@@ -991,9 +1083,6 @@
 
     &:nth-of-type(n+1) {
       margin-right: 0;
-    }
-
-    &:nth-of-type(n+1) {
       margin-bottom: 20px;
     }
 
@@ -1065,21 +1154,18 @@
   .page-main__products-item {
     &:nth-of-type(n+1) {
       margin-right: 0;
+      margin-bottom: 30px;
     }
 
     &:nth-of-type(n+4) {
       margin-top: 0;
     }
 
-    &:nth-of-type(n+1) {
-      margin-bottom: 30px;
-    }
-
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    &:after {
+    &::after {
       left: 227px;
     }
   }
@@ -1139,9 +1225,6 @@
 
     &:nth-of-type(n+1) {
       margin-right: 0;
-    }
-
-    &:nth-of-type(n+1) {
       margin-bottom: 30.4px;
     }
 
@@ -1175,7 +1258,6 @@
 
   .page-main__questions-agreement label {
     width: 238px;
-    margin-left: 0;
     margin-left: 49px;
     margin-top: 30px;
   }

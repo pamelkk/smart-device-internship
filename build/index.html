@@ -38,13 +38,13 @@
         <a class="page-main__header-description-consultation page-main__header-description-consultation--mob" href="#consultation">Бесплатная консультация</a>
         <a href="#features" class="page-main__header-description-features">Скролл вниз</a>
       </div>
-      <picture>
+      <picture class="page-main__header-description-picture">
         <!-- 1х: 320px; 2x: 640px -->
         <source media="(max-width: 767px)" srcset="img/pcb-mob.png 1x, img/pcb-mob@2x.png 2x">
         <!-- 1х: 770px; 2x: 1540px -->
         <source media="(max-width: 1023px)" srcset="img/pcb-tab.png 1x, img/pcb-tab@2x.png 2x">
         <!-- 1х: 1920px; 2x: 3840px -->
-        <img class="page-main__header-description-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="705" height="515" alt="Наша продукция"></picture>
+        <img class="page-main__header-description-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="710" height="655" alt="Наша продукция"></picture>
     </section>
     <section class="page-main__features" id="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -130,7 +130,7 @@
         <fieldset class="page-main__questions-inputs">
           <input type="text" id="name" name="name" placeholder="Имя">
           <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-          <input type="tel" id="tel" name="tel" pattern="(\+7[0-9]{10}|8[0-9]{10})" placeholder="Телефон" required="">
+          <input type="tel" id="tel" name="tel" pattern="+7\([0-9]{3}\)[0-9]{7}" placeholder="Телефон" required="">
           <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
           <textarea name="question" id="question" rows="7" placeholder="Ваш вопрос"></textarea>
           <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
@@ -229,7 +229,7 @@
     <div class="page-footer__wrapper">
       <nav class="page-footer__nav">
         <h3>Разделы сайта</h3>
-        <div class="page-footer__nav-lists page-footer__nav-lists--opened">
+        <div class="page-footer__nav-lists page-footer__nav-lists--mob page-footer__nav-lists--opened">
           <ul>
             <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">О компании</a></li>
             <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Продукты</a>
@@ -251,7 +251,7 @@
         </div>
         <button type="button" class="page-footer__nav-lists-menu page-footer__nav-lists-menu--opened"></button>
       </nav>
-      <div class="page-footer__address page-footer__address--opened">
+      <div class="page-footer__address page-footer__address--mob page-footer__address--opened">
         <h3>Наш офис</h3>
         <ul>
           <li class="page-footer__address-item">г. Мытищи, Олимпийский проспект, д.10</li>
@@ -267,6 +267,27 @@
       <p>Developed by wow studio</p>
     </div>
   </footer>
+  <section class="popup">
+    <div class="popup-wrapper">
+      <h3>Закажите звонок</h3>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="popup-wrapper__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+        <button class="popup-wrapper__close-button" type="button" title="Закрыть модальное окно"></button>
+        <input type="text" id="name-popup" name="name-popup" placeholder="Имя" autofocus="">
+        <label class="visually-hidden" for="name-popup">Введите Ваше Имя</label>
+        <input type="tel" id="tel-popup" name="tel-popup" pattern="+7\([0-9]{3}\)[0-9]{7}" placeholder="Телефон" required="">
+        <label class="visually-hidden" for="tel-popup">Введите Ваш номер телефона</label>
+        <textarea name="question-popup" id="question-popup" rows="7" placeholder="Ваш вопрос"></textarea>
+        <label class="visually-hidden" for="question-popup">Введите Ваш вопрос</label>
+        <button class="popup-wrapper__form-button" type="submit">Отправить</button>
+        <div class="popup-wrapper__form-agreement">
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-popup" value="agreement-popup" checked="">
+          <label for="agreement-popup">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

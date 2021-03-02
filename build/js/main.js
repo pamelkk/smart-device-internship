@@ -1,36 +1,51 @@
-const buttonOpen = document.querySelector(".page-header__menu");
-const menu = document.querySelector(".page-header__nav-wrapper");
-const headerElement = document.querySelector(".page-header");
-const mainElement = document.querySelector(".page-main");
-const headerWrapperElement = document.querySelector(".page-header__nav-wrapper");
-const pageElement = document.querySelector(".page");
-const pageHeaderNavElement = document.querySelector(".page-header__nav");
+const buttonListsOpen = document.querySelector(".page-footer__nav-lists-menu");
+const menuLists = document.querySelector(".page-footer__nav-lists--mob");
+const buttonAddressOpen = document.querySelector(".page-footer__address-menu");
+const menuAddress = document.querySelector(".page-footer__address--mob");
+const buttonPopupOpen = document.querySelector(".page-header__contacts-button");
+const popup = document.querySelector(".popup");
+const buttonPopupClose = document.querySelector(".popup-wrapper__close-button");
+const ESC_KEYCODE = 27;
 
-menu.classList.add("page-header__nav-wrapper--inactive");
-buttonOpen.classList.remove("page-header__menu--opened");
-buttonOpen.classList.remove("page-header__menu--disabled");
-headerElement.classList.remove("page-header--active");
-headerElement.classList.add("page-header--activate-bckg");
-mainElement.classList.add("page-main--inactive");
-headerWrapperElement.classList.remove("page-header__nav-wrapper--active");
-pageElement.classList.remove("page--inactive");
-pageHeaderNavElement.classList.remove("page-header__nav--active");
+menuLists.classList.remove("page-footer__nav-lists--opened");
+buttonListsOpen.classList.remove("page-footer__nav-lists-menu--opened");
+menuAddress.classList.remove("page-footer__address--opened");
+buttonAddressOpen.classList.remove("page-footer__address-menu--opened");
 
-
-buttonOpen.addEventListener("click", function (evt) {
-  if (!menu.classList.contains("page-header__nav-wrapper--inactive")) {
-    menu.classList.add("page-header__nav-wrapper--inactive");
-    buttonOpen.classList.remove("page-header__menu--opened");
-    headerElement.classList.remove("page-header--active");
-    headerWrapperElement.classList.remove("page-header__nav-wrapper--active");
-    pageElement.classList.remove("page--inactive");
-    pageHeaderNavElement.classList.remove("page-header__nav--active");
+buttonListsOpen.addEventListener("click", function () {
+  if (!menuLists.classList.contains("page-footer__nav-lists--opened")) {
+    menuLists.classList.add("page-footer__nav-lists--opened");
+    buttonListsOpen.classList.add("page-footer__nav-lists-menu--opened");
   } else {
-    menu.classList.remove("page-header__nav-wrapper--inactive");
-    buttonOpen.classList.add("page-header__menu--opened");
-    headerElement.classList.add("page-header--active");
-    headerWrapperElement.classList.add("page-header__nav-wrapper--active");
-    pageElement.classList.add("page--inactive");
-    pageHeaderNavElement.classList.add("page-header__nav--active");
+    menuLists.classList.remove("page-footer__nav-lists--opened");
+    buttonListsOpen.classList.remove("page-footer__nav-lists-menu--opened");
+  }
+});
+
+buttonAddressOpen.addEventListener("click", function () {
+  if (!menuAddress.classList.contains("page-footer__address--opened")) {
+    menuAddress.classList.add("page-footer__address--opened");
+    buttonAddressOpen.classList.add("page-footer__address-menu--opened");
+  } else {
+    menuAddress.classList.remove("page-footer__address--opened");
+    buttonAddressOpen.classList.remove("page-footer__address-menu--opened");
+  }
+});
+
+buttonPopupOpen.addEventListener("click", function () {
+  if (!popup.classList.contains("popup--opened")) {
+    popup.classList.add("popup--opened");
+  }
+});
+
+buttonPopupClose.addEventListener("click", function () {
+  if (popup.classList.contains("popup--opened")) {
+    popup.classList.remove("popup--opened");
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode === ESC_KEYCODE & popup.classList.contains("popup--opened")) {
+    popup.classList.remove("popup--opened");
   }
 });
