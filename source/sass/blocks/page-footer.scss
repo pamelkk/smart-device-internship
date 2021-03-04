@@ -44,6 +44,7 @@
   align-self: center;
   width: 27px;
   height: 27px;
+  cursor: pointer;
 
   &:nth-of-type(n+1) {
     margin-right: 15.5px;
@@ -174,6 +175,11 @@
   font-family: $font-text;
   opacity: 0.5;
   color: $products-footer-header;
+
+  &:hover {
+    color: $questions-features-products;
+    text-decoration: underline;
+  }
 }
 
 .page-footer__address {
@@ -218,6 +224,11 @@
   line-height: 25px;
   color: $products-footer-header;
   text-decoration: none;
+
+  &:hover {
+    color: $questions-features-products;
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -349,6 +360,7 @@
   .page-footer__logo-social-list {
     flex-direction: column;
     margin-bottom: 54px;
+    margin-left: 5px;
   }
 
   .page-footer__logo-social-list ul {
@@ -357,11 +369,16 @@
 
   .page-footer__logo-social-list p {
     margin-top: 26px;
-    margin-bottom: 31px;
+    margin-left: 1px;
+    margin-bottom: 35px;
   }
 
   .page-footer__logo-social-list a {
     align-self: center;
+  }
+
+  .page-footer--tablet {
+    padding-left: 20px;
   }
 
   .page-footer__copyright {
@@ -404,7 +421,7 @@
     width: 16px;
     height: 16px;
     position: absolute;
-    left: 272px;
+    left: 287px;
     background-image: url("../img/icon-plus.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -425,6 +442,10 @@
     border-top: 1px solid $footer-line;
     padding-top: 29px;
     padding-bottom: 28px;
+  }
+
+  .page-footer__address--mob {
+    margin-left: -5px;
   }
 
   .page-footer__nav {

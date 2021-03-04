@@ -38,7 +38,7 @@
         <a class="page-main__header-description-consultation page-main__header-description-consultation--mob" href="#consultation">Бесплатная консультация</a>
         <a href="#features" class="page-main__header-description-features">Скролл вниз</a>
       </div>
-      <picture class="page-main__header-description-picture">
+      <picture>
         <!-- 1х: 320px; 2x: 640px -->
         <source media="(max-width: 767px)" srcset="img/pcb-mob.png 1x, img/pcb-mob@2x.png 2x">
         <!-- 1х: 770px; 2x: 1540px -->
@@ -130,7 +130,7 @@
         <fieldset class="page-main__questions-inputs">
           <input type="text" id="name" name="name" placeholder="Имя">
           <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-          <input type="tel" id="tel" name="tel" pattern="+7\([0-9]{3}\)[0-9]{7}" placeholder="Телефон" required="">
+          <input type="tel" id="tel" name="tel" pattern="(\[0-9]{10})" placeholder="Телефон" onfocus="this.value = '+7('" required="">
           <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
           <textarea name="question" id="question" rows="7" placeholder="Ваш вопрос"></textarea>
           <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
@@ -275,7 +275,7 @@
         <button class="popup-wrapper__close-button" type="button" title="Закрыть модальное окно"></button>
         <input type="text" id="name-popup" name="name-popup" placeholder="Имя" autofocus="">
         <label class="visually-hidden" for="name-popup">Введите Ваше Имя</label>
-        <input type="tel" id="tel-popup" name="tel-popup" pattern="+7\([0-9]{3}\)[0-9]{7}" placeholder="Телефон" required="">
+        <input type="tel" id="tel-popup" name="tel-popup" pattern="(\+7[0-9]{10})" placeholder="Телефон" onfocus="this.value = '+7('" required="">
         <label class="visually-hidden" for="tel-popup">Введите Ваш номер телефона</label>
         <textarea name="question-popup" id="question-popup" rows="7" placeholder="Ваш вопрос"></textarea>
         <label class="visually-hidden" for="question-popup">Введите Ваш вопрос</label>
