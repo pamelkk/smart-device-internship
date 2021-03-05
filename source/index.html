@@ -138,8 +138,7 @@
         <fieldset class="page-main__questions-inputs">
           <input type="text" id="name" name="name" placeholder="Имя">
           <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-          <input type="tel" id="tel" name="tel" pattern="(\[0-9]{10})" placeholder="Телефон"
-            onfocus="this.value = '+7('" required>
+          <input type="tel" id="tel" name="tel" pattern="([0-9]{10})" placeholder="Телефон" required>
           <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
           <textarea name="question" id="question" rows="7" placeholder="Ваш вопрос"></textarea>
           <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
@@ -286,15 +285,14 @@
         <button class="popup-wrapper__close-button" type="button" title="Закрыть модальное окно"></button>
         <input type="text" id="name-popup" name="name-popup" placeholder="Имя" autofocus>
         <label class="visually-hidden" for="name-popup">Введите Ваше Имя</label>
-        <input type="tel" id="tel-popup" name="tel-popup" pattern="(\+7[0-9]{10})" placeholder="Телефон"
-          onfocus="this.value = '+7('" required>
+        <input type="tel" id="tel-popup" name="tel-popup" pattern="([0-9]{10})" placeholder="Телефон" required>
         <label class="visually-hidden" for="tel-popup">Введите Ваш номер телефона</label>
         <textarea name="question-popup" id="question-popup" rows="7" placeholder="Ваш вопрос"></textarea>
         <label class="visually-hidden" for="question-popup">Введите Ваш вопрос</label>
         <button class="popup-wrapper__form-button" type="submit">Отправить</button>
         <div class="popup-wrapper__form-agreement">
-          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-popup" value="agreement-popup"
-            checked>
+          <input class="visually-hidden" type="checkbox" name="agreement-popup" id="agreement-popup"
+            value="agreement-popup" checked>
           <label for="agreement-popup">Я согласен на обработку персональных данных</label>
         </div>
       </form>

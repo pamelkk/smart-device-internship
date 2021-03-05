@@ -18,8 +18,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -200px;
-  margin-top: -200px;
+  margin-left: -193px;
+  margin-top: -408px;
   background-color: $questions-features-products;
   padding-top: 33px;
   padding-left: 39px;
@@ -52,8 +52,8 @@
   width: 411.4px;
   height: 51.8px;
   box-sizing: border-box;
-  padding-top: 14.5px;
-  padding-bottom: 14.5px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: $inputs;
@@ -81,7 +81,7 @@
   margin-top: 30px;
   padding: 0;
   width: 411.4px;
-  min-height: 104px;
+  height: 105px;
   box-sizing: border-box;
   padding-top: 13.7px;
   padding-bottom: 13.7px;
@@ -111,21 +111,22 @@
   width: 411.4px;
   height: 46.6px;
   box-sizing: border-box;
-  padding-top: 14.5px;
-  padding-bottom: 8px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   padding-left: 27.4px;
   padding-right: 29.7px;
   border: 1px solid $header-features-form;
   border-radius: 5px;
   background-color: $questions-features-products;
   font-family: $font-main;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .popup-wrapper__form-agreement {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 35px;
+  margin-left: 18px;
 }
 
 .popup-wrapper__form-agreement label {
@@ -146,7 +147,7 @@
     position: absolute;
     width: 16px;
     top: 0;
-    left: -37px;
+    left: -45px;
     height: 16px;
     background-image: url("../img/icon-check-agree-rectangle.svg");
     background-repeat: no-repeat;
@@ -159,7 +160,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -37px;
+    left: -45px;
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-check-agree-rectangle-checked.svg");
@@ -175,7 +176,7 @@
   line-height: 22px;
   color: $header-features-form;
   text-align: left;
-  margin-top: 17px;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 

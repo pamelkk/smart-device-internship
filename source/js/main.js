@@ -6,6 +6,8 @@ const buttonPopupOpen = document.querySelector(".page-header__contacts-button");
 const popup = document.querySelector(".popup");
 const buttonPopupClose = document.querySelector(".popup-wrapper__close-button");
 const ESC_KEYCODE = 27;
+const isStorageSupport = true;
+const storage = "";
 
 menuLists.classList.remove("page-footer__nav-lists--opened");
 buttonListsOpen.classList.remove("page-footer__nav-lists-menu--opened");

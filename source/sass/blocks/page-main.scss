@@ -6,15 +6,17 @@
 .page-main__header {
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
 }
 
 .page-main__header-description {
   display: flex;
   flex-direction: column;
   width: 718px;
-  align-self: flex-start;
+  align-self: center;
   margin-top: 230px;
-  margin-left: 95px;
+  margin-left: -600px;
+  position: relative;
 }
 
 .page-main__header-description h1 {
@@ -36,6 +38,7 @@
   top: 120px;
   right: -78px;
   z-index: -1;
+  background-position: center;
 }
 
 .page-main__header-description-img {
@@ -1377,7 +1380,7 @@
 
   .page-main__products {
     padding-top: 50px;
-    padding-bottom: 59px;
+    padding-bottom: 58px;
     padding-left: 16px;
     padding-right: 9px;
 
