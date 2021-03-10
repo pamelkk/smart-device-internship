@@ -11,7 +11,7 @@
     z-index: -2;
     width: 100vw;
     top: 0;
-    left: calc(-50vw + 50%);
+    left: calc(50vw + 0%);
     height: 880px;
   }
 
@@ -21,7 +21,7 @@
     z-index: -1;
     width: 100vw;
     top: 0;
-    left: calc(-50vw + 50%);
+    left: calc(50vw + 0%);
     background-position: center;
     height: 880px;
     background-image: url("../img/bckg-header-dt.png");
@@ -43,10 +43,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 50px;
-}
-
-.page-header__contacts-link--tab {
-  display: none;
 }
 
 .page-header__contacts-link {
@@ -165,18 +161,14 @@
   }
 
   .page-header__contacts-link {
-    display: none;
-  }
-
-  .page-header__contacts-link--tab {
-    display: block;
+    color: transparent;
   }
 
   .page-header__contacts-link--mail {
     &::before {
       width: 25px;
-      top: -7px;
-      left: 15px;
+      top: 1px;
+      left: 285px;
       height: 19px;
       background-size: 25px 19px;
     }
@@ -185,8 +177,8 @@
   .page-header__contacts-link--phone {
     &::before {
       width: 24px;
-      top: -10px;
-      left: -48px;
+      top: -1px;
+      left: 125px;
       height: 24px;
       background-size: 24px 24px;
     }
@@ -221,15 +213,15 @@
 
   .page-header__contacts-link--mail {
     &::before {
-      top: -4px;
-      left: 34px;
+      top: 24px;
+      left: 158px;
     }
   }
 
   .page-header__contacts-link--phone {
     &::before {
-      top: -7px;
-      left: -39px;
+      top: 3px;
+      left: 85px;
     }
   }
 

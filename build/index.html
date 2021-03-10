@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Smart Device</title>
-  <link href="normalize.css" rel="stylesheet">
   <link href="css/min.css" rel="stylesheet">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font">
 </head>
@@ -24,8 +23,6 @@
       <a class="page-header__contacts-link page-header__contacts-link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
       <a class="page-header__contacts-link page-header__contacts-link--phone" href="tel:84950005252">+7 (495) 000 52
         52</a>
-      <a class="page-header__contacts-link page-header__contacts-link--tab page-header__contacts-link--mail" href="mailto:info@sd.ru"></a>
-      <a class="page-header__contacts-link page-header__contacts-link--tab page-header__contacts-link--phone" href="tel:84950005252"></a>
       <button type="button" class="page-header__contacts-button">Заказать звонок</button>
     </div>
   </header>
@@ -40,9 +37,9 @@
       </div>
       <picture>
         <!-- 1х: 320px; 2x: 640px -->
-        <source media="(max-width: 767px)" srcset="img/pcb-mob.png 1x, img/pcb-mob@2x.png 2x">
+        <source media="(max-width: 767px)" srcset="img/pcb-mob.webp 1x, img/pcb-mob@2x.webp 2x">
         <!-- 1х: 770px; 2x: 1540px -->
-        <source media="(max-width: 1023px)" srcset="img/pcb-tab.png 1x, img/pcb-tab@2x.png 2x">
+        <source media="(max-width: 1023px)" srcset="img/pcb-tab.webp 1x, img/pcb-tab@2x.webp 2x">
         <!-- 1х: 1920px; 2x: 3840px -->
         <img class="page-main__header-description-img" src="img/pcb-dt.png" srcset="img/pcb-dt@2x.png 2x" width="710" height="655" alt="Наша продукция"></picture>
     </section>
@@ -50,21 +47,21 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul>
         <li class="page-main__features-item">
-          <h3 class="page-main__features-item-header--timing">Оперативные сроки</h3>
+          <h3 class="page-main__features-item--timing">Оперативные сроки</h3>
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="page-main__features-item">
-          <h3 class="page-main__features-item-header--supplier">Крупные поставщики</h3>
+          <h3 class="page-main__features-item--supplier">Крупные поставщики</h3>
           <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li class="page-main__features-item">
-          <h3 class="page-main__features-item-header--confidentiality">Полная конфиденциальность</h3>
+          <h3 class="page-main__features-item--confidentiality">Полная конфиденциальность</h3>
           <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="page-main__features-item">
-          <h3 class="page-main__features-item-header--cost">Персонализация стоимости</h3>
+          <h3 class="page-main__features-item--cost">Персонализация стоимости</h3>
           <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
             устраивает.</p>
         </li>
@@ -74,12 +71,10 @@
       <h2>О компании</h2>
       <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
         года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-      <p class="page-main__about-description--tab">Наши поставщики - мировые производители электронных компонентов:
-        OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях
-        Российских Железных Дорог..</p>
       <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
-        (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="page-main__about-split">..</span><span>(РЖД), РоссАвтоПрома
+          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
+          России.</span></p>
       <a href="#">Подробнее</a>
     </section>
     <section class="page-main__products">
@@ -90,9 +85,9 @@
             <h3>Производство печатных плат</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/production-mob.jpg 1x, img/production-mob@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/production-mob.webp 1x, img/production-mob@2x.webp 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)" srcset="img/production-tab.jpg 1x, img/production-tab@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/production-tab.webp 1x, img/production-tab@2x.webp 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/production-dt.jpg" srcset="img/production-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция"></picture>
           </a>
@@ -102,9 +97,9 @@
             <h3>Монтаж печатных плат</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/installation-mob.jpg 1x, img/installation-mob@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/installation-mob.webp 1x, img/installation-mob@2x.webp 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)" srcset="img/installation-tab.jpg 1x, img/installation-tab@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/installation-tab.webp 1x, img/installation-tab@2x.webp 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/installation-dt.jpg" srcset="img/installation-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция"></picture>
           </a>
@@ -114,9 +109,9 @@
             <h3>Комплектующие для светотехники</h3>
             <picture>
               <!-- 1х: 290px; 2x: 580px -->
-              <source media="(max-width: 767px)" srcset="img/accessories-mob.jpg 1x, img/accessories-mob@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/accessories-mob.webp 1x, img/accessories-mob@2x.webp 2x">
               <!-- 1х: 715px; 2x: 1430px -->
-              <source media="(max-width: 1023px)" srcset="img/accessories-tab.jpg 1x, img/accessories-tab@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/accessories-tab.webp 1x, img/accessories-tab@2x.webp 2x">
               <!-- 1х: 370px; 2x: 740px -->
               <img class="page-main__products-item-img" src="img/accessories-dt.jpg" srcset="img/accessories-dt@2x.jpg 2x" width="370" height="620" alt="Наша продукция"></picture>
           </a>
@@ -143,7 +138,7 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer page-footer--desktop">
+  <footer class="page-footer">
     <div class="page-footer__menu">
       <h2 class="visually-hidden">Меню и контакты</h2>
       <div class="page-footer__social-logo">
@@ -152,81 +147,25 @@
             <use xlink:href="img/sprite_auto.svg#icon-logo-footer"></use>
           </svg>
         </a>
+        <p class="page-footer__social-logo-rights">1999-2018 SD Service Devices</p>
         <ul>
-          <li class="page-footer__social-logo-item"><a title="Наша страничка в Facebook"><svg width="27" height="27">
+          <li class="page-footer__social-logo-item">
+            <a title="Наша страничка в Facebook" href="#">
+              <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
               </svg></a></li>
-          <li class="page-footer__social-logo-item"><a title="Наша страничка в Одноклассниках"><svg width="27" height="27">
+          <li class="page-footer__social-logo-item">
+            <a title="Наша страничка в Одноклассниках" href="#">
+              <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-classmates"></use>
               </svg></a></li>
-          <li class="page-footer__social-logo-item"><a title="Наша страничка в Вконтакте"><svg width="27" height="27">
+          <li class="page-footer__social-logo-item">
+            <a title="Наша страничка в Вконтакте" href="#">
+              <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg></a></li>
         </ul>
       </div>
-      <nav class="page-footer__nav">
-        <h3>Разделы сайта</h3>
-        <div class="page-footer__nav-lists">
-          <ul>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">О компании</a></li>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Продукты</a>
-            </li>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Производство
-                печатных плат</a>
-            </li>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Монтаж печатных
-                плат</a></li>
-          </ul>
-          <ul>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Комплектующие</a>
-            </li>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Доставка</a>
-            </li>
-            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-footer__address">
-        <h3>Наш офис</h3>
-        <ul>
-          <li class="page-footer__address-item">г. Мытищи, Олимпийский проспект, д.10</li>
-          <li class="page-footer__address-item"><a href="tel:84955894050">+7 (495) 589-40-50</a></li>
-          <li class="page-footer__address-item"><a href="tel:89250038767">+7 (925) 003-87-67</a></li>
-          <li class="page-footer__address-item"><a href="tel:892692608079">+7 (926) 926-080-79</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="page-footer__information">
-      <ul>
-        <li class="page-footer__information-rights-item">Все права защищены</li>
-        <li class="page-footer__information-rights-item">1999-2018 SD Service Devices</li>
-        <li class="page-footer__information-rights-item"><a href="#">Условия конфиденциальности</a></li>
-      </ul>
-      <p>Developed by wow studio</p>
-    </div>
-  </footer>
-  <footer class="page-footer page-footer--tablet">
-    <div class="page-footer__logo-social-list">
-      <a title="Логотип нашей компании" href="#">
-        <svg class="page-footer__social-logo-svg" width="202" height="52">
-          <use xlink:href="img/sprite_auto.svg#icon-logo-footer"></use>
-        </svg>
-      </a>
-      <p>1999-2018 SD Service Devices</p>
-      <ul>
-        <li class="page-footer__social-logo-item"><a title="Наша страничка в Facebook"><svg width="27" height="27">
-              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-            </svg></a></li>
-        <li class="page-footer__social-logo-item"><a title="Наша страничка в Одноклассниках"><svg width="27" height="27">
-              <use xlink:href="img/sprite_auto.svg#icon-classmates"></use>
-            </svg></a></li>
-        <li class="page-footer__social-logo-item"><a title="Наша страничка в Вконтакте"><svg width="27" height="27">
-              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-            </svg></a></li>
-      </ul>
-    </div>
-    <div class="page-footer__wrapper">
       <nav class="page-footer__nav">
         <h3>Разделы сайта</h3>
         <div class="page-footer__nav-lists page-footer__nav-lists--mob page-footer__nav-lists--opened">
@@ -262,8 +201,14 @@
         <button type="button" class="page-footer__address-menu page-footer__address-menu--opened"></button>
       </div>
     </div>
-    <div class="page-footer__copyright">
-      <a href="#">Условия конфиденциальности</a>
+    <div class="page-footer__information">
+      <ul>
+        <li class="page-footer__information-rights-item page-footer__information-rights-item--dt">Все права защищены
+        </li>
+        <li class="page-footer__information-rights-item page-footer__information-rights-item--dt">1999-2018 SD Service
+          Devices</li>
+        <li class="page-footer__information-rights-item"><a href="#">Условия конфиденциальности</a></li>
+      </ul>
       <p>Developed by wow studio</p>
     </div>
   </footer>

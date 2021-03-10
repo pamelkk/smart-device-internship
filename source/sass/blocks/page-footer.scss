@@ -1,10 +1,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-}
-
-.page-footer--tablet {
-  display: none;
+  padding-left: 95px;
 }
 
 .page-footer__menu {
@@ -20,13 +17,13 @@
   height: 52px;
 }
 
-.page-footer--desktop {
-  padding-left: 95px;
-}
-
 .page-footer__social-logo {
   display: flex;
   flex-direction: column;
+}
+
+.page-footer__social-logo-rights {
+  display: none;
 }
 
 .page-footer__social-logo ul {
@@ -83,7 +80,8 @@
   width: 860px;
 }
 
-.page-footer__information-rights-item {
+.page-footer__information-rights-item,
+.page-footer__social-logo-rights {
   font-family: $font-text;
   font-weight: 400;
   font-size: 13px;
@@ -232,16 +230,15 @@
 }
 
 @media (max-width: $tablet-width) {
-  .page-footer--tablet {
-    display: flex;
+  .page-footer {
     flex-direction: column;
     box-sizing: border-box;
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 17px;
   }
 
-  .page-footer--desktop {
-    display: none;
+  .page-footer__menu {
+    padding-bottom: 35px;
   }
 
   .page-footer__logo-social-list {
@@ -251,10 +248,65 @@
     margin-bottom: 26px;
   }
 
+  .page-footer__social-logo-rights {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    align-self: center;
+    padding-left: 87px;
+    padding-top: 3px;
+    padding-right: 72px;
+  }
+
+  .page-footer__information-rights-item--dt {
+    display: none;
+  }
+
   .page-footer__logo-social-list a {
     width: 216px;
     height: 52px;
     align-self: center;
+  }
+
+  .page-footer__social-logo {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $footer-line;
+  }
+
+  .page-footer__social-logo ul {
+    margin: 0;
+    justify-content: center;
+    align-self: center;
+    width: 113px;
+    padding-bottom: 5px;
+  }
+
+  .page-footer__information {
+    padding-top: 22px;
+  }
+
+  .page-footer__information-rights-item a {
+    margin-left: 2px;
+  }
+
+  .page-footer__information ul {
+    width: auto;
+  }
+
+  .page-footer__information p {
+    padding-right: 2px;
+  }
+
+  .page-footer__nav {
+    padding-top: 38px;
+    padding-left: 6px;
+  }
+
+  .page-footer__nav h3 {
+    padding-left: 1px;
   }
 
   .page-footer__logo-social-list p {
@@ -284,6 +336,7 @@
 
   .page-footer__nav-lists-link {
     line-height: 25px;
+    letter-spacing: 0;
   }
 
   .page-footer__nav-lists {
@@ -312,8 +365,8 @@
   }
 
   .page-footer__address--mob {
-    margin-right: 10px;
-    margin-top: -1px;
+    margin-right: 17px;
+    padding-top: 40px;
 
     ul {
       margin-top: 25px;
@@ -377,8 +430,29 @@
     align-self: center;
   }
 
-  .page-footer--tablet {
-    padding-left: 20px;
+  .page-footer {
+    padding-left: 12px;
+  }
+
+  .page-footer__social-logo {
+    border: none;
+  }
+
+  .page-footer__social-logo a {
+    padding-left: 40px;
+  }
+
+  .page-footer__social-logo-rights {
+    padding: 0;
+    padding-top: 22px;
+    padding-left: 31px;
+    padding-bottom: 33px;
+  }
+
+  .page-footer__social-logo ul {
+    padding: 0;
+    padding-left: 50px;
+    padding-bottom: 31px;
   }
 
   .page-footer__copyright {
@@ -413,6 +487,19 @@
     padding: 0;
   }
 
+  .page-footer__information {
+    flex-direction: column;
+    padding-top: 29px;
+    padding-left: 5px;
+  }
+
+  .page-footer__information p {
+    padding: 0;
+    align-self: center;
+    padding-top: 21px;
+    padding-left: 2px;
+  }
+
   .page-footer__nav-lists-menu,
   .page-footer__address-menu {
     display: block;
@@ -421,7 +508,7 @@
     width: 16px;
     height: 16px;
     position: absolute;
-    left: 287px;
+    left: 286px;
     background-image: url("../img/icon-plus.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -438,6 +525,7 @@
   }
 
   .page-footer__address {
+    margin: 0;
     border-bottom: 1px solid $footer-line;
     border-top: 1px solid $footer-line;
     padding-top: 29px;
@@ -445,13 +533,17 @@
   }
 
   .page-footer__address--mob {
-    margin-left: -5px;
+    margin-left: 2px;
+    width: 320px;
+    border-bottom: none;
+    padding-top: 27px;
   }
 
   .page-footer__nav {
     border-top: 1px solid $footer-line;
     padding-top: 29px;
     padding-bottom: 28px;
+    width: 320px;
   }
 
   .page-footer__nav-lists,

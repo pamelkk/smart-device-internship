@@ -30,7 +30,7 @@
   color: $header-features-form;
 }
 
-.page-main__header picture {
+.page-main__header-description-img {
   width: 710px;
   height: 655px;
   background-size: 710px 655px;
@@ -38,10 +38,6 @@
   top: 120px;
   right: -78px;
   z-index: -1;
-  background-position: center;
-}
-
-.page-main__header-description-img {
   background-position: center;
 }
 
@@ -184,25 +180,25 @@
       color: $header-features-form;
     }
 
-    .page-main__features-item-header--timing {
+    .page-main__features-item--timing {
       &::before {
         background-image: url("../img/icon-watch-white.svg");
       }
     }
 
-    .page-main__features-item-header--supplier {
+    .page-main__features-item--supplier {
       &::before {
         background-image: url("../img/icon-people-white.svg");
       }
     }
 
-    .page-main__features-item-header--confidentiality {
+    .page-main__features-item--confidentiality {
       &::before {
         background-image: url("../img/icon-detective-white.svg");
       }
     }
 
-    .page-main__features-item-header--cost {
+    .page-main__features-item--cost {
       &::before {
         background-image: url("../img/icon-tag-white.svg");
       }
@@ -226,7 +222,7 @@
   }
 }
 
-.page-main__features-item-header--timing {
+.page-main__features-item--timing {
   &::before {
     width: 29px;
     height: 35px;
@@ -248,7 +244,7 @@
   }
 }
 
-.page-main__features-item-header--supplier {
+.page-main__features-item--supplier {
   &::before {
     width: 35px;
     height: 35px;
@@ -274,7 +270,7 @@
   }
 }
 
-.page-main__features-item-header--confidentiality {
+.page-main__features-item--confidentiality {
   &::before {
     width: 36px;
     height: 31px;
@@ -297,7 +293,7 @@
   }
 }
 
-.page-main__features-item-header--cost {
+.page-main__features-item--cost {
   &::before {
     width: 35px;
     height: 35px;
@@ -359,10 +355,6 @@
   }
 }
 
-.page-main__about-description--tab {
-  display: none;
-}
-
 .page-main__about h2 {
   margin: 0;
   font-weight: 400;
@@ -370,6 +362,10 @@
   line-height: 51px;
   color: $features-about;
   margin-bottom: 21px;
+}
+
+.page-main__about-split {
+  display: none;
 }
 
 .page-main__about p {
@@ -384,6 +380,8 @@
   &:last-of-type {
     margin-top: 22px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -421,7 +419,7 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 90px;
-  padding-bottom: 123px;
+  padding-bottom: 122px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: $products-footer-header;
@@ -791,7 +789,7 @@
 
   .page-main__header-description {
     margin-top: 111px;
-    margin-left: 88px;
+    margin-left: 125px;
   }
 
   .page-main__header-description h1 {
@@ -832,12 +830,6 @@
   }
 
   .page-main__header-description-img {
-    width: 332px;
-    height: 465px;
-    background-size: 332px 465px;
-  }
-
-  .page-main__header picture {
     width: 332px;
     height: 465px;
     background-size: 332px 465px;
@@ -898,7 +890,7 @@
     }
   }
 
-  .page-main__features-item-header--timing {
+  .page-main__features-item--timing {
     &::before {
       height: 36px;
       top: -46px;
@@ -911,7 +903,7 @@
     }
   }
 
-  .page-main__features-item-header--supplier {
+  .page-main__features-item--supplier {
     &::before {
       width: 31.7px;
       height: 32px;
@@ -931,7 +923,7 @@
     }
   }
 
-  .page-main__features-item-header--confidentiality {
+  .page-main__features-item--confidentiality {
     &::before {
       width: 30px;
       height: 26px;
@@ -945,7 +937,7 @@
     }
   }
 
-  .page-main__features-item-header--cost {
+  .page-main__features-item--cost {
     &::before {
       width: 32px;
       height: 32px;
@@ -970,7 +962,7 @@
   }
 
   .page-main__about {
-    margin-left: 185px;
+    margin-left: 187px;
     margin-bottom: 83px;
 
     &::before {
@@ -989,6 +981,10 @@
     }
   }
 
+  .page-main__about-split {
+    display: block;
+  }
+
   .page-main__about h2 {
     margin-bottom: 24px;
     font-size: 32px;
@@ -999,17 +995,25 @@
   .page-main__about p {
     width: 532px;
 
-    &:last-of-type {
-      display: none;
-    }
-
     &:first-of-type {
       margin-bottom: 20px;
     }
-  }
 
-  .page-main__about-description--tab {
-    display: block;
+    &:last-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      span {
+        display: none;
+      }
+
+      .page-main__about-split {
+        display: block;
+        position: absolute;
+        bottom: 87px;
+        right: 4px;
+      }
+    }
   }
 
   .page-main__about a {
@@ -1087,7 +1091,7 @@
 
   .page-main__questions {
     margin-bottom: 19px;
-    padding-left: 98px;
+    padding-left: 90px;
     padding-right: 70px;
     padding-top: 81px;
     padding-bottom: 103px;
@@ -1214,12 +1218,6 @@
     width: 294px;
     height: 437px;
     background-size: 294px 437px;
-  }
-
-  .page-main__header picture {
-    width: 294px;
-    height: 437px;
-    background-size: 294px 437px;
     top: 31px;
     right: 0;
   }
@@ -1310,14 +1308,14 @@
     line-height: 28.13px;
   }
 
-  .page-main__features-item-header--timing {
+  .page-main__features-item--timing {
     &::before {
       top: -48px;
       left: 0;
     }
   }
 
-  .page-main__features-item-header--supplier {
+  .page-main__features-item--supplier {
     &::before {
       top: -43px;
       left: 0;
@@ -1331,14 +1329,14 @@
     }
   }
 
-  .page-main__features-item-header--confidentiality {
+  .page-main__features-item--confidentiality {
     &::before {
       top: -39px;
       left: 0;
     }
   }
 
-  .page-main__features-item-header--cost {
+  .page-main__features-item--cost {
     &::before {
       top: -42px;
       left: 0;
@@ -1367,6 +1365,15 @@
 
     &:first-of-type {
       margin-bottom: 40px;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+
+      .page-main__about-split {
+        bottom: 76px;
+        right: 133px;
+      }
     }
   }
 
@@ -1434,7 +1441,7 @@
   }
 
   .page-main__questions {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 31px;
