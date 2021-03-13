@@ -1,7 +1,9 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 95px;
+  padding-left: 252px;
+  padding-right: 167px;
+  margin-top: 65px;
 }
 
 .page-footer__menu {
@@ -65,7 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 14px;
   box-sizing: border-box;
 }
@@ -92,7 +94,11 @@
   opacity: 0.5;
 
   &:nth-of-type(n+1) {
-    margin-right: 77px;
+    margin-right: 74px;
+  }
+
+  &:nth-of-type(n+2) {
+    margin-right: 78px;
   }
 
   &:last-of-type {
@@ -128,7 +134,7 @@
 .page-footer__nav {
   display: flex;
   flex-direction: column;
-  margin-left: -5px;
+  margin-right: 17px;
   margin-top: -1px;
 }
 
@@ -140,6 +146,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $products-footer-header;
+  margin-left: 2px;
 }
 
 .page-footer__nav-lists {
@@ -156,7 +163,7 @@
   list-style: none;
 
   &:nth-of-type(n+1) {
-    margin-right: 53px;
+    margin-right: 65px;
   }
 
   &:nth-of-type(2n) {
@@ -183,8 +190,8 @@
 .page-footer__address {
   display: flex;
   flex-direction: column;
-  margin-left: 12px;
-  margin-top: -3px;
+  margin-left: 5px;
+  margin-top: -1px;
 }
 
 .page-footer__address h3 {
@@ -203,7 +210,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-top: 29px;
+  margin-top: 25px;
 }
 
 .page-footer__address-item {
@@ -233,12 +240,13 @@
   .page-footer {
     flex-direction: column;
     box-sizing: border-box;
-    padding-left: 25px;
+    padding-left: 18px;
     padding-right: 17px;
+    margin-top: 18px;
   }
 
   .page-footer__menu {
-    padding-bottom: 35px;
+    padding-bottom: 37px;
   }
 
   .page-footer__logo-social-list {
@@ -253,9 +261,9 @@
     box-sizing: border-box;
     margin: 0;
     align-self: center;
-    padding-left: 87px;
+    padding-left: 62px;
     padding-top: 3px;
-    padding-right: 72px;
+    padding-right: 50px;
   }
 
   .page-footer__information-rights-item--dt {
@@ -274,6 +282,8 @@
     flex-wrap: wrap;
     padding-bottom: 22px;
     border-bottom: 1px solid $footer-line;
+    margin-left: 7px;
+    width: 100%;
   }
 
   .page-footer__social-logo ul {
@@ -282,10 +292,13 @@
     align-self: center;
     width: 113px;
     padding-bottom: 5px;
+    padding-right: 5px;
   }
 
   .page-footer__information {
-    padding-top: 22px;
+    padding-top: 21px;
+    padding-left: 8px;
+    width: 100%;
   }
 
   .page-footer__information-rights-item a {
@@ -297,7 +310,7 @@
   }
 
   .page-footer__information p {
-    padding-right: 2px;
+    padding-right: 7px;
   }
 
   .page-footer__nav {
@@ -431,27 +444,34 @@
   }
 
   .page-footer {
-    padding-left: 12px;
+    padding: 0;
   }
 
   .page-footer__social-logo {
     border: none;
+    padding-bottom: 23px;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 0;
   }
 
   .page-footer__social-logo a {
-    padding-left: 40px;
+    align-self: center;
   }
 
   .page-footer__social-logo-rights {
     padding: 0;
     padding-top: 22px;
-    padding-left: 31px;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
+    align-self: center;
+  }
+
+  .page-footer__menu {
+    flex-direction: column;
   }
 
   .page-footer__social-logo ul {
     padding: 0;
-    padding-left: 50px;
     padding-bottom: 31px;
   }
 
@@ -487,10 +507,15 @@
     padding: 0;
   }
 
+  .page-footer__nav h3 {
+    margin-left: -4px;
+  }
+
   .page-footer__information {
     flex-direction: column;
+    align-self: center;
     padding-top: 29px;
-    padding-left: 5px;
+    padding-left: 16px;
   }
 
   .page-footer__information p {
@@ -522,6 +547,7 @@
   .page-footer__address h3,
   .page-footer__nav h3 {
     position: relative;
+    text-align: left;
   }
 
   .page-footer__address {
@@ -530,11 +556,15 @@
     border-top: 1px solid $footer-line;
     padding-top: 29px;
     padding-bottom: 28px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .page-footer__address--mob {
-    margin-left: 2px;
-    width: 320px;
     border-bottom: none;
     padding-top: 27px;
   }
@@ -543,7 +573,14 @@
     border-top: 1px solid $footer-line;
     padding-top: 29px;
     padding-bottom: 28px;
-    width: 320px;
+    width: 100%;
+    margin-right: 0;
+    padding-left: 18px;
+    align-self: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   .page-footer__nav-lists,

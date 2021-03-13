@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-top: 33px;
+  margin-top: 30px;
+  padding-right: 169px;
+  padding-left: 253px;
+  width: 100%;
 
   &::before {
     background-color: $products-footer-header;
@@ -11,8 +14,8 @@
     z-index: -2;
     width: 100vw;
     top: 0;
-    left: calc(50vw + 0%);
-    height: 880px;
+    left: 0;
+    height: 878px;
   }
 
   &::after {
@@ -21,12 +24,12 @@
     z-index: -1;
     width: 100vw;
     top: 0;
-    left: calc(50vw + 0%);
+    left: 0;
     background-position: center;
-    height: 880px;
+    height: 878px;
     background-image: url("../img/bckg-header-dt.png");
     background-repeat: no-repeat;
-    background-size: 100vw 878px;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bckg-header-dt@2x.png");
@@ -43,6 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 50px;
+  justify-content: center;
 }
 
 .page-header__contacts-link {
@@ -63,6 +67,10 @@
 
   &:nth-of-type(n+2) {
     margin-left: 122px;
+  }
+
+  &:nth-of-type(3n) {
+    margin-left: 120px;
   }
 
   &:first-of-type {
@@ -110,8 +118,7 @@
 
 .page-header__logo {
   align-self: center;
-  margin-left: 98px;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .page-header__contacts-button {
@@ -144,18 +151,21 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
+    padding: 0;
+    margin-top: 6px;
+
     &::before {
-      height: 713px;
+      height: 686px;
     }
 
     &::after {
-      height: 713px;
+      height: 686px;
       background-image: url("../img/bckg-header-tab.png");
-      background-size: 100vw 713px;
+      background-size: 100vw 686px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/bckg-header-tab@2x.png");
-        background-size: 100vw 713px;
+        background-size: 100vw 686px;
       }
     }
   }
@@ -167,7 +177,7 @@
   .page-header__contacts-link--mail {
     &::before {
       width: 25px;
-      top: 1px;
+      top: 2px;
       left: 285px;
       height: 19px;
       background-size: 25px 19px;
@@ -213,31 +223,41 @@
 
   .page-header__contacts-link--mail {
     &::before {
-      top: 24px;
-      left: 158px;
+      top: 6px;
+      left: -87px;
+    }
+  }
+
+  .page-header__contacts-link {
+    width: 1px;
+
+    &:nth-of-type(n+2) {
+      margin-left: 0;
     }
   }
 
   .page-header__contacts-link--phone {
     &::before {
-      top: 3px;
-      left: 85px;
+      top: 40px;
+      left: -39px;
     }
   }
 
   .page-header {
     &::before {
+      top: -7px;
       height: 678px;
     }
 
     &::after {
+      top: -7px;
       height: 678px;
       background-image: url("../img/bckg-header-mob.png");
-      background-size: 100vw 647px;
+      background-size: 100vw 678px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/bckg-header-mob@2x.png");
-        background-size: 100vw 647px;
+        background-size: 100vw 678px;
       }
     }
   }
