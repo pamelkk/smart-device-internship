@@ -1,11 +1,10 @@
 .page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
-  margin-top: 30px;
-  padding-right: 169px;
-  padding-left: 253px;
+  padding-top: 30px;
   width: 100%;
+  margin: 0 auto;
 
   &::before {
     background-color: $products-footer-header;
@@ -119,6 +118,7 @@
 .page-header__logo {
   align-self: center;
   margin-top: 2px;
+  margin-right: 22.5%;
 }
 
 .page-header__contacts-button {
@@ -178,7 +178,7 @@
     &::before {
       width: 25px;
       top: 2px;
-      left: 285px;
+      left: 286px;
       height: 19px;
       background-size: 25px 19px;
     }
@@ -188,7 +188,7 @@
     &::before {
       width: 24px;
       top: -1px;
-      left: 125px;
+      left: 126px;
       height: 24px;
       background-size: 24px 24px;
     }
@@ -201,6 +201,7 @@
   .page-header__logo {
     margin-top: 15px;
     margin-left: 25px;
+    margin-right: 98px;
   }
 }
 
@@ -217,13 +218,17 @@
     margin-left: 17px;
   }
 
+  .page-header__logo {
+    margin-top: 19px;
+  }
+
   .page-header__logo-svg--dt {
     display: none;
   }
 
   .page-header__contacts-link--mail {
     &::before {
-      top: 6px;
+      top: -10px;
       left: -87px;
     }
   }
@@ -238,19 +243,25 @@
 
   .page-header__contacts-link--phone {
     &::before {
-      top: 40px;
+      top: 22px;
       left: -39px;
     }
   }
 
   .page-header {
+    justify-content: space-between;
+    width: 320px;
+    margin: 0;
+    height: 50px;
+    align-self: center;
+
     &::before {
-      top: -7px;
+      top: -30px;
       height: 678px;
     }
 
     &::after {
-      top: -7px;
+      top: -30px;
       height: 678px;
       background-image: url("../img/bckg-header-mob.png");
       background-size: 100vw 678px;
