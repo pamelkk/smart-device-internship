@@ -118,7 +118,7 @@
 .page-header__logo {
   align-self: center;
   margin-top: 2px;
-  margin-right: 22.5%;
+  margin-right: 19%;
 }
 
 .page-header__contacts-button {
@@ -150,6 +150,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .page-header__contacts-button {
+    display: none;
+  }
+
   .page-header {
     padding: 0;
     margin-top: 6px;
@@ -172,6 +176,10 @@
 
   .page-header__contacts-link {
     color: transparent;
+
+    &:hover {
+      color: transparent;
+    }
   }
 
   .page-header__contacts-link--mail {
@@ -181,6 +189,12 @@
       left: 286px;
       height: 19px;
       background-size: 25px 19px;
+
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 
@@ -191,11 +205,13 @@
       left: 126px;
       height: 24px;
       background-size: 24px 24px;
-    }
-  }
 
-  .page-header__contacts-button {
-    display: none;
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
+    }
   }
 
   .page-header__logo {
