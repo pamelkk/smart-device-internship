@@ -5,6 +5,8 @@
   padding-top: 30px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
 
   &::before {
     background-color: $products-footer-header;
@@ -44,8 +46,9 @@
 .page-header__contacts {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 50px;
+  padding-left: 10px;
   justify-content: center;
+  max-width: 402px;
 }
 
 .page-header__contacts-link {
@@ -68,8 +71,8 @@
     margin-left: 122px;
   }
 
-  &:nth-of-type(3n) {
-    margin-left: 120px;
+  &:nth-of-type(2n+1) {
+    margin-left: 0;
   }
 
   &:first-of-type {
@@ -117,12 +120,13 @@
 
 .page-header__logo {
   align-self: center;
-  margin-top: 2px;
-  margin-right: 19%;
+  margin-top: 3px;
+  cursor: default;
+  margin-right: 17.6%;
 }
 
 .page-header__contacts-button {
-  margin-left: 49px;
+  margin-left: 40px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -132,6 +136,7 @@
   text-transform: uppercase;
   font-family: $font-main;
   color: $header-features-form;
+  text-decoration: none;
   width: 180px;
   height: 45px;
   padding-top: 13px;
@@ -266,7 +271,6 @@
 
   .page-header {
     justify-content: space-between;
-    width: 320px;
     margin: 0;
     height: 50px;
     align-self: center;

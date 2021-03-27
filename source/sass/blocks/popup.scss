@@ -30,6 +30,7 @@
   height: 605px;
   display: flex;
   flex-direction: column;
+  z-index: 500;
 }
 
 .popup-wrapper h3 {
@@ -59,6 +60,7 @@
   background-color: $inputs;
   border: none;
   font-family: $font-text;
+  border-radius: 0;
 
   &::placeholder {
     font-weight: 400;
@@ -75,6 +77,34 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  &:hover {
+    border: 1px solid $header-features-form;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  &:focus {
+    border: 1px solid $header-features-form;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  &:invalid {
+    border: 1px solid $invalid;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  &:invalid:not(:focus) {
+    border: none;
+  }
 }
 
 .popup-wrapper__form textarea {
@@ -88,8 +118,10 @@
   padding-left: 23.7px;
   padding-right: 23.7px;
   background-color: $inputs;
+  border-radius: 0;
   border: none;
   font-family: $font-text;
+  resize: none;
 
   &::placeholder {
     font-weight: 400;
@@ -97,6 +129,22 @@
     line-height: 22px;
     color: $header-features-form;
     font-family: $font-text;
+  }
+
+  &:hover {
+    border: 1px solid $header-features-form;
+    padding-top: 12.7px;
+    padding-bottom: 12.7px;
+    padding-left: 22.7px;
+    padding-right: 22.7px;
+  }
+
+  &:invalid {
+    border: 1px solid $invalid;
+    padding-top: 12.7px;
+    padding-bottom: 12.7px;
+    padding-left: 22.7px;
+    padding-right: 22.7px;
   }
 }
 
@@ -120,6 +168,7 @@
   background-color: $questions-features-products;
   font-family: $font-main;
   margin-top: 27px;
+  cursor: pointer;
 }
 
 .popup-wrapper__form-agreement {
@@ -127,6 +176,7 @@
   flex-direction: column;
   margin-top: 35px;
   margin-left: 18px;
+  position: relative;
 }
 
 .popup-wrapper__form-agreement label {
@@ -142,31 +192,47 @@
   position: relative;
   margin-left: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    top: 0;
-    left: -45px;
-    height: 16px;
-    background-image: url("../img/icon-check-agree-rectangle.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-.popup-wrapper__form-agreement input:checked + label {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -45px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/icon-check-agree-rectangle-checked.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
+.popup-wrapper__form-agreement input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 2px;
+  left: -1px;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    border: none;
   }
+}
+
+.popup-wrapper__form-agreement-checkbox {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-image: url("../img/icon-check-agree-rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  top: 2px;
+  left: 0;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.popup-wrapper__form-agreement input:checked + .popup-wrapper__form-agreement-checkbox {
+  background-image: url("../img/icon-check-agree-rectangle-checked.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
 }
 
 .popup-wrapper p {

@@ -3,6 +3,10 @@
   font-family: $font-main;
 }
 
+.page--inactive {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
