@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding-left: 5px;
-  padding-right: 5px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  flex-shrink: 0;
 }
 
 .page-footer__menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 55px;
   border-bottom: 1px solid $footer-line;
   align-self: center;
@@ -28,14 +29,14 @@
 .page-footer__social-logo {
   display: flex;
   flex-direction: column;
-  margin-right: 11%;
 }
 
 .page-footer__nav {
   display: flex;
   flex-direction: column;
   margin-top: -1px;
-  margin-right: 11%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 .page-footer__address {
@@ -136,12 +137,11 @@
 
 .page-footer__information ul {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   align-self: center;
-  padding-right: 10%;
+  width: 74%;
 }
 
 .page-footer__information-rights-item {
@@ -155,11 +155,11 @@
   opacity: 0.5;
 
   &:nth-of-type(n+1) {
-    margin-right: 11.2%;
+    margin-right: 5%;
   }
 
   &:nth-of-type(n+2) {
-    margin-right: 11.7%;
+    margin-right: 11%;
   }
 
   &:last-of-type {
@@ -168,7 +168,6 @@
 }
 
 .page-footer__information-rights-item a {
-  margin-left: 65px;
   text-decoration: none;
   font-family: $font-text;
   font-weight: 400;
@@ -353,6 +352,7 @@
     padding-top: 21px;
     padding-left: 8px;
     width: 100%;
+    justify-content: space-between;
   }
 
   .page-footer__information-rights-item a {
@@ -625,7 +625,7 @@
     position: relative;
     text-align: left;
     align-self: center;
-    margin-right: 187px;
+    margin-right: 186px;
     margin-left: 0;
   }
 

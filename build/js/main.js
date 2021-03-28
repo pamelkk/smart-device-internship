@@ -6,6 +6,7 @@ const buttonPopupOpen = document.querySelector(".page-header__contacts-button");
 const popup = document.querySelector(".popup");
 const buttonPopupClose = document.querySelector(".popup-wrapper__close-button");
 const pageElement = document.querySelector(".page");
+const inputNameElement = document.querySelector("#name-popup");
 const addressField = document.querySelector(".page-footer__address");
 const listsField = document.querySelector(".page-footer__nav");
 
@@ -68,6 +69,7 @@ buttonPopupOpen.addEventListener("click", function (e) {
   if (!popup.classList.contains("popup--opened")) {
     popup.classList.add("popup--opened");
     pageElement.classList.add("page--inactive");
+    inputNameElement.focus();
   }
 });
 
