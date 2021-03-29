@@ -8,6 +8,7 @@
   padding-left: 0.5%;
   padding-right: 0.5%;
   flex-shrink: 0;
+  max-width: 1417px;
 }
 
 .page-footer__menu {
@@ -29,20 +30,21 @@
 .page-footer__social-logo {
   display: flex;
   flex-direction: column;
+  margin-right: -5px;
 }
 
 .page-footer__nav {
   display: flex;
   flex-direction: column;
   margin-top: -1px;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
 }
 
 .page-footer__address {
   display: flex;
   flex-direction: column;
   margin-top: -1px;
+  margin-left: 10px;
+  margin-right: -15px;
 }
 
 .page-footer__social-logo-rights {
@@ -127,7 +129,7 @@
 .page-footer__information {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
   box-sizing: border-box;
@@ -141,7 +143,8 @@
   padding: 0;
   list-style: none;
   align-self: center;
-  width: 74%;
+  width: auto;
+  min-width: 810px;
 }
 
 .page-footer__information-rights-item {
@@ -155,11 +158,11 @@
   opacity: 0.5;
 
   &:nth-of-type(n+1) {
-    margin-right: 5%;
+    margin-right: 9%;
   }
 
   &:nth-of-type(n+2) {
-    margin-right: 11%;
+    margin-right: 17%;
   }
 
   &:last-of-type {
@@ -189,6 +192,7 @@
   text-transform: uppercase;
   color: $products-footer-header;
   opacity: 0.5;
+  margin-right: -14px;
 }
 
 .page-footer__nav h3 {
@@ -315,7 +319,7 @@
     box-sizing: border-box;
     margin: 0;
     align-self: center;
-    padding-left: 63px;
+    padding-left: 72px;
     padding-top: 1px;
     padding-right: 50px;
   }
@@ -345,7 +349,7 @@
     justify-content: center;
     align-self: center;
     padding-bottom: 5px;
-    padding-right: 5px;
+    padding-right: -3px;
   }
 
   .page-footer__information {
@@ -362,10 +366,11 @@
   .page-footer__information ul {
     width: auto;
     padding-right: 0;
+    min-width: auto;
   }
 
   .page-footer__information p {
-    padding-right: 7px;
+    padding-right: 21px;
   }
 
   .page-footer__nav {
@@ -379,7 +384,7 @@
 
   .page-footer__address-item {
     &:nth-of-type(n+1) {
-      margin-top: -2px;
+      margin-top: 0;
     }
 
     &:nth-of-type(n+2) {
@@ -531,6 +536,7 @@
     flex-direction: column;
     margin-left: 0;
     width: 320px;
+    margin-right: 0;
   }
 
   .page-footer__social-logo a {
@@ -643,7 +649,7 @@
     padding-top: 29px;
     padding-bottom: 28px;
     box-sizing: border-box;
-    padding-left: 15px;
+    padding-left: 13px;
     align-self: center;
     width: 100%;
     display: flex;
@@ -661,7 +667,7 @@
     padding-bottom: 28px;
     width: 100%;
     margin-right: 0;
-    padding-left: 14px;
+    padding-left: 12px;
     align-self: center;
     box-sizing: border-box;
     display: flex;

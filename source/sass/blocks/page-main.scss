@@ -8,16 +8,16 @@
 .page-main__header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .page-main__header-description {
   display: flex;
   flex-direction: column;
   margin-top: 228px;
-  margin-right: 27.9%;
   padding-left: 5px;
   padding-right: 5px;
+  margin-left: 12.8%;
   position: relative;
   box-sizing: border-box;
 
@@ -54,7 +54,7 @@
 
 .page-main__header-description p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   max-width: 683px;
   margin-left: 98px;
   font-family: $font-text;
@@ -851,7 +851,7 @@
 @media (max-width: $tablet-width) {
   .page-main {
     overflow-x: hidden;
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
 
   .page-main__header {
@@ -865,7 +865,7 @@
       background-repeat: no-repeat;
       width: 332px;
       height: 465px;
-      top: -75px;
+      top: -77px;
       right: -3px;
       background-image: url("../img/pcb-tab.png");
       background-size: 332px 465px;
@@ -878,8 +878,8 @@
   }
 
   .page-main__header-description {
-    margin-right: 120px;
-    margin-top: 113px;
+    margin-right: 122px;
+    margin-top: 112px;
     margin-left: 0;
 
     &::before {
@@ -926,7 +926,7 @@
 
   .page-main__features {
     margin-top: 217px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     width: 100%;
   }
 
@@ -946,8 +946,8 @@
     height: 306px;
     padding-top: 65px;
     padding-bottom: 18px;
-    padding-left: 26px;
-    padding-right: 19px;
+    padding-left: 24px;
+    padding-right: 22px;
     border-left: 2px solid $questions-features-products;
 
     &:hover {
@@ -956,8 +956,16 @@
       cursor: pointer;
       padding-top: 65px;
       padding-bottom: 18px;
-      padding-left: 29px;
-      padding-right: 19px;
+      padding-left: 26px;
+      padding-right: 21px;
+    }
+
+    &:nth-of-type(n+1) {
+      margin-right: 29px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
     }
 
     &:nth-of-type(2n+1) {
@@ -1070,7 +1078,7 @@
   }
 
   .page-main__about {
-    margin-left: 189px;
+    margin-left: 212px;
     margin-bottom: 83px;
 
     &::before {
@@ -1097,11 +1105,12 @@
     margin-bottom: 24px;
     font-size: 32px;
     line-height: 45px;
-    margin-left: -3px;
+    margin-left: -2px;
   }
 
   .page-main__about p {
-    min-width: 532px;
+    min-width: 530px;
+    padding-right: 25px;
 
     &:first-of-type {
       margin-bottom: 20px;
@@ -1119,13 +1128,14 @@
         display: block;
         position: absolute;
         bottom: 87px;
-        right: 4px;
+        right: 27px;
       }
     }
   }
 
   .page-main__about a {
-    margin-top: 41px;
+    margin-top: 42px;
+    padding-top: 14px;
   }
 
   .page-main__products {
@@ -1133,6 +1143,7 @@
     padding-bottom: 73px;
     padding-left: 23px;
     padding-right: 25px;
+    min-height: 1127px;
 
     &::before {
       background-color: $products-footer-header;
@@ -1148,7 +1159,7 @@
 
   .page-main__products h2 {
     margin-left: 0;
-    margin-right: 102px;
+    margin-right: 88px;
     margin-bottom: 50px;
     font-size: 32px;
     line-height: 45px;
@@ -1168,7 +1179,7 @@
 
     &:nth-of-type(n+1) {
       margin-right: 0;
-      margin-bottom: 44px;
+      margin-bottom: 46px;
     }
 
     &:nth-of-type(n+4) {
@@ -1176,14 +1187,18 @@
     }
 
     &:nth-of-type(n+2) {
-      margin-bottom: 40px;
+      margin-bottom: 45px;
+
+      h3 {
+        top: 40px;
+      }
     }
 
     &:last-of-type {
       margin-bottom: 0;
 
       h3 {
-        top: 50px;
+        top: 51px;
       }
     }
 
@@ -1209,7 +1224,7 @@
   .page-main__questions {
     padding-left: 90px;
     padding-right: 75px;
-    padding-top: 81px;
+    padding-top: 80px;
     padding-bottom: 80px;
     box-sizing: border-box;
     min-height: 665px;
@@ -1234,6 +1249,7 @@
   .page-main__questions h2 {
     font-size: 32px;
     line-height: 45px;
+    margin-left: -3px;
   }
 
   .page-main__questions p {
@@ -1248,8 +1264,7 @@
   .page-main__questions-wrapper-form-inputs input {
     width: 279px;
     height: 52px;
-    padding-top: 14px;
-    padding-bottom: 16px;
+    padding-left: 17px;
 
     &:nth-of-type(n+1) {
       margin-right: 32px;
@@ -1264,13 +1279,15 @@
     }
 
     &:hover {
-      padding-top: 13px;
+      padding-top: 12px;
       padding-bottom: 15px;
+      padding-left: 16px;
     }
 
     &:invalid {
       padding-top: 13px;
       padding-bottom: 15px;
+      padding-left: 17px;
     }
   }
 
@@ -1280,16 +1297,30 @@
     min-height: 160px;
     padding-top: 12px;
     padding-bottom: 14px;
+    padding-left: 17px;
 
     &:hover {
       padding-top: 11px;
       padding-bottom: 13px;
+      padding-left: 16px;
     }
 
     &:invalid {
       padding-top: 11px;
       padding-bottom: 13px;
+      padding-left: 16px;
     }
+  }
+
+  .page-main__questions-wrapper-form-agreement input {
+    top: 9px;
+    left: 319px;
+  }
+
+  .page-main__questions-wrapper-form-agreement-checkbox {
+    top: 9px;
+    left: 320px;
+    width: 17px;
   }
 
   .page-main__questions-wrapper-form-agreement-button {
@@ -1332,7 +1363,7 @@
       width: 295px;
       height: 440px;
       top: -50px;
-      right: -2px;
+      right: -1px;
       background-image: url("../img/pcb-mob.png");
       background-size: 295px 440px;
 
@@ -1347,8 +1378,8 @@
     align-self: center;
     font-size: 40px;
     line-height: 47px;
-    margin-top: 235px;
-    margin-bottom: 28px;
+    margin-top: 237px;
+    margin-bottom: 26px;
     width: 277px;
     margin-left: 0;
     margin-right: 13px;
@@ -1366,7 +1397,7 @@
   .page-main__header-description-consultation {
     margin-left: 0;
     padding-top: 17px;
-    padding-left: 11px;
+    padding-left: 12px;
     padding-right: 11px;
     padding-bottom: 16px;
     width: 287px;
@@ -1383,6 +1414,7 @@
 
   .page-main__questions-wrapper {
     align-self: center;
+    flex-direction: column;
   }
 
   .page-main__features {
@@ -1394,7 +1426,7 @@
   }
 
   .page-main__features ul {
-    padding-left: 10px;
+    padding-left: 13px;
     padding-right: 10px;
     flex-direction: column;
     width: auto;
@@ -1412,10 +1444,10 @@
     height: 310px;
 
     &:hover {
-      padding-top: 74px;
-      padding-bottom: 24px;
-      padding-left: 25px;
-      padding-right: 20px;
+      padding-top: 72px;
+      padding-bottom: 23px;
+      padding-left: 26px;
+      padding-right: 19px;
     }
 
     &:nth-of-type(n+2) {
@@ -1430,9 +1462,10 @@
     }
 
     &:nth-of-type(n+3) {
-      padding-top: 62px;
+      padding-top: 63px;
       padding-right: 15px;
       padding-bottom: 57px;
+      padding-left: 27px;
       margin-top: 0;
       height: 232px;
 
@@ -1450,7 +1483,8 @@
     &:nth-of-type(n+4) {
       padding-top: 68px;
       padding-bottom: 20px;
-      padding-left: 25px;
+      padding-left: 26px;
+      padding-right: 18px;
       height: 244px;
 
       &:hover {
@@ -1505,8 +1539,8 @@
 
   .page-main__features-item-header--confidentiality {
     &::before {
-      top: -38px;
-      left: 1px;
+      top: -39px;
+      left: 0;
     }
   }
 
@@ -1520,9 +1554,8 @@
   .page-main__about {
     margin-left: 0;
     margin-bottom: 65px;
-    padding-left: 0;
     align-self: center;
-    padding-left: 17px;
+    padding-left: 41px;
     padding-right: 15px;
     box-sizing: border-box;
 
@@ -1551,8 +1584,8 @@
       margin-top: 0;
 
       .page-main__about-split {
-        bottom: 76px;
-        right: 133px;
+        bottom: 74px;
+        right: 175px;
       }
     }
   }
@@ -1563,12 +1596,13 @@
     padding-bottom: 8px;
     padding-left: 12px;
     padding-right: 13px;
+    margin-left: 0;
   }
 
   .page-main__products {
     padding-top: 50px;
     padding-bottom: 58px;
-    padding-left: 17px;
+    padding-left: 10px;
     padding-right: 9px;
     min-height: 1101px;
 
@@ -1578,7 +1612,7 @@
   }
 
   .page-main__products h2 {
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 0;
     margin-bottom: 41px;
     font-size: 29px;
@@ -1595,7 +1629,14 @@
   .page-main__products-item {
     &:nth-of-type(n+1) {
       margin-right: 0;
-      margin-bottom: 27px;
+      margin-bottom: 30px;
+    }
+
+    &:nth-of-type(n+2) {
+      h3 {
+        top: 20px;
+        left: 34px;
+      }
     }
 
     &:nth-of-type(n+4) {
@@ -1606,7 +1647,8 @@
       margin-bottom: 0;
 
       h3 {
-        top: 29px;
+        top: 31px;
+        left: 36px;
       }
     }
 
@@ -1620,12 +1662,8 @@
   }
 
   .page-main__products-item h3 {
-    left: 32px;
+    left: 35px;
     top: 21px;
-  }
-
-  .page-main__questions-wrapper {
-    flex-direction: column;
   }
 
   .page-main__questions {
@@ -1647,7 +1685,7 @@
     max-width: 100%;
     min-width: 243px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 18px;
   }
 
   .page-main__questions p {
@@ -1733,7 +1771,6 @@
 
   .page-main__questions-wrapper-form-agreement {
     flex-direction: column;
-
   }
 
   .page-main__questions-wrapper-form-agreement-button {
@@ -1752,9 +1789,19 @@
     padding-right: 5px;
     box-sizing: border-box;
     align-self: center;
-    margin-left: 17px;
-    margin-top: 30px;
+    margin-left: 50px;
+    margin-top: 29px;
     background-size: 17px 16px;
+  }
+
+  .page-main__questions-wrapper-form-agreement input {
+    top: 76px;
+    left: 13px;
+  }
+
+  .page-main__questions-wrapper-form-agreement-checkbox {
+    top: 77px;
+    left: 15px;
   }
 
   .page-main__questions-wrapper-form-agreement input:checked + label {

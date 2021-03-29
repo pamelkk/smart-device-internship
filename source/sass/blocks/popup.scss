@@ -214,6 +214,10 @@
   &:hover {
     border: none;
   }
+
+  &:focus {
+    padding: 0;
+  }
 }
 
 .popup-wrapper__form-agreement-checkbox {
