@@ -2,7 +2,7 @@ const buttonListsOpen = document.querySelector(".page-footer__nav-lists-menu");
 const menuLists = document.querySelector(".page-footer__nav-lists--mob");
 const buttonAddressOpen = document.querySelector(".page-footer__address-menu");
 const menuAddress = document.querySelector(".page-footer__address--mob");
-const buttonPopupOpen = document.querySelector(".page-header__contacts-button");
+const buttonPopupOpen = document.querySelector(".page-header__wrapper-contacts-button");
 const popup = document.querySelector(".popup");
 const buttonPopupClose = document.querySelector(".popup-wrapper__close-button");
 const pageElement = document.querySelector(".page");
@@ -92,3 +92,4 @@ document.addEventListener("keydown", function (e) {
     popup.classList.remove("popup--opened");
   }
 });
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Smart Device</title>
+  <link href="css/min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font">
+</head>
+
+<body class="page-body">
+  <header class="page-header page-header--popup">
+    <a title="Логотип нашей компании" href="index.html">
+      <svg width="202" height="52">
+        <use xlink:href="img/sprite_auto.svg#icon-logo-header"></use>
+      </svg>
+    </a>
+  </header>
+  <main class="page-main page-main--popup">
+      <section>
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+          <input type="text" id="name-popup-index" name="name-popup-index" placeholder="Имя" autofocus="" tabindex="1" required="">
+          <label class="visually-hidden" for="name-popup">Введите Ваше Имя</label>
+          <input type="tel" id="tel-popup-index" name="tel-popup-index" pattern="+[0-9]{10}" placeholder="Телефон" required="" tabindex="2">
+          <label class="visually-hidden" for="tel-popup">Введите Ваш номер телефона</label>
+          <textarea name="question-popup-index" id="question-popup-index" rows="7" placeholder="Ваш вопрос" tabindex="3"></textarea>
+          <label class="visually-hidden" for="question-popup-index">Введите Ваш вопрос</label>
+          <button type="submit" tabindex="4">Отправить</button>
+          <div class="page-main--popup-form-agreement">
+            <input type="checkbox" name="agreement-popup-index" id="agreement-popup-index" value="agreement-popup-index" checked="" required="" tabindex="5">
+            <span></span>
+            <label for="agreement-popup-index">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__menu">
+      <h2 class="visually-hidden">Меню и контакты</h2>
+      <div class="page-footer__social-logo">
+        <a title="Логотип нашей компании" href="#">
+          <svg class="page-footer__social-logo-svg" width="202" height="52">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+        <p class="page-footer__social-logo-rights">1999-2018 SD Service Devices</p>
+        <ul>
+          <li class="page-footer__social-logo-item page-footer__social-logo-item--fb">
+            <a title="Наша страничка в Facebook" href="#"></a></li>
+          <li class="page-footer__social-logo-item page-footer__social-logo-item--ok">
+            <a title="Наша страничка в Одноклассниках" href="#"></a></li>
+          <li class="page-footer__social-logo-item page-footer__social-logo-item--vk">
+            <a title="Наша страничка в Вконтакте" href="#"></a></li>
+        </ul>
+      </div>
+      <nav class="page-footer__nav">
+        <h3>Разделы сайта</h3>
+        <div class="page-footer__nav-lists page-footer__nav-lists--mob page-footer__nav-lists--opened">
+          <ul>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">О компании</a></li>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Продукты</a>
+            </li>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Производство
+                печатных плат</a>
+            </li>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Монтаж печатных
+                плат</a></li>
+          </ul>
+          <ul>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Комплектующие</a>
+            </li>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Доставка</a>
+            </li>
+            <li class="page-footer__nav-lists-item"><a class="page-footer__nav-lists-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="page-footer__nav-lists-menu page-footer__nav-lists-menu--opened"></button>
+      </nav>
+      <div class="page-footer__address page-footer__address--mob page-footer__address--opened">
+        <h3>Наш офис</h3>
+        <ul>
+          <li class="page-footer__address-item">г. Мытищи, Олимпийский проспект, д.10</li>
+          <li class="page-footer__address-item"><a href="tel:84955894050">+7 (495) 589-40-50</a></li>
+          <li class="page-footer__address-item"><a href="tel:89250038767">+7 (925) 003-87-67</a></li>
+          <li class="page-footer__address-item"><a href="tel:892692608079">+7 (926) 926-080-79</a></li>
+        </ul>
+        <button type="button" class="page-footer__address-menu page-footer__address-menu--opened"></button>
+      </div>
+    </div>
+    <div class="page-footer__information">
+      <ul>
+        <li class="page-footer__information-rights-item page-footer__information-rights-item--dt">Все права защищены
+        </li>
+        <li class="page-footer__information-rights-item page-footer__information-rights-item--dt">1999-2018 SD Service
+          Devices</li>
+        <li class="page-footer__information-rights-item"><a href="#">Условия конфиденциальности</a></li>
+      </ul>
+      <p>Developed by wow studio</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#tel-popup-index").mask("+7(999)9999999");
+    });
+  </script>
+</body>
+
+</html>

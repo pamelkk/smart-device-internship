@@ -19,13 +19,13 @@
         <use xlink:href="img/sprite_auto.svg#icon-logo-header-mob"></use>
       </svg>
     </a>
-    <div class="wrapper">
-    <div class="page-header__contacts">
-      <a class="page-header__contacts-link page-header__contacts-link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
-      <a class="page-header__contacts-link page-header__contacts-link--phone" href="tel:84950005252">+7 (495) 000 52
+    <div class="page-header__wrapper">
+    <div class="page-header__wrapper-contacts">
+      <a class="page-header__wrapper-contacts-link page-header__wrapper-contacts-link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
+      <a class="page-header__wrapper-contacts-link page-header__wrapper-contacts-link--phone" href="tel:84950005252">+7 (495) 000 52
         52</a>
     </div>
-    <a href="#" class="page-header__contacts-button">Заказать звонок</a>
+    <a href="popup.html" class="page-header__wrapper-contacts-button">Заказать звонок</a>
   </div>
   </header>
   <main class="page-main">
@@ -121,7 +121,7 @@
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="page-main__questions-wrapper-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
           <fieldset class="page-main__questions-wrapper-form-inputs">
-            <input type="text" id="name" name="name" placeholder="Имя">
+            <input type="text" id="name" name="name" placeholder="Имя" required="">
             <label class="visually-hidden" for="name">Введите Ваше Имя</label>
             <input type="tel" id="tel" name="tel" pattern="+[0-9]{10}" placeholder="Телефон" required="">
             <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
@@ -130,7 +130,7 @@
           </fieldset>
           <div class="page-main__questions-wrapper-form-agreement">
             <button class="page-main__questions-wrapper-form-agreement-button" type="submit">Задать вопрос</button>
-            <input type="checkbox" name="agreement" id="agreement" value="agreement" checked="">
+            <input type="checkbox" name="agreement" id="agreement" value="agreement" checked="" required="">
             <span class="page-main__questions-wrapper-form-agreement-checkbox"></span>
             <label for="agreement">Я согласен на обработку персональных данных</label>
           </div>
@@ -209,7 +209,7 @@
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="popup-wrapper__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
         <button class="popup-wrapper__close-button" type="button" title="Закрыть модальное окно" tabindex="6"></button>
-        <input type="text" id="name-popup" name="name-popup" placeholder="Имя" autofocus="" tabindex="1">
+        <input type="text" id="name-popup" name="name-popup" placeholder="Имя" autofocus="" tabindex="1" required="">
         <label class="visually-hidden" for="name-popup">Введите Ваше Имя</label>
         <input type="tel" id="tel-popup" name="tel-popup" pattern="+[0-9]{10}" placeholder="Телефон" required="" tabindex="2">
         <label class="visually-hidden" for="tel-popup">Введите Ваш номер телефона</label>
@@ -217,7 +217,7 @@
         <label class="visually-hidden" for="question-popup">Введите Ваш вопрос</label>
         <button class="popup-wrapper__form-button" type="submit" tabindex="4">Отправить</button>
         <div class="popup-wrapper__form-agreement">
-          <input type="checkbox" name="agreement-popup" id="agreement-popup" value="agreement-popup" checked="" tabindex="5">
+          <input type="checkbox" name="agreement-popup" id="agreement-popup" value="agreement-popup" checked="" required="" tabindex="5">
           <span class="popup-wrapper__form-agreement-checkbox"></span>
           <label for="agreement-popup">Я согласен на обработку персональных данных</label>
         </div>
