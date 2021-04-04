@@ -686,6 +686,7 @@
     line-height: 22px;
     color: $header-features-form;
     font-family: $font-text;
+    min-height: 100%;
   }
 
   &:nth-of-type(n+1) {
@@ -804,7 +805,7 @@
   opacity: 0.8;
   color: $header-features-form;
   align-self: center;
-  margin-left: 67px;
+  margin-left: 70px;
   cursor: pointer;
   margin-top: 3px;
 
@@ -814,8 +815,6 @@
 }
 
 .page-main__questions-wrapper-form-agreement input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: absolute;
   top: 5px;
@@ -1031,8 +1030,6 @@
 }
 
 .page-main--popup-form-agreement input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: absolute;
   top: -1px;
@@ -1796,9 +1793,10 @@
     margin-left: 0;
     margin-bottom: 65px;
     align-self: center;
-    padding-left: 41px;
+    padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    width: 100%;
 
     &::before {
       display: none;
@@ -1816,6 +1814,7 @@
     margin: 0;
     min-width: 288px;
     width: auto;
+    padding-left: 1px;
 
     &:first-of-type {
       margin-bottom: 40px;
@@ -1837,7 +1836,7 @@
     padding-bottom: 8px;
     padding-left: 12px;
     padding-right: 13px;
-    margin-left: 0;
+    margin-left: 1px;
   }
 
   .page-main__products {
@@ -1965,7 +1964,7 @@
     width: 290px;
     height: 52px;
     padding-top: 13px;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     padding-left: 16px;
     align-self: center;
 
@@ -1989,13 +1988,13 @@
 
     &:hover {
       padding-top: 12px;
-      padding-bottom: 17px;
+      padding-bottom: 12px;
       padding-left: 15px;
     }
 
     &:invalid {
-      padding-top: 12px;
-      padding-bottom: 17px;
+      padding-top: 9px;
+      padding-bottom: 12px;
       padding-left: 17px;
     }
   }

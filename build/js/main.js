@@ -92,4 +92,3 @@ document.addEventListener("keydown", function (e) {
     popup.classList.remove("popup--opened");
   }
 });
-

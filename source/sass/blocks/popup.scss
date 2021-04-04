@@ -65,6 +65,7 @@
     line-height: 22px;
     color: $header-features-form;
     font-family: $font-text;
+    min-height: 100%;
   }
 
   &:nth-of-type(n+1) {
@@ -195,8 +196,6 @@
 }
 
 .popup-wrapper__form-agreement input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   position: absolute;
   top: 2px;

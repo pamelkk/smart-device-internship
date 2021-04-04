@@ -162,11 +162,11 @@
 }
 
 .page-header--popup {
-  &:before {
+  &::before {
     height: 800px;
   }
 
-  &:after {
+  &::after {
     height: 800px;
   }
 }

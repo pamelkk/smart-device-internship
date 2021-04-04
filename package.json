@@ -1,10 +1,10 @@
 {
-  "name": "Smart-device",
+  "name": "Smart-Device",
   "version": "1.0.0",
   "description": "Проект Smart-device",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "2.26.x",
     "eslint": "^4.16.0",
     "eslint-config-htmlacademy": "0.4.x",
